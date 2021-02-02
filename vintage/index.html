@@ -3,99 +3,146 @@ layout: default
 title: Vintages
 ---
 <!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 <!-- Create a div where the graph will take place -->
+        <style>
+        body {
+            font: 15px sans-serif;
+        }
 
-<div id="my_dataviz"></div>
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
 
-<script>
-
-// set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 30, left: 30},
-    width = 900 - margin.left - margin.right,
-    height = 450 - margin.top - margin.bottom;
-
-// append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
-  .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
-
-//Read the data
-//d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score1.tsv", function(data) {
-d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score_uni.tsv", function(data) {
-
-  // Add X axis
-  var x = d3.scaleLinear()
-    .domain([1962, 2019])
-    .range([ 0, width ]);
-  svg.append("g")
-    .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x));
-
-  // Add Y axis
-  var y = d3.scaleLinear()
-    .domain([0, 1])
-    .range([ height, 0]);
-  svg.append("g")
-    .call(d3.axisLeft(y));
-
-  // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
-  // Its opacity is set to 0: we don't see it by default.
-  var tooltip = d3.select("#my_dataviz")
-    .append("div")
-    .style("opacity", 0)
-    .attr("class", "tooltip")
-    .style("background-color", "white")
-    .style("border", "solid")
-    .style("border-width", "1px")
-    .style("border-radius", "5px")
-    .style("padding", "10px")
+        .dot {
+            stroke: none;
+        }
+        .tooltip {
+            position: absolute;
+            font-size: 12px;
+            width:  auto;
+            height: auto;
+            pointer-events: none;
+            background-color: white;
+        }
+         </style>
 
 
+<div id="vis-container"></div>
 
-  // A function that change this tooltip when the user hover a point.
-  // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
-  var mouseover = function(d) {
-    tooltip
-      .style("opacity", 1)
-  }
+        <!-- Optionally reference your vis JS file here, or define in a script tag -->
+        <!-- <script type="text/javascript" src="js/my-vis.js"></script> -->
+        <script type="text/javascript">
 
-  var mousemove = function(d) {
-    tooltip
-      .html(d.region+" Vintage "+ d.year +" : "+ d.review)
-      .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-      .style("top", (d3.mouse(this)[1]) + "px")
-  }
+d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score_uni.tsv", function loadCallback(error, data) {
+                data.forEach(function(d) { // convert strings to numbers
+                    d.uniscore = +d.uniscore;
+                    d.year = +d.year;
+                });
+                makeVis(data);
+            });
 
-  // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
-  var mouseleave = function(d) {
-    tooltip
-      .transition()
-      .duration(200)
-      .style("opacity", 0)
-  }
+var makeVis = function(data) {
+              // Common pattern for defining vis size and margins
+              var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+                  width  = 960 - margin.left - margin.right,
+                  height = 500 - margin.top - margin.bottom;
 
-  // Add dots
-  svg.append('g')
-    .selectAll("dot")
-    .data(data.filter(function(d,i){return i<5000})) // the .filter part is just to keep a few dots on the chart, not all of them
-    .enter()
-    .append("circle")
-      .attr("cx", function (d) { return x(d.year); } )
-      .attr("cy", function (d) { return y(d.uniscore); } )
-      .attr("r", 7)
-      .style("fill", "#69b3a2")
-      .style("opacity", 0.3)
-      .style("stroke", "white")
-    .on("mouseover", mouseover )
-    .on("mousemove", mousemove )
-    .on("mouseleave", mouseleave )
+              // Add the visualization svg canvas to the vis-container <div>
+              var canvas = d3.select("#vis-container").append("svg")
+                  .attr("width",  width  + margin.left + margin.right)
+                  .attr("height", height + margin.top  + margin.bottom)
+                .append("g")
+                  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-})
+              // Define our scales
+              var colorScale = d3.scale.category10();
 
-</script>
+              var xScale = d3.scale.linear()
+                  .domain([ d3.min(data, function(d) { return d.year; }) - 1,
+                            d3.max(data, function(d) { return d.year; }) + 1 ])
+                  .range([0, width]);
+
+              var yScale = d3.scale.linear()
+                  .domain([ d3.min(data, function(d) { return d.uniscore; }) - 1,
+                            d3.max(data, function(d) { return d.uniscore; }) + 1 ])
+                  .range([height, 0]); // flip order because y-axis origin is upper LEFT
+
+              // Define our axes
+              var xAxis = d3.svg.axis()
+                  .scale(xScale)
+                  .orient('bottom');
+
+              var yAxis = d3.svg.axis()
+                  .scale(yScale)
+                  .orient('left');
+
+              // Add x-axis to the canvas
+              canvas.append("g")
+                  .attr("class", "x axis")
+                  .attr("transform", "translate(0," + height + ")") // move axis to the bottom of the canvas
+                  .call(xAxis)
+                .append("text")
+                  .attr("class", "label")
+                  .attr("x", width) // x-offset from the xAxis, move label all the way to the right
+                  .attr("y", -6)    // y-offset from the xAxis, moves text UPWARD!
+                  .style("text-anchor", "end") // right-justify text
+                  .text("year");
+
+              // Add y-axis to the canvas
+              canvas.append("g")
+                  .attr("class", "y axis") // .orient('left') took care of axis positioning for us
+                  .call(yAxis)
+                .append("text")
+                  .attr("class", "label")
+                  .attr("transform", "rotate(-90)") // although axis is rotated, text is not
+                  .attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
+                  .style("text-anchor", "end")
+                  .text("uniscore");
+
+              // Add the tooltip container to the vis container
+              // it's invisible and its position/contents are defined during mouseover
+              var tooltip = d3.select("#vis-container").append("div")
+                  .attr("class", "tooltip")
+                  .style("opacity", 0);
+
+              // tooltip mouseover event handler
+              var tipMouseover = function(d) {
+                  var color = colorScale(d.region);
+                  var html  = d.review + "<br/>" +
+                              "<span style='color:" + color + ";'>" + d.region + "</span><br/>" +
+                              "<b>" + d.year + "</b> year, <b/>" + d.uniscore + "</b> uniscore";
+
+                  tooltip.html(html)
+                      .style("left", (d3.event.pageX + 15) + "px")
+                      .style("top", (d3.event.pageY - 28) + "px")
+                    .transition()
+                      .duration(200) // ms
+                      .style("opacity", .9) // started as 0!
+
+              };
+              // tooltip mouseout event handler
+              var tipMouseout = function(d) {
+                  tooltip.transition()
+                      .duration(300) // ms
+                      .style("opacity", 0); // don't care about position!
+              };
+
+              // Add data points!
+              canvas.selectAll(".dot")
+                .data(data)
+              .enter().append("circle")
+                .attr("class", "dot")
+                .attr("r", 5.5) // radius size, could map to another data dimension
+                .attr("cx", function(d) { return xScale( d.year ); })     // x position
+                .attr("cy", function(d) { return yScale( d.uniscore ); })  // y position
+                .style("fill", function(d) { return colorScale(d.region); })
+                .on("mouseover", tipMouseover)
+                .on("mouseout", tipMouseout);
+          };
+
+        </script>
