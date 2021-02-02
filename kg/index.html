@@ -1,56 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ForceDirected - Force Directed Static Graph</title>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Test</title>
+        <script type="text/javascript" src="d3.v3.js">
+                var lineData = [ { "x": 1,   "y": 5},  { "x": 20,  "y": 20}, { "x": 40,  "y": 10}, { "x": 60,  "y": 40}, { "x": 80,  "y": 5},  { "x": 100, "y": 60}];
 
-<!-- CSS Files -->
-<link type="text/css" href="/css/base.css" rel="stylesheet" />
-<link type="text/css" href="/css/ForceDirected.css" rel="stylesheet" />
+        //This is the accessor function we talked about above
+        var lineFunction = d3.svg.line().x(function(d) { return d.x; }).y(function(d) { return d.y; }).interpolate("linear");
 
-<!--[if IE]><script language="javascript" type="text/javascript" src="../../Extras/excanvas.js"></script><![endif]-->
+        //The SVG Container
+        var svgContainer = d3.select("body").append("svg").attr("width", 200).attr("height", 200);
 
-<!-- JIT Library File -->
-<script language="javascript" type="text/javascript" src="jit.js"></script>
-
-<!-- Example File -->
-<script language="javascript" type="text/javascript" src="/kg/example1.js"></script>
-</head>
-
-<body onload="init();">
-<div id="container">
-
-<div id="left-container">
-
-
-
-        <div class="text">
-        <h4>
-Force Directed Static Graph    
-        </h4> 
-
-            A static JSON Graph structure is used as input for this visualization.<br /><br />
-            You can <b>zoom</b> and <b>pan</b> the visualization by <b>scrolling</b> and <b>dragging</b>.<br /><br />
-            You can <b>change node positions</b> by <b>dragging the nodes around</b>.<br /><br />
-            The clicked node's connections are displayed in a relations list in the right column.<br /><br />
-            The JSON static data is customized to provide different node types, colors and widths.
-            
-        </div>
-
-        <div id="id-list"></div>
-
-
-<div id="center-container">
-    <div id="infovis"></div>    
-</div>
-
-<div id="right-container">
-
-<div id="inner-details"></div>
-
-</div>
-
-<div id="log"></div>
-</div>
-</body>
-</html>
+        //The line SVG Path we draw
+        var lineGraph = svgContainer.append("path").attr("d", lineFunction(lineData)).attr("stroke", "blue").attr("stroke-width", 2).attr("fill", "none");
+   
+             //d3 = require("d3@6")
+             </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // Your beautiful D3 code will go here
+        </script>
+    </body>
+</html>     
