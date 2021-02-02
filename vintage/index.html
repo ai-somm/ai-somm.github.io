@@ -82,7 +82,7 @@ d3.tsv("https://somm-ai.github.io/vintage/jrv_wide_none.tsv", function(data){
       .enter()
       .append("path")
         .attr("class", function(d){ return d.name })
-        .attr("d", function(d){ return line(d.values) } )
+        .attr("d", function(d){ return line(d.value) } )
         .attr("stroke", function(d){ return myColor(d.name) })
         .style("stroke-width", 4)
         .style("fill", "none")
@@ -145,7 +145,14 @@ d3.tsv("https://somm-ai.github.io/vintage/jrv_wide_none.tsv", function(data){
 
   var mousemove = function(d) {
     tooltip
+      .data(dataReady)
+      .enter()
 
+      .html(d.name)//+" Vintage "+ d.time +" : "+ d.review)
+      //.style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+      //.style("top", (d3.mouse(this)[1]) + "px")
+      .data(function(d){ return d.values })
+      .enter()
       .html(d.name+" Vintage "+ d.time +" : "+ d.review)
       .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
       .style("top", (d3.mouse(this)[1]) + "px")
@@ -175,7 +182,7 @@ d3.tsv("https://somm-ai.github.io/vintage/jrv_wide_none.tsv", function(data){
       .append("circle")
         .attr("cx", function(d) { return x(d.time) } )
         .attr("cy", function(d) { return y(d.value) } )
-        .attr("r", 5)
+        .attr("r", 7)
         .style("fill", "#69b3a2")
         .style("opacity", 0.3)
         .style("stroke", "white")
