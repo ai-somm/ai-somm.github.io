@@ -9,20 +9,11 @@ title: Vintages
 
 <div id="my_dataviz"></div>
 
-<style>
-.myCircle:hover {
-  stroke: black;
-}
-</style>
-
-<!-- Color Scale -->
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-
 <script>
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 30, bottom: 30, left: 30},
-    width = 1200 - margin.left - margin.right,
+    width = 900 - margin.left - margin.right,
     height = 450 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -35,28 +26,7 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-//d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score1.tsv", function(data) {
-d3.tsv("https://somm-ai.github.io/vintage/jrv_wide_none.tsv", function(data){
-    // list of grapes
-    var allGroup = ["ARGENTINA", "SOUTH AUSTRALIA", "AUSTRIA", "CHILE", "ALSACE", "BORDEAUX - SWEET", "BURGUNDY - RED", "CHAMPAGNE", "LOIRE VALLEY", "SOUTHERN RHÔNE", "BORDEAUX - RED", "BORDEAUX - WHITE", "BURGUNDY - WHITE", "LANGUEDOC-ROUSSILLON", "NORTHERN RHÔNE", "GERMANY", "PIEMONTE", "TUSCANY", "NEW ZEALAND", "PORT AND THE DOURO", "SOUTH AFRICA", "CATALUNYA", "RIOJA AND RIBERA DEL DUERO", "ENGLAND", "NORTHERN CALIFORNIA"]
-    var allGroupScore = ["V9.ARGENTINA", "V9.SOUTH AUSTRALIA", "V9.AUSTRIA", "V9.CHILE", "V9.ALSACE", "V9.BORDEAUX - SWEET", "V9.BURGUNDY - RED", "V9.CHAMPAGNE", "V9.LOIRE VALLEY", "V9.SOUTHERN RHÔNE", "V9.BORDEAUX - RED", "V9.BORDEAUX - WHITE", "V9.BURGUNDY - WHITE", "V9.LANGUEDOC-ROUSSILLON", "V9.NORTHERN RHÔNE", "V9.GERMANY", "V9.PIEMONTE", "V9.TUSCANY", "V9.NEW ZEALAND", "V9.PORT AND THE DOURO", "V9.SOUTH AFRICA", "V9.CATALUNYA", "V9.RIOJA AND RIBERA DEL DUERO", "V9.ENGLAND", "V9.NORTHERN CALIFORNIA"]
-    var allGroupText = ["V5.ARGENTINA", "V5.SOUTH AUSTRALIA", "V5.AUSTRIA", "V5.CHILE", "V5.ALSACE", "V5.BORDEAUX - SWEET", "V5.BURGUNDY - RED", "V5.CHAMPAGNE", "V5.LOIRE VALLEY", "V5.SOUTHERN RHÔNE", "V5.BORDEAUX - RED", "V5.BORDEAUX - WHITE", "V5.BURGUNDY - WHITE", "V5.LANGUEDOC-ROUSSILLON", "V5.NORTHERN RHÔNE", "V5.GERMANY", "V5.PIEMONTE", "V5.TUSCANY", "V5.NEW ZEALAND", "V5.PORT AND THE DOURO", "V5.SOUTH AFRICA", "V5.CATALUNYA", "V5.RIOJA AND RIBERA DEL DUERO", "V5.ENGLAND", "V5.NORTHERN CALIFORNIA"]
-    // Reformat the data: we need an array of arrays of {x, y} tuples
-    var dataReady = allGroup.map( function(grpName) { // .map allows to do something for each element of the list
-      return {
-        name: grpName,
-        values: data.map(function(d) {
-          return {time: d.V3, value: +d["V9."+grpName], review: +d["V5."+grpName]};
-        })
-      };
-    });
-    // I strongly advise to have a look to dataReady with
-    console.log(dataReady)
-
-    // A color scale: one color for each group
-    var myColor = d3.scaleOrdinal()
-      .domain(allGroup)
-      .range(d3.schemeSet2);
+d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score1.tsv", function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
@@ -73,56 +43,6 @@ d3.tsv("https://somm-ai.github.io/vintage/jrv_wide_none.tsv", function(data){
   svg.append("g")
     .call(d3.axisLeft(y));
 
-// Add the lines
-    var line = d3.line()
-      .x(function(d) { return x(+d.time) })
-      .y(function(d) { return y(+d.value) })
-    svg.selectAll("myLines")
-      .data(dataReady)
-      .enter()
-      .append("path")
-        .attr("class", function(d){ return d.name })
-        .attr("d", function(d){ return line(d.value) } )
-        .attr("stroke", function(d){ return myColor(d.name) })
-        .style("stroke-width", 4)
-        .style("fill", "none")
-
-
-    // Add a label at the end of each line
-    //svg
-      //.selectAll("myLabels")
-      //.data(dataReady)
-      //.enter()
-        //.append('g')
-        //.append("text")
-          //.attr("class", function(d){ return d.name })
-          //.datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; }) // keep only the last value of each time series
-          //.attr("transform", function(d) { return "translate(" + x(d.value.time) + "," + y(d.value.value) + ")"; }) // Put the text at the position of the last point
-          //.attr("x", 12) // shift the text a bit more right
-          //.text(function(d) { return d.name; })
-          //.style("fill", function(d){ return myColor(d.name) })
-          //.style("font-size", 15)
-
-    // Add a legend (interactive)
-    svg
-      .selectAll("myLegend")
-      .data(dataReady)
-      .enter()
-        .append('g')
-        .append("text")
-          .attr('x', function(d,i){ return 30 + i*60})
-          .attr('y', 30)
-          .text(function(d) { return d.name; })
-          .style("fill", function(d){ return myColor(d.name) })
-          .style("font-size", 15)
-        .on("click", function(d){
-          // is the element currently visible ?
-          currentOpacity = d3.selectAll("." + d.name).style("opacity")
-          // Change the opacity: from 0 to 1 or from 1 to 0
-          d3.selectAll("." + d.name).transition().style("opacity", currentOpacity == 1 ? 0:1)
-
-        })
-
   // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
   // Its opacity is set to 0: we don't see it by default.
   var tooltip = d3.select("#my_dataviz")
@@ -136,6 +56,7 @@ d3.tsv("https://somm-ai.github.io/vintage/jrv_wide_none.tsv", function(data){
     .style("padding", "10px")
 
 
+
   // A function that change this tooltip when the user hover a point.
   // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
   var mouseover = function(d) {
@@ -145,15 +66,7 @@ d3.tsv("https://somm-ai.github.io/vintage/jrv_wide_none.tsv", function(data){
 
   var mousemove = function(d) {
     tooltip
-      .data(dataReady)
-      .enter()
-
-      .html(d.name)//+" Vintage "+ d.time +" : "+ d.review)
-      //.style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-      //.style("top", (d3.mouse(this)[1]) + "px")
-      .data(function(d){ return d.values })
-      .enter()
-      .html(d.name+" Vintage "+ d.time +" : "+ d.review)
+      .html(d.region+" Vintage "+ d.year +" : "+ d.review)
       .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
       .style("top", (d3.mouse(this)[1]) + "px")
   }
@@ -166,47 +79,21 @@ d3.tsv("https://somm-ai.github.io/vintage/jrv_wide_none.tsv", function(data){
       .style("opacity", 0)
   }
 
-    // Add the points
-    svg
-      // First we need to enter in a group
-      .selectAll("myDots")
-      .data(dataReady)
-      .enter()
-        .append('g')
-        .style("fill", function(d){ return myColor(d.name) })
-        .attr("class", function(d){ return d.name })
-      // Second we need to enter in the 'values' part of this group
-      .selectAll("myPoints")
-      .data(function(d){ return d.values })
-      .enter()
-      .append("circle")
-        .attr("cx", function(d) { return x(d.time) } )
-        .attr("cy", function(d) { return y(d.value) } )
-        .attr("r", 7)
-        .style("fill", "#69b3a2")
-        .style("opacity", 0.3)
-        .style("stroke", "white")
-        .attr("stroke", "white")
-      .on("mouseover", mouseover )
-      .on("mousemove", mousemove )
-      .on("mouseleave", mouseleave )
-
   // Add dots
-  //svg.append('g')
-    //.selectAll("dot")
-    
-    //.data(dataReady)//data.filter(function(d,i){return i<50})) // the .filter part is just to keep a few dots on the chart, not all of them
-    //.enter()
-    //.append("circle")
-      //.attr("cx", function (d) { return x(d.time); } )
-      //.attr("cy", function (d) { return y(d.value); } )
-      //.attr("r", 7)
-      //.style("fill", "#69b3a2")
-      //.style("opacity", 0.3)
-      //.style("stroke", "white")
-    //.on("mouseover", mouseover )
-    //.on("mousemove", mousemove )
-    //.on("mouseleave", mouseleave )
+  svg.append('g')
+    .selectAll("dot")
+    .data(data.filter(function(d,i){return i<50})) // the .filter part is just to keep a few dots on the chart, not all of them
+    .enter()
+    .append("circle")
+      .attr("cx", function (d) { return x(d.year); } )
+      .attr("cy", function (d) { return y(d.score); } )
+      .attr("r", 7)
+      .style("fill", "#69b3a2")
+      .style("opacity", 0.3)
+      .style("stroke", "white")
+    .on("mouseover", mouseover )
+    .on("mousemove", mousemove )
+    .on("mouseleave", mouseleave )
 
 })
 
