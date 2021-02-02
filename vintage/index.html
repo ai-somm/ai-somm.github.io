@@ -68,8 +68,8 @@ var makeVis = function(data) {
                   .range([0, width]);
 
               var yScale = d3.scale.linear()
-                  .domain([ d3.min(data, function(d) { return d.uniscore; }) - 1,
-                            d3.max(data, function(d) { return d.uniscore; }) + 1 ])
+                  .domain([ d3.min(data, function(d) { return d.uniscore; }) ,
+                            d3.max(data, function(d) { return d.uniscore; }) ])
                   .range([height, 0]); // flip order because y-axis origin is upper LEFT
 
               // Define our axes
@@ -91,7 +91,7 @@ var makeVis = function(data) {
                   .attr("x", width) // x-offset from the xAxis, move label all the way to the right
                   .attr("y", -6)    // y-offset from the xAxis, moves text UPWARD!
                   .style("text-anchor", "end") // right-justify text
-                  .text("year");
+                  .text("vintage");
 
               // Add y-axis to the canvas
               canvas.append("g")
@@ -102,7 +102,7 @@ var makeVis = function(data) {
                   .attr("transform", "rotate(-90)") // although axis is rotated, text is not
                   .attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
                   .style("text-anchor", "end")
-                  .text("uniscore");
+                  .text("sentiment");
 
               // Add the tooltip container to the vis container
               // it's invisible and its position/contents are defined during mouseover
@@ -113,9 +113,9 @@ var makeVis = function(data) {
               // tooltip mouseover event handler
               var tipMouseover = function(d) {
                   var color = colorScale(d.region);
-                  var html  = d.review + "<br/>" +
-                              "<span style='color:" + color + ";'>" + d.region + "</span><br/>" +
-                              "<b>" + d.year + "</b> year, <b/>" + d.uniscore + "</b> uniscore";
+                  var html  = "<span style='color:" + color + ";'>" + d.region + "</span><br/>" +
+                              "<b> vintage " + d.year + "</b>"+
+                  d.review + "<br/>";
 
                   tooltip.html(html)
                       .style("left", (d3.event.pageX + 15) + "px")
