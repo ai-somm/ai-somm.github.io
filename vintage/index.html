@@ -26,7 +26,7 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score.tsv", function(data) {
+d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score1.tsv", function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
@@ -38,7 +38,7 @@ d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score.tsv", function(data) 
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([0.95, 1])
+    .domain([0, 1])
     .range([ height, 0]);
   svg.append("g")
     .call(d3.axisLeft(y));
