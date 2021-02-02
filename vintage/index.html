@@ -82,7 +82,7 @@ d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score1.tsv", function(data)
   // Add dots
   svg.append('g')
     .selectAll("dot")
-    .data(data.filter(function(d,i){return i<50})) // the .filter part is just to keep a few dots on the chart, not all of them
+    .data(data.filter(function(d,i){return i<5000})) // the .filter part is just to keep a few dots on the chart, not all of them
     .enter()
     .append("circle")
       .attr("cx", function (d) { return x(d.year); } )
