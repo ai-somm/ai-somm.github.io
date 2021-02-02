@@ -43,6 +43,36 @@ d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score1.tsv", function(data)
   svg.append("g")
     .call(d3.axisLeft(y));
 
+
+// gridlines in x axis function
+function make_x_gridlines() {   
+    return d3.axisBottom(x)
+        .ticks(55)
+}
+
+// gridlines in y axis function
+function make_y_gridlines() {   
+    return d3.axisLeft(y)
+        .ticks(10)
+}
+
+
+  // add the X gridlines
+  svg.append("g")     
+      .attr("class", "grid")
+      .attr("transform", "translate(0," + height + ")")
+      .call(make_x_gridlines()
+          .tickSize(-height)
+          .tickFormat("")
+      )
+
+  // add the Y gridlines
+  svg.append("g")     
+      .attr("class", "grid")
+      .call(make_y_gridlines()
+          .tickSize(-width)
+          .tickFormat("")
+
   // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
   // Its opacity is set to 0: we don't see it by default.
   var tooltip = d3.select("#my_dataviz")
