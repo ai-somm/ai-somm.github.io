@@ -81,6 +81,8 @@ var makeVis = function(data) {
                   .scale(yScale)
                   .orient('left');
 
+              log.console(xAxis)
+
               // Add x-axis to the canvas
               canvas.append("g")
                   .attr("class", "x axis")
