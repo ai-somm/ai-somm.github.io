@@ -73,10 +73,10 @@ var makeVis = function(data) {
                   .range([height, 0]); // flip order because y-axis origin is upper LEFT
 
               // Define our axes
-              //var xAxis = d3.svg.axis()
-                //  .scale(xScale)
+              var xAxis = d3.svg.axis()
+                  .scale(xScale)
                   //.tickFormat(function(d) { return d.year; })
-                  //.orient('bottom');
+                  .orient('bottom');
 
               var x = d3.scaleLinear()
                 .domain([1962, 2019])
@@ -93,8 +93,8 @@ var makeVis = function(data) {
               canvas.append("g")
                   .attr("class", "x axis")
                   .attr("transform", "translate(0," + height + ")") // move axis to the bottom of the canvas
-                  //.call(xAxis)
-                  .call(d3.axisBottom(x))
+                  .call(xAxis)
+                  //.call(d3.axisBottom(x))
                   //.selectAll("text")  
                     //.style("text-anchor", "end")
                     //.attr("dx", "-.8em")
