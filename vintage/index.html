@@ -48,7 +48,7 @@ d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score_uni.tsv", function lo
 
 var makeVis = function(data) {
               // Common pattern for defining vis size and margins
-              var margin = { top: 20, right: 20, bottom: 50, left: 40 },
+              var margin = { top: 20, right: 20, bottom: 30, left: 40 },
                   width  = 960 - margin.left - margin.right,
                   height = 500 - margin.top - margin.bottom;
 
@@ -75,15 +75,7 @@ var makeVis = function(data) {
               // Define our axes
               var xAxis = d3.svg.axis()
                   .scale(xScale)
-                  //.tickFormat(function(d) { return d.year; })
                   .orient('bottom');
-
-              //var x = d3.scaleLinear()
-                //.domain([1962, 2019])
-                //.range([ 0, width ]);
-              //svg.append("g")
-              //  .attr("transform", "translate(0," + height + ")")
-                
 
               var yAxis = d3.svg.axis()
                   .scale(yScale)
@@ -94,12 +86,6 @@ var makeVis = function(data) {
                   .attr("class", "x axis")
                   .attr("transform", "translate(0," + height + ")") // move axis to the bottom of the canvas
                   .call(xAxis)
-                  //.call(d3.axisBottom(x))
-                  //.selectAll("text")  
-                    //.style("text-anchor", "end")
-                    //.attr("dx", "-.8em")
-                    //.attr("dy", ".15em")
-                    //.attr("transform", "rotate(-65)" )
                 .append("text")
                   .attr("class", "label")
                   .attr("x", width) // x-offset from the xAxis, move label all the way to the right
@@ -152,7 +138,7 @@ var makeVis = function(data) {
               .enter().append("circle")
                 .attr("class", "dot")
                 .attr("r", 5.5) // radius size, could map to another data dimension
-                .attr("cx", function(d) { return (xScale( d.year )).toString(); })     // x position
+                .attr("cx", function(d) { return xScale( d.year ); })     // x position
                 .attr("cy", function(d) { return yScale( d.uniscore ); })  // y position
                 .style("fill", function(d) { return colorScale(d.region); })
                 .on("mouseover", tipMouseover)
