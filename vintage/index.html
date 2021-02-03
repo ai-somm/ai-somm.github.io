@@ -75,8 +75,15 @@ var makeVis = function(data) {
               // Define our axes
               var xAxis = d3.svg.axis()
                   .scale(xScale)
-                  .tickFormat(function(d) { return d.year; })
+                  //.tickFormat(function(d) { return d.year; })
                   .orient('bottom');
+
+              var x = d3.scaleLinear()
+                .domain([1962, 2019])
+                .range([ 0, width ]);
+              //svg.append("g")
+              //  .attr("transform", "translate(0," + height + ")")
+                
 
               var yAxis = d3.svg.axis()
                   .scale(yScale)
@@ -86,7 +93,15 @@ var makeVis = function(data) {
               canvas.append("g")
                   .attr("class", "x axis")
                   .attr("transform", "translate(0," + height + ")") // move axis to the bottom of the canvas
-                  .call(xAxis)
+                  //.call(xAxis)
+                  .call(d3.axisBottom(x))
+
+                  .selectAll("text")  
+                    .style("text-anchor", "end")
+                    .attr("dx", "-.8em")
+                    .attr("dy", ".15em")
+                    .attr("transform", "rotate(-65)" )
+
                 .append("text")
                   .attr("class", "label")
                   .attr("x", width) // x-offset from the xAxis, move label all the way to the right
