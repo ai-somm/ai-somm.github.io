@@ -75,6 +75,7 @@ var makeVis = function(data) {
               // Define our axes
               var xAxis = d3.svg.axis()
                   .scale(xScale)
+                  .tickFormat(function(d) { return d.year; })
                   .orient('bottom');
 
               var yAxis = d3.svg.axis()
