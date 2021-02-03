@@ -138,7 +138,7 @@ var makeVis = function(data) {
               .enter().append("circle")
                 .attr("class", "dot")
                 .attr("r", 5.5) // radius size, could map to another data dimension
-                .attr("cx", function(d) { return xScale( d.year ); })     // x position
+                .attr("cx", function(d) { return (xScale( d.year )).toString(); })     // x position
                 .attr("cy", function(d) { return yScale( d.uniscore ); })  // y position
                 .style("fill", function(d) { return colorScale(d.region); })
                 .on("mouseover", tipMouseover)
