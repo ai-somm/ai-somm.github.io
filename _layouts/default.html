@@ -7,8 +7,8 @@
     <!--<link rel="stylesheet" type="text/css" href="inspector.css">-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--<meta charset="utf-8">-->
-  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="d3.v4.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="font-awesome.min.css">
 <style>
 .fa {
   padding: 7px;
@@ -143,15 +143,42 @@
 .fa-delicious {
   background: #2c4762;
   color: white;
+
 }
-</style>
+
+    @font-face {
+      font-family: xkcd;
+      src: url('https://cdn.rawgit.com/ipython/xkcd-font/master/xkcd-script/font/xkcd-script.woff') format('woff');
+    }
+    .xkcd {
+      font-family: xkcd;
+    }    
+  </style>
+
   </head>
 
 
   <body>
+    <script>    
+  WebFont.load({
+    custom: {
+      families: ['xkcd']
+    },
+    active: function() {
+      draw();
+    }
+  });
+
+  function draw() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.font = "2em xkcd";
+    ctx.fillText("Using the xkcd font (html5 canvas)",0,30);
+  }
+  </script>
     <nav>
 	    		<ul>
-	        		<li><a href="/">Home</a></li>
+	        		<li><a href="/"><p class='xkcd'>Home</p></a></li>
 				
 	    		</ul>
 	</nav>
@@ -166,7 +193,7 @@
 				<li><a href="/trust">Trust</a></li>
 				<li><a href="/pairing">Wine Pairing</a></li>
 				<li><a href="/tasting">Deductive Tasting</a></li>
-				<li><a href="/bias">Bias</a></li>
+				<li><a href="/bias">Societal Bias</a></li>
 				
 	    		</ul>
 			</nav>
@@ -185,8 +212,8 @@
 				<li><a href="/style">Style Transfer</a></li>
 				<li><a href="/trust">Deception Detection</a></li>
 				<li><a href="/causal">Causal Inference</a></li>
-				<li><a href="/generate"></a>Text Generation</li>
-				<li><a href="/bias"></a>Algorithmic Bias</li>
+				<li><a href="/generate">Text Generation</a></li>
+				<li><a href="/bias">Algorithmic Bias</a></li>
 				
 	    		</ul>
 			</nav>
