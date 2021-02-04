@@ -45,8 +45,8 @@ d3.json("burgundy.json", function(error, graph) {
     .selectAll("line")
     .data(graph.links)
     .enter().append("line")
-      .attr("stroke-width", function(d) { return Math.sqrt(d.value); })
-      //.attr("fill", function(d){return color(d.group); });
+      //.attr("stroke-width", function(d) { return Math.sqrt(d.value); })
+      .attr("fill", function(d){return color(d.group); });
 
   var node = svg.append("g")
       .attr("class", "nodes")
