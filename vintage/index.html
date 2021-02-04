@@ -113,9 +113,9 @@ var makeVis = function(data) {
               // tooltip mouseover event handler
               var tipMouseover = function(d) {
                   var color = colorScale(d.region);
-                  var html  = "<span style='color:" + color + ";'>" + d.region + "</span><br/>" +
-                              "<b> Vintage " + d.year + "</b>"+ "<br/>"+
-                  d.review ;
+                  var html  = "<b><span style='color:" + color + ";'>" + d.region + "</span><br/>" +
+                              " Vintage " + d.year + "<br/>"+
+                  d.review +"</b>";
 
                   tooltip.html(html)
                       .style("left", (d3.event.pageX + 15) + "px")
