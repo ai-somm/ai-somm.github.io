@@ -72,10 +72,16 @@ var makeVis = function(data) {
                             d3.max(data, function(d) { return d.uniscore; }) ])
                   .range([height, 0]); // flip order because y-axis origin is upper LEFT
 
+              var brush = d3.svg.brush()
+                  .x(x)
+                  .on("brush", brushmove)
+                  .on("brushend", brushend);
+
               // Define our axes
               var xAxis = d3.svg.axis()
                   .scale(xScale)
                   .orient('bottom');
+                  //.ticks(2017-1962);
 
               var yAxis = d3.svg.axis()
                   .scale(yScale)
@@ -84,7 +90,9 @@ var makeVis = function(data) {
               // Add x-axis to the canvas
               canvas.append("g")
                   .attr("class", "x axis")
+                  .attr("clip-path", "url(#clip)")
                   .attr("transform", "translate(0," + height + ")") // move axis to the bottom of the canvas
+
                   .call(xAxis)
                 .append("text")
                   .attr("class", "label")
@@ -104,6 +112,17 @@ var makeVis = function(data) {
                   .style("text-anchor", "end")
                   .text("sentiment");
 
+              canvas.append("g")
+                  .attr("class", "brush")
+                  .call(brush)
+                  .selectAll('rect')
+                  .attr('height', height);
+
+              canvas.append("defs").append("clipPath")
+                  .attr("id", "clip")
+                  .append("rect")
+                  .attr("width", width)
+                  .attr("height", height + 20);
               // Add the tooltip container to the vis container
               // it's invisible and its position/contents are defined during mouseover
               var tooltip = d3.select("#vis-container").append("div")
@@ -133,16 +152,77 @@ var makeVis = function(data) {
               };
 
               // Add data points!
-              canvas.selectAll(".dot")
+              points = canvas.selectAll(".dot")
                 .data(data)
               .enter().append("circle")
                 .attr("class", "dot")
                 .attr("r", 5.5) // radius size, could map to another data dimension
+                .attr("clip-path", "url(#clip)")
                 .attr("cx", function(d) { return xScale( d.year ); })     // x position
                 .attr("cy", function(d) { return yScale( d.uniscore ); })  // y position
                 .style("fill", function(d) { return colorScale(d.region); })
                 .on("mouseover", tipMouseover)
                 .on("mouseout", tipMouseout);
+
+                points.on('mousedown', function(){
+                  brush_elm = canvas.select(".brush").node();
+                  new_click_event = new Event('mousedown');
+                  new_click_event.pageX = d3.event.pageX;
+                  new_click_event.clientX = d3.event.clientX;
+                  new_click_event.pageY = d3.event.pageY;
+                  new_click_event.clientY = d3.event.clientY;
+                  brush_elm.dispatchEvent(new_click_event);
+                });
+
+                function brushmove() {
+  var extent = brush.extent();
+  points.classed("selected", function(d) {
+    is_brushed = extent[0] <= d.index && d.index <= extent[1];
+    return is_brushed;
+  });
+}
+
+function brushend() {
+  get_button = d3.select(".clear-button");
+  if(get_button.empty() === true) {
+    clear_button = canvas.append('text')
+      .attr("y", 460)
+      .attr("x", 825)
+      .attr("class", "clear-button")
+      .text("Clear Brush");
+  }
+
+  yScale.domain(brush.extent());
+  //xScale.domain(brush.extent());
+
+  transition_data();
+  reset_axis();
+
+  points.classed("selected", false);
+  d3.select(".brush").call(brush.clear());
+
+  clear_button.on('click', function(){
+    x.domain([1961, 2018]);
+    transition_data();
+    reset_axis();
+    clear_button.remove();
+  });
+}
+
+function transition_data() {
+  canvas.selectAll(".point")
+    .data(data)
+  .transition()
+    .duration(500)
+    //.attr("cx", function(d) { return x(d.index); });
+    .attr("cx", function(d) { return xScale( d.year ); })
+}
+
+function reset_axis() {
+  canvas.transition().duration(500)
+   .select(".x.axis")
+   .call(xAxis);
+}
           };
 
         </script>
