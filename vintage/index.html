@@ -72,8 +72,8 @@ var makeVis = function(data) {
                             d3.max(data, function(d) { return d.uniscore; }) ])
                   .range([height, 0]); // flip order because y-axis origin is upper LEFT
 
-              var brush = d3.svg.brush()
-                  .xScale(xScale)
+              var brush = d3.brush()
+                  .scale(xScale)
                   .on("brush", brushmove)
                   .on("brushend", brushend);
 
