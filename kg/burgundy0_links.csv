@@ -1,0 +1,159 @@
+target,value,source
+Fye,1,CHABLIS
+Fontenay,1,CHABLIS
+Fleys,1,CHABLIS
+La Chapelle Vaupelteigne,1,CHABLIS
+Maligny,1,CHABLIS
+Chichee,1,CHABLIS
+Poinchy,1,CHABLIS
+Chablis,1,CHABLIS
+Courgis,1,CHABLIS
+Beines,1,CHABLIS
+Blanchots,2,Fye
+Bougros,2,Poinchy
+Preuses,2,Chablis
+Vaudesir,2,Chablis
+Grenouilles,2,Chablis
+Valmur,2,Chablis
+Les Clos,2,Chablis
+Berdiot,2,Fye
+Montee de Tonnerre,2,Fye
+Cote de Vaubarousse,2,Fye
+Domaine Raveneau,3,Les Clos
+Domaine Raveneau,3,Valmur
+Domaine Raveneau,3,Blanchots
+Domaine Raveneau,3,Montee de Tonnerre
+Domaine Raveneau,3,Butteaux
+Domaine Raveneau,3,Forets
+Domaine Raveneau,3,Chapelot
+Domaine Raveneau,3,Montmains
+Domaine Raveneau,3,Vaillons
+Butteaux,2,Chablis
+Forets,2,Chablis
+Chapelot,2,Chablis
+Montmains,2,Chablis
+Vaillons,2,Chablis
+Fourchaume,2,Fontenay
+Comblanchien,2,Cote de Nuits Villages
+Corgoloin,2,Cote de Nuits Villages
+Fixin,1,Cote de Nuits
+Marsannay,1,Cote de Nuits
+Gevrey-Chambertin,1,Cote de Nuits
+Morey-Saint-Denis,1,Cote de Nuits
+Chambolle-Musigny,1,Cote de Nuits
+Vougeot,1,Cote de Nuits
+Vosne-Romanee,1,Cote de Nuits
+Flagey-Echezeaux,1,Cote de Nuits
+Nuits-Saint-Georges,1,Cote de Nuits
+Cote de Nuits Villages,1,Cote de Nuits
+Corton,1,Cote de Beaune
+Aloxe-Corton,1,Cote de Beaune
+Ladoix,1,Cote de Beaune
+Pernand-Vergelesses,1,Cote de Beaune
+Savigny-les-Beaune,1,Cote de Beaune
+Beaune,1,Cote de Beaune
+Pommard,1,Cote de Beaune
+Volnay,1,Cote de Beaune
+Monthelie,1,Cote de Beaune
+Auxey-Duresses,1,Cote de Beaune
+Saint-Romain,1,Cote de Beaune
+Meursault,1,Cote de Beaune
+Blagny,1,Cote de Beaune
+Puligny-Montrachet,1,Cote de Beaune
+Saint-Aubin,1,Cote de Beaune
+Chassagne-Montrachet,1,Cote de Beaune
+Santenay,1,Cote de Beaune
+Maranges,1,Cote de Beaune
+Bouzeron,1,Cote Chalonnaise
+Rully,1,Cote Chalonnaise
+Mercurey,1,Cote Chalonnaise
+Givry,1,Cote Chalonnaise
+Montagny,1,Cote Chalonnaise
+Corton-Charlemagne,2,Corton
+Latricieres-Chambertin,2,Gevrey-Chambertin
+Les Vergelesses,2,Savigny-les-Beaune
+Les Marconnets,2,Savigny-les-Beaune
+Aux Fourneaux,2,Savigny-les-Beaune
+Les Guettes,2,Savigny-les-Beaune
+Domaine Simon Bize,3,Corton-Charlemagne
+Domaine Simon Bize,3,Latricieres-Chambertin
+Domaine Simon Bize,3,Les Vergelesses
+Domaine Simon Bize,3,Les Marconnets
+Domaine Simon Bize,3,Aux Fourneaux
+Domaine Simon Bize,3,Les Guettes
+Patrick Bize,4,Domaine Simon Bize
+Patrick Bize,5,Jean-Marie Raveneau
+Jean-Marie Raveneau,4,Domaine Raveneau
+Patrick Bize,5,Anne-Claude de Nicolay
+Frederic Drouhin,4,Joseph Drouhin
+Joseph Drouhin,3,Rully
+Joseph Drouhin,3,Les Bressandes
+Joseph Drouhin,3,Clos des Mouches
+Frederic Drouhin,5,Anne-Claude de Nicolay
+Chisa Bize,4,Domaine Simon Bize
+Les Bressandes,2,Corton
+Clos du Roi,2,Corton
+Les Marechaudes,2,Corton
+Les Caillerets,2,Volnay
+Les Valozieres,2,Aloxe-Corton
+Ile de Vergelesses,2,Pernand-Vergelesses
+Les Basses-Vergelesses,2,Pernand-Vergelesses
+Les Lavieres,2,Savigny-les-Beaune
+Aux Fourneaux,2,Savigny-les-Beaune
+Chandon de Briaille,3,Les Bressandes
+Chandon de Briaille,3,Clos du Roi
+Chandon de Briaille,3,Les Marechaudes
+Chandon de Briaille,3,Les Caillerets
+Chandon de Briaille,3,Les Valozieres
+Chandon de Briaille,3,Ile de Vergelesses
+Chandon de Briaille,3,Les Basses-Vergelesses
+Chandon de Briaille,3,Les Lavieres
+Chandon de Briaille,3,Aux Fourneaux
+Anne-Claude de Nicolay,4,Chandon de Briaille
+Francois de Nicolay,4,Chandon de Briaille
+Les Angles,2,Volnay
+Les Aussy,2,Volnay
+La Barre,2,Volnay
+Les Brouillards,2,Volnay
+Cailleret-Dessus,2,Volnay
+Les Caillerets,2,Volnay
+Carelle sous la Chapelle,2,Volnay
+En Champans,2,Volnay
+Les Chanlins,2,Volnay
+En Chevret,2,Volnay
+Clos de l`Audignac,2,Volnay
+Clos de la Bousse d`Or,2,Volnay
+Clos de la Cave des Ducs,2,Volnay
+Clos de la Chapelle,2,Volnay
+Clos des Chenes,2,Volnay
+Clos des Ducs,2,Volnay
+Clos des Mouches,2,Beaune
+Clos du Chateau des Ducs,2,Volnay
+Les Fremiets,2,Volnay
+La Gigotte,2,Volnay
+Les Grands Champs,2,Volnay
+Lassolle,2,Volnay
+Les Lurets,2,Volnay
+Les Mitans,2,Volnay
+En l`Ormeau,2,Volnay
+Pitures Dessus,2,Volnay
+Pointes d`Angles,2,Volnay
+Robardelle,2,Volnay
+Le Ronceret,2,Volnay
+Taille Pieds,2,Volnay
+En Verseuil,2,Volnay
+Le Village,2,Volnay
+Marquis d`Angerville,3,Clos des Ducs
+Pousse d`Or,3,Clos de l`Audignac
+Pousse d`Or,3,Clos de la Bousse d`Or
+Yvon Clerget,3,En Verseuil
+Michel Lafarge,3,Clos du Chateau des Ducs
+Louis Jadot,3,La Barre
+Guillaume d`Angerville,4,Marquis d`Angerville
+Renaud de Villette,4,Marquis d`Angerville
+Les Santenots,2,Meursault
+Marquis d`Angerville,3,En Champans
+Marquis d`Angerville,3,Les Fremiets
+Marquis d`Angerville,3,Taille Pieds
+Marquis d`Angerville,3,Les Caillerets
+Marquis d`Angerville,3,Les Santenots
