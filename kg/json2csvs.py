@@ -39,14 +39,43 @@ nodes = pandas.read_csv("/Users/sheng/somm-ai.github.io/kg/"+filename+"_nodes.cs
 links = pandas.read_csv("/Users/sheng/somm-ai.github.io/kg/"+filename+"_links.csv")
 
 # check of all link ends are included in nodes, if not ERROR
-
+all_items = set(list(links.source)+list(links.target))
+node_pool = list(nodes.id)
+node_dict = defaultdict(int)
+for nd in node_pool:
+    node_dict[nd] += 1
+for it in all_items:
+    if node_dict[it] <= 0:
+        print("Heck, "+it+" is NOT included in nodes!!!")
 
 # check if all nodes' group values are filled, if not ERROR
+nodes[nodes.group.isna()]
+nodes[nodes.group.isnull()]
 
 # check if all links' value fields are filled if not, auto-fill
+links[links.value.isna()]
+links[links.value.isnull()]
+
+# crosswalk maps source-target-groups to link value
+# key: str(node_a.group)+"-"+str(node_b.group)
+crosswalk = defaultdict(int)
+for i in range(5):
+    crosswalk[str(i)+"-"+str(i+1)] = i
+crosswalk['5-5'] = 5
+
+#finding group value given a link source
+int(nodes.group[nodes.id==links.source[0]])
 
 # autogenerate link values based on nodes group values
+#assigning link value by node groups using crosswalk
+values = []
+for src, targ in zip(links.source[links.value.isnull()], links.target[links.value.isnull()]):
+    values.append(crosswalk[str(int(nodes.group[nodes.id==src])+"-"+str(int(nodes.group[nodes.id==targ])])
 
+links.value[links.value.isnull()] = values
+
+
+### save to json file
 jsf = defaultdict(list)
 jsf['nodes'] = [{"id":ind, "group": grp} for ind, grp in zip(nodes.id, nodes.group)]
 jsf['links'] = [{"source": src, "target": tg, "value": vl} for src, tg, vl in zip(links.source, links.target, links.value)]
