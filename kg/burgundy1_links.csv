@@ -1,0 +1,458 @@
+value,source,target
+1,CHABLIS,Fye
+1,CHABLIS,Fontenay
+1,CHABLIS,Fleys
+1,CHABLIS,La Chapelle Vaupelteigne
+1,CHABLIS,Maligny
+1,CHABLIS,Chichee
+1,CHABLIS,Poinchy
+1,CHABLIS,Chablis
+1,CHABLIS,Courgis
+1,CHABLIS,Beines
+2,Fye,Blanchots
+2,Poinchy,Bougros
+2,Chablis,Preuses
+2,Chablis,Vaudesir
+2,Chablis,Grenouilles
+2,Chablis,Valmur
+2,Chablis,Les Clos
+2,Fye,Berdiot
+2,Fye,Montee de Tonnerre
+2,Fye,Cote de Vaubarousse
+3,Les Clos,Domaine Raveneau
+3,Valmur,Domaine Raveneau
+3,Blanchots,Domaine Raveneau
+3,Montee de Tonnerre,Domaine Raveneau
+3,Butteaux,Domaine Raveneau
+3,Forets,Domaine Raveneau
+3,Chapelot,Domaine Raveneau
+3,Montmains,Domaine Raveneau
+3,Vaillons,Domaine Raveneau
+2,Chablis,Butteaux
+2,Chablis,Forets
+2,Chablis,Chapelot
+2,Chablis,Montmains
+2,Chablis,Vaillons
+2,Fontenay,Fourchaume
+2,Cote de Nuits Villages,Comblanchien
+2,Cote de Nuits Villages,Corgoloin
+1,Cote de Nuits,Fixin
+1,Cote de Nuits,Marsannay
+1,Cote de Nuits,Gevrey-Chambertin
+1,Cote de Nuits,Morey-Saint-Denis
+1,Cote de Nuits,Chambolle-Musigny
+1,Cote de Nuits,Vougeot
+1,Cote de Nuits,Vosne-Romanee
+1,Cote de Nuits,Flagey-Echezeaux
+1,Cote de Nuits,Nuits-Saint-Georges
+1,Cote de Nuits,Cote de Nuits Villages
+1,Cote de Beaune,Corton
+1,Cote de Beaune,Aloxe-Corton
+1,Cote de Beaune,Ladoix
+1,Cote de Beaune,Pernand-Vergelesses
+1,Cote de Beaune,Savigny-les-Beaune
+1,Cote de Beaune,Beaune
+1,Cote de Beaune,Pommard
+1,Cote de Beaune,Volnay
+1,Cote de Beaune,Monthelie
+1,Cote de Beaune,Auxey-Duresses
+1,Cote de Beaune,Saint-Romain
+1,Cote de Beaune,Meursault
+1,Cote de Beaune,Blagny
+1,Cote de Beaune,Puligny-Montrachet
+1,Cote de Beaune,Saint-Aubin
+1,Cote de Beaune,Chassagne-Montrachet
+1,Cote de Beaune,Santenay
+1,Cote de Beaune,Maranges
+1,Cote Chalonnaise,Bouzeron
+1,Cote Chalonnaise,Rully
+1,Cote Chalonnaise,Mercurey
+1,Cote Chalonnaise,Givry
+1,Cote Chalonnaise,Montagny
+2,Corton,Corton-Charlemagne
+2,Gevrey-Chambertin,Latricieres-Chambertin
+2,Savigny-les-Beaune,Les Vergelesses
+2,Savigny-les-Beaune,Les Marconnets
+2,Savigny-les-Beaune,Aux Fourneaux
+2,Savigny-les-Beaune,Les Guettes
+3,Corton-Charlemagne,Domaine Simon Bize
+3,Latricieres-Chambertin,Domaine Simon Bize
+3,Les Vergelesses,Domaine Simon Bize
+3,Les Marconnets,Domaine Simon Bize
+3,Aux Fourneaux,Domaine Simon Bize
+3,Les Guettes,Domaine Simon Bize
+4,Domaine Simon Bize,Patrick Bize
+5,Jean-Marie Raveneau,Patrick Bize
+4,Domaine Raveneau,Jean-Marie Raveneau
+5,Anne-Claude de Nicolay,Patrick Bize
+4,Joseph Drouhin,Frederic Drouhin
+3,Rully,Joseph Drouhin
+3,Les Bressandes,Joseph Drouhin
+3,Clos des Mouches,Joseph Drouhin
+5,Anne-Claude de Nicolay,Frederic Drouhin
+4,Domaine Simon Bize,Chisa Bize
+2,Corton,Les Bressandes
+2,Corton,Clos du Roi
+2,Corton,Les Marechaudes
+2,Volnay,Les Caillerets
+2,Aloxe-Corton,Les Valozieres
+2,Pernand-Vergelesses,Ile de Vergelesses
+2,Pernand-Vergelesses,Les Basses-Vergelesses
+2,Savigny-les-Beaune,Les Lavieres
+2,Savigny-les-Beaune,Aux Fourneaux
+3,Les Bressandes,Chandon de Briaille
+3,Clos du Roi,Chandon de Briaille
+3,Les Marechaudes,Chandon de Briaille
+3,Les Caillerets,Chandon de Briaille
+3,Les Valozieres,Chandon de Briaille
+3,Ile de Vergelesses,Chandon de Briaille
+3,Les Basses-Vergelesses,Chandon de Briaille
+3,Les Lavieres,Chandon de Briaille
+3,Aux Fourneaux,Chandon de Briaille
+4,Chandon de Briaille,Anne-Claude de Nicolay
+4,Chandon de Briaille,Francois de Nicolay
+2,Volnay,Les Angles
+2,Volnay,Les Aussy
+2,Volnay,La Barre
+2,Volnay,Les Brouillards
+2,Volnay,Cailleret-Dessus
+2,Volnay,Les Caillerets
+2,Volnay,Carelle sous la Chapelle
+2,Volnay,En Champans
+2,Volnay,Les Chanlins
+2,Volnay,En Chevret
+2,Volnay,Clos de l`Audignac
+2,Volnay,Clos de la Bousse d`Or
+2,Volnay,Clos de la Cave des Ducs
+2,Volnay,Clos de la Chapelle
+2,Volnay,Clos des Chenes
+2,Volnay,Clos des Ducs
+2,Beaune,Clos des Mouches
+2,Volnay,Clos du Chateau des Ducs
+2,Volnay,Les Fremiets
+2,Volnay,La Gigotte
+2,Volnay,Les Grands Champs
+2,Volnay,Lassolle
+2,Volnay,Les Lurets
+2,Volnay,Les Mitans
+2,Volnay,En l`Ormeau
+2,Volnay,Pitures Dessus
+2,Volnay,Pointes d`Angles
+2,Volnay,Robardelle
+2,Volnay,Le Ronceret
+2,Volnay,Taille Pieds
+2,Volnay,En Verseuil
+2,Volnay,Le Village
+3,Clos des Ducs,Marquis d`Angerville
+3,Clos de l`Audignac,Pousse d`Or
+3,Clos de la Bousse d`Or,Pousse d`Or
+3,En Verseuil,Yvon Clerget
+3,Clos du Chateau des Ducs,Michel Lafarge
+3,La Barre,Louis Jadot
+4,Marquis d`Angerville,Guillaume d`Angerville
+4,Marquis d`Angerville,Renaud de Villette
+2,Meursault,Les Santenots
+3,En Champans,Marquis d`Angerville
+3,Les Fremiets,Marquis d`Angerville
+3,Taille Pieds,Marquis d`Angerville
+3,Les Caillerets,Marquis d`Angerville
+3,Les Santenots,Marquis d`Angerville
+2,Blagny,La Jeunelotte
+2,Blagny,Sous de Dos d`Ane
+2,Blagny,La Piece sous le Bois
+2,Blagny,Les Ravelles
+2,Blagny,Sous Blagny
+1,Cote de Beaune,Blagny
+2,Meursault,Les Boucheres
+2,Meursault,Les Caillerets 
+2,Meursault,Les Charmes
+2,Meursault,Les Cras
+2,Meursault,Les Genevrieres
+2,Meursault,Les Gouttes d`Or
+2,Meursault,Les Perrieres
+2,Meursault,Les Plures
+2,Meursault,Les Porusots
+2,Meursault,Les Santenots Blancs
+2,Meursault,Les Santenots du Milieu
+2,Meursault,Clos des Mouches (village)
+2,Meursault,Clos de la Barre
+2,Meursault,Les Casses Tetes
+2,Meursault,La Barre Dessus
+2,Meursault,Les Grands Charrons
+2,Meursault,Les Petits Charrons
+2,Meursault,Les Chevalieres
+2,Meursault,Les Clous
+2,Meursault,Les Corbins
+2,Meursault,Le Cromin
+2,Meursault,Desiree
+2,Meursault,Les Forges
+2,Meursault,Les Gruyaches
+2,Meursault,Le Limozin
+2,Meursault,Les Luchets
+2,Meursault,Les Malpoiriers
+2,Meursault,Clos de Mazeray
+2,Meursault,Le Meix sous le Chateau
+2,Meursault,Les Meix Chavaux
+2,Meursault,Les Narvaux
+2,Meursault,En l`Ormeau 
+2,Meursault,Les Rougeots
+2,Meursault,Les Terres Blanches
+2,Meursault,Le Tesson
+2,Meursault,Les Tillets
+2,Meursault,Les Vireuils
+3,Les Perrieres,Michel Ampeau
+3,Les Charmes,Michel Ampeau
+3,La Piece sous le Bois,Michel Ampeau
+3,Clos du Roi ,Michel Ampeau
+3,Les Santenots,Michel Ampeau
+3,Les Combettes,Michel Ampeau
+2,Beaune,Clos du Roi 
+2,Puligny-Montrachet,Les Combettes
+4,Domaine Boisson Vadot,Pierre Vadot
+3,Les Genevrieres,Domaine Boisson Vadot
+3,Les Grands Charrons,Domaine Boisson Vadot
+3,Monthelie,Domaine Boisson Vadot
+2,Auxey-Duresses,Reugne
+3,Reugne,Domaine Boisson Vadot
+3,Les Chevalieres,Domaine Boisson Vadot
+4,Domaine Michel Bouzereau,Jean-Baptiste Bouzereau
+4,Domaine Jean-Marie Bouzereau,Jean-Marie Bouzereau
+4,Domaine Vicent Bouzereau,Vicent Bouzereau
+4,Chateau de Citeaux,Philippe Bouzereau
+3,Les Grands Charrons,Chateau de Citeaux
+3,Les Perrieres,Chateau de Citeaux
+3,Les Charmes,Chateau de Citeaux
+3,Les Bressandes,Chateau de Citeaux
+3,Les Narvaux,Chateau de Citeaux
+3,Les Perrieres,Domaine Michel Bouzereau
+3,Les Charmes,Domaine Michel Bouzereau
+3,Les Genevrieres,Domaine Michel Bouzereau
+3,Les Grands Charrons,Domaine Michel Bouzereau
+3,Le Tesson,Domaine Michel Bouzereau
+3,Le Limozin,Domaine Michel Bouzereau
+3,Les Narvaux,Domaine Vicent Bouzereau
+3,Les Charmes,Domaine Vicent Bouzereau
+3,Les Gouttes d`Or,Domaine Vicent Bouzereau
+3,Les Porusots,Domaine Vicent Bouzereau
+3,Les Santenots,Domaine Vicent Bouzereau
+3,Ez Folatieres,Domaine Vicent Bouzereau
+3,Pertuisots,Domaine Vicent Bouzereau
+2,Puligny-Montrachet,Ez Folatieres
+2,Beaune,Pertuisots
+3,Les Narvaux,Domaine Jean-Marie Bouzereau
+3,Les Charmes,Domaine Jean-Marie Bouzereau
+3,Les Gouttes d`Or,Domaine Jean-Marie Bouzereau
+3,Les Porusots,Domaine Jean-Marie Bouzereau
+3,Les Santenots,Domaine Jean-Marie Bouzereau
+3,Ez Folatieres,Domaine Jean-Marie Bouzereau
+3,Pertuisots,Domaine Jean-Marie Bouzereau
+4,Domaine Boyer-Martenot,Vicent Boyer
+4,Domaine Buisson-Charles,Patrick Essa
+2,Puligny-Montrachet,Champ Canet
+3,Champ Canet,Château de Meursault
+3,Les Charmes,Château de Meursault
+3,Les Perrieres,Château de Meursault
+3,Clos des Epenots,Château de Meursault
+3,Clos des Chenes,Château de Meursault
+2,Pommard,Clos des Epenots
+3,Le Limozin,Domaine Coche-Bizouard
+3,Les Chevalieres,Domaine Coche-Bizouard
+3,En l`Ormeau ,Domaine Coche-Bizouard
+3,Les Luchets,Domaine Coche-Bizouard
+3,Les Charmes,Domaine Coche-Bizouard
+3,Les Gouttes d`Or,Domaine Coche-Bizouard
+4,Domaine Coche-Dury,Jean-François Coche-Dury
+4,Domaine Coche-Dury,Raphaël Coche-Dury
+3,Corton-Charlemagne,Domaine Coche-Dury
+3,Les Perrieres,Domaine Coche-Dury
+3,Les Genevrieres,Domaine Coche-Dury
+3,Les Caillerets ,Domaine Coche-Dury
+3,Les Chevalieres,Domaine Coche-Dury
+3,Les Rougeots,Domaine Coche-Dury
+3,Vaumuriens,Domaine Coche-Dury
+3,Les Enseigneres,Domaine Coche-Dury
+3,Monthelie,Domaine Coche-Dury
+3,Auxey-Duresses,Domaine Coche-Dury
+2,Pommard,Vaumuriens
+2,Puligny-Montrachet,Les Enseigneres
+3,Clos des Chenes,Domaine Coche-Dury
+3,Taille Pieds,Domaine Coche-Dury
+3,Les Gouttes d`Or,Domaine Arnaud Ente
+4,Domaine Arnaud Ente,Arnaud Ente
+4,Domaine Arnaud Ente,Benoit Ente
+2,Volnay,Les Santenots
+3,Les Santenots,Domaine Arnaud Ente
+3,Les Referts,Domaine Arnaud Ente
+2,Puligny-Montrachet,Les Referts
+4,Domaine Jean-Philippe Fichet,Jean-Philippe Fichet
+3,Le Tesson,Domaine Jean-Philippe Fichet
+3,Les Gruyaches,Domaine Jean-Philippe Fichet
+3,Les Chevalieres,Domaine Jean-Philippe Fichet
+3,Le Meix sous le Chateau,Domaine Jean-Philippe Fichet
+3,Monthelie,Domaine Jean-Philippe Fichet
+3,Auxey-Duresses,Domaine Jean-Philippe Fichet
+4,Henri Germain & Fils,Jean-Francois Germain
+4,Henri Germain & Fils,Henri Germain
+3,Les Chevalieres,Henri Germain & Fils
+4,Domaine Antoine Jobard,Antoine Jobard
+3,Le Limozin,Henri Germain & Fils
+3,Les Charmes,Henri Germain & Fils
+3,Les Perrieres,Henri Germain & Fils
+3,Clos des Mouches (village),Henri Germain & Fils
+2,Beaune,Bressandes
+2,Chassagne-Montrachet,Morgeot
+3,Bressandes,Henri Germain & Fils
+3,Morgeot,Henri Germain & Fils
+4,Domaine Vincent Girardin,Eric Germain
+4,Domaine Vincent Girardin,Vincent Girardin
+4,Domaine Vincent Girardin,Jean-Pierre Nie
+3,Meursault,Domaine Vincent Girardin
+3,Clos des Perrieres,Domaine Albert Grivault
+2,Meursault,Clos des Perrieres
+3,Les Perrieres,Domaine Albert Grivault
+4,Domaine Albert Grivault,Michel Bardet
+4,Domaine Albert Grivault,Henri-Marc Bardet
+4,Domaine Albert Grivault,Claire Bardet
+2,Pommard,Le Clos Blanc
+3,Le Clos Blanc,Domaine Albert Grivault
+3,Corton-Charlemagne,Domaine Patrick Javillier
+3,Les Charmes,Domaine Patrick Javillier
+3,Les Levrons,Domaine Patrick Javillier
+3,Les Casses Tetes,Domaine Patrick Javillier
+3,Le Cromin,Domaine Patrick Javillier
+2,Savigny-les-Beaune,En ​ Montchenevoy
+3,En ​ Montchenevoy,Domaine Patrick Javillier
+2,Puligny-Montrachet,Les Levrons
+2,Meursault,Les Murgers de Monthelie
+3,Les Clous,Domaine Patrick Javillier
+3,Crotots,Domaine Patrick Javillier
+2,Meursault,Les Clous
+2,Meursault,Crotots
+3,Champ Gain,Domaine Antoine Jobard
+2,Puligny-Montrachet,Champ Gain
+3,Les Porusots,Domaine Antoine Jobard
+3,Les Charmes,Domaine Antoine Jobard
+3,Les Genevrieres,Domaine Antoine Jobard
+3,Les Narvaux,Domaine Antoine Jobard
+3,Le Trezin,Domaine Antoine Jobard
+2,Puligny-Montrachet,Le Trezin
+3,La Barre Dessus,Domaine Antoine Jobard
+3,Les Tillets,Domaine Antoine Jobard
+2,Saint-Romain,Sous La Velle
+3,Sous La Velle,Remi Jobard
+2,Meursault,En Luraule
+2,Monthelie,Champs Fulliot
+2,Monthelie,Vignes Rondes
+3,Les Charmes,Remi Jobard
+3,Les Genevrieres,Remi Jobard
+3,Les Porusots,Remi Jobard
+3,En Luraule,Remi Jobard
+3,Les Chevalieres,Remi Jobard
+3,Les Narvaux,Remi Jobard
+3,Les Santenots,Remi Jobard
+4,Domaine des Comtes Lafon,Rene Lafon
+4,Domaine des Comtes Lafon,Dominique Lafon
+5,Dominique Lafon,Patrick Bize
+5,Dominique Lafon,Etienne Grivot
+5,Dominique Lafon,Christopher Roumier
+5,Domaine Simon Bize,Marielle Bize
+5,Marielle Bize,Etienne Grivot
+4,Domaine Jean Grivot,Etienne Grivot
+2,Monthelie,Les Duresses
+4,Dominique Lafon (label),Dominique Lafon
+3,Le Montrachet,Domaine des Comtes Lafon
+3,Les Boucheres,Domaine des Comtes Lafon
+3,Les Charmes,Domaine des Comtes Lafon
+3,Les Genevrieres,Domaine des Comtes Lafon
+3,Les Gouttes d`Or,Domaine des Comtes Lafon
+3,Les Perrieres,Domaine des Comtes Lafon
+3,Les Porusots,Domaine des Comtes Lafon
+3,Clos de la Barre,Domaine des Comtes Lafon
+3,Desiree,Domaine des Comtes Lafon
+3,Les Santenots,Domaine des Comtes Lafon
+3,Clos des Chenes,Domaine des Comtes Lafon
+3,En Champans,Domaine des Comtes Lafon
+3,Les Duresses,Domaine des Comtes Lafon
+4,Les Heritiers du Comte Lafon,Dominique Lafon
+1,Maconnais,Milly-Lamartine
+3,Milly-Lamartine,Les Heritiers du Comte Lafon
+3,Les Lurets,Dominique Lafon (label)
+3,Les Epenottes,Dominique Lafon (label)
+3,Champ Gain,Dominique Lafon (label)
+2,Beaune,Les Epenottes
+3,Les Charmes,Domaine Thierry & Pascale Matrot
+3,Les Perrieres,Domaine Thierry & Pascale Matrot
+3,Les Combettes,Domaine Thierry & Pascale Matrot
+3,Les Garennes,Domaine Thierry & Pascale Matrot
+3,Les Chalumeaux,Domaine Thierry & Pascale Matrot
+3,Les Chevalieres,Domaine Thierry & Pascale Matrot
+3,Les Santenots,Domaine Thierry & Pascale Matrot
+3,Auxey-Duresses,Domaine Thierry & Pascale Matrot
+3,Monthelie,Domaine Thierry & Pascale Matrot
+2,Puligny-Montrachet,Les Garennes
+2,Puligny-Montrachet,Les Chalumeaux
+4,Domaine Michelot,Jean-François Mestre
+3,Clos St-Felix,Domaine Michelot
+3,Le Cromin,Domaine Michelot
+2,Meursault,Clos St-Felix
+3,Les Charmes,Domaine Michelot
+3,Les Genevrieres,Domaine Michelot
+3,Les Perrieres,Domaine Michelot
+3,Les Porusots,Domaine Michelot
+3,Le Limozin,Domaine Michelot
+3,Les Charmes,Francois Mikulski
+3,Les Genevrieres,Francois Mikulski
+3,Les Gouttes d`Or,Francois Mikulski
+3,Les Perrieres,Francois Mikulski
+3,Les Santenots,Francois Mikulski
+4,Domaine Pierre Morey,Pierre Morey
+4,Morey Blanc,Pierre Morey
+3,Monthelie,Domaine Pierre Morey
+3,Les Santenots,Domaine Pierre Morey
+3,Les Grands Epenots,Domaine Pierre Morey
+3,Batard-Montrachet,Domaine Pierre Morey
+3,Les Perrieres,Domaine Pierre Morey
+3,Les Terres Blanches,Domaine Pierre Morey
+3,Le Tesson,Domaine Pierre Morey
+3,Les Durots,Domaine Pierre Morey
+2,Meursault,Les Durots
+1,Cote de Beaune,Batard-Montrachet
+1,Cote de Beaune,Le Montrachet
+4,Domaine Jacques Prieur,Nadine Gublin
+3,Le Montrachet,Domaine Jacques Prieur
+3,Les Combettes,Domaine Jacques Prieur
+3,Les Santenots,Domaine Jacques Prieur
+3,Clos de Beze,Domaine Jacques Prieur
+2,Gevrey-Chambertin,Clos de Beze
+3,Clos de Mazeray,Domaine Jacques Prieur
+3,En Champans,Domaine Jacques Prieur
+3,Chambertin,Domaine Jacques Prieur
+2,Gevrey-Chambertin,Chambertin
+3,Musigny,Domaine Jacques Prieur
+2,Chambolle-Musigny,Musigny
+3,Clos de Vougeot,Domaine Jacques Prieur
+2,Vougeot,Clos de Vougeot
+3,Les Bressandes,Domaine Jacques Prieur
+3,Corton-Charlemagne,Domaine Jacques Prieur
+3,Chevalier-Montrachet,Domaine Jacques Prieur
+3,Les Perrieres,Domaine Jacques Prieur
+3,Champs Pimont,Domaine Jacques Prieur
+2,Beaune,Champs Pimont
+3,Greves,Domaine Jacques Prieur
+3,Clos de la Feguine,Domaine Jacques Prieur
+2,Beaune,Greves
+2,Beaune,Clos de la Feguine
+4,Domaine Roulot,Jean-Marc Roulot
+3,Champs Fulliot,Domaine Roulot
+3,Auxey-Duresses,Domaine Roulot
+3,Crotots,Domaine Roulot
+3,Les Boucheres,Domaine Roulot
+3,Les Charmes,Domaine Roulot
+3,Les Perrieres,Domaine Roulot
+3,Les Porusots,Domaine Roulot
+3,Les Gruyaches,Domaine Roulot
+3,Les Luchets,Domaine Roulot
+3,Les Meix Chavaux,Domaine Roulot
+3,Les Narvaux,Domaine Roulot
+3,Le Tesson,Domaine Roulot
+3,Les Vireuils,Domaine Roulot

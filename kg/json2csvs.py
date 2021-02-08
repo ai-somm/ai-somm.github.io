@@ -32,7 +32,7 @@ links.to_csv("/users/sheng/somm-ai.github.io/kg/"+filename+"_links.csv", index=F
 ##### from two csv files (region_links.csv, region_nodes.csv) to one json file (region.json) 
 from collections import defaultdict
 
-filename = "burgundy0"
+filename = "burgundy1"
 
 nodes = pandas.read_csv("/Users/sheng/somm-ai.github.io/kg/"+filename+"_nodes.csv")
 
