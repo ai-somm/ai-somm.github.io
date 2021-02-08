@@ -75,10 +75,27 @@ for src, targ in zip(links.source[links.value.isnull()], links.target[links.valu
 links.value[links.value.isnull()] = values
 
 
+import numpy as np
+## remove nodes that are lieu-dit but not associated with any growers to make the graph look clean
+nodes_to_drop = []
+links_to_drop = []
+link_sources = set(links.source)
+for nod, gp in zip(nodes.id, nodes.group):
+    if int(gp) == 3 and nod not in link_sources:
+        print(nod)
+        #nodes_to_drop.append(np.where(nodes.id==nod))
+        nodes_to_drop.extend(np.where(np.isin(nodes.id, nod))[0].tolist())
+        #links_to_drop.append(np.where(links.target==nod))
+        links_to_drop.extend(np.where(np.isin(links.target, nod))[0].tolist())
+        
+nodes
 ### save to json file
 jsf = defaultdict(list)
 jsf['nodes'] = [{"id":ind, "group": grp} for ind, grp in zip(nodes.id, nodes.group)]
 jsf['links'] = [{"source": src, "target": tg, "value": vl} for src, tg, vl in zip(links.source, links.target, links.value)]
+
+
+
 
 if os.path.exists("/Users/sheng/somm-ai.github.io/kg/"+filename+".json"):
     print("no overeriting!!")
