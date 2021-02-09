@@ -15,13 +15,13 @@ d3.helper.tooltip = function(){
                            .attr('class', 'tooltip');
             var absoluteMousePos = d3.mouse(bodyNode);
             tooltipDiv.style({
-                left: (absoluteMousePos[0])+'px',
-                top: (absoluteMousePos[1])+'px',
+                //left: (absoluteMousePos[0])+'px',
+                //top: (absoluteMousePos[1])+'px',
                 'background-color': '#d8d5e4',
-                width: '200px',
-                height: '80px',
-                padding: '5px',
-                position: 'absolute',
+                //width: '200px',
+                //height: '80px',
+                //padding: '5px',
+                //position: 'absolute',
                 'z-index': 1001,
                 'box-shadow': '0 1px 2px 0 #656565'
             });
@@ -37,7 +37,9 @@ d3.helper.tooltip = function(){
                   //   //.transition()
                   //     //.duration(200) // ms
                   //     .style("opacity", 1); // started as 0!
-            tooltipDiv.html(first_line + second_line);
+            tooltipDiv.html(first_line + second_line)
+                      .style("left", (d3.event.pageX + 15) + "px")
+                      .style("top", (d3.event.pageY - 28) + "px");
             //tooltipDiv.html(html);
         })
         .on('mousemove.tooltip', function(pD){
