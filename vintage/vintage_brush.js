@@ -2,15 +2,15 @@ d3.helper = {};
 
 d3.helper.tooltip = function(){
     var tooltipDiv;
-    var bodyNode = d3.select('body').node();
+    var bodyNode = d3.select("#vis-container").node();
 
     function tooltip(selection){
 
         selection.on('mouseover.tooltip', function(pD, pI){
             // Clean up lost tooltips
-            d3.select('body').selectAll('div.tooltip').remove();
+            d3.select("#vis-container").selectAll('div.tooltip').remove();
             // Append tooltip
-            tooltipDiv = d3.select('body')
+            tooltipDiv = d3.select("#vis-container")
                            .append('div')
                            .attr('class', 'tooltip');
             var absoluteMousePos = d3.mouse(bodyNode);
