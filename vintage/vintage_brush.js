@@ -26,9 +26,10 @@ d3.helper.tooltip = function(){
                 'box-shadow': '0 1px 2px 0 #656565'
             });
             var colorScale = d3.scale.category10();
-            var color = colorScale(pD.region);
+            
             var first_line = "<p><span style='color:" + color + ";'>" + pD.region + "</span> " + pD.year +"</p>";;
             var second_line = '<p>' + pD.review + '</p>';
+            var color = colorScale(pD.region);
                   //var html  = "<b><span style='color:" + color + ";'>" + pD.region + "</span><br/>" +
                               //" Vintage " + pD.year + "<br/>"+ pD.review +"</b>";
                   // tooltipDiv.html(html)
