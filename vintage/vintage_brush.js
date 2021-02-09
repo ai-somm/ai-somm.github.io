@@ -25,6 +25,7 @@ d3.helper.tooltip = function(){
                 'z-index': 1001,
                 'box-shadow': '0 1px 2px 0 #656565'
             });
+            var colorScale = d3.scale.category10();
             var color = colorScale(pD.region);
             var first_line = "<p><span style='color:" + color + ";'>" + pD.region + "</span></p>";
             var second_line = "<p>Vintage " + pD.year +"</p>";
