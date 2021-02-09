@@ -38,8 +38,8 @@ d3.helper.tooltip = function(){
                   //     //.duration(200) // ms
                   //     .style("opacity", 1); // started as 0!
             tooltipDiv.html(first_line + second_line)
-                      .style("left", (d3.event.pageX + 15) + "px")
-                      .style("top", (d3.event.pageY - 28) + "px");
+                      .style("left", (d3.event.pageX ) + "px")
+                      .style("top", (d3.event.pageY ) + "px");
             //tooltipDiv.html(html);
         })
         .on('mousemove.tooltip', function(pD){
