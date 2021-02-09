@@ -27,9 +27,8 @@ d3.helper.tooltip = function(){
             });
             var colorScale = d3.scale.category10();
             var color = colorScale(pD.region);
-            var first_line = "<p><span style='color:" + color + ";'>" + pD.region + "</span></p>";
-            var second_line = "<p>Vintage " + pD.year +"</p>";
-            var third_line = '<p>' + pD.review + '</p>';
+            var first_line = "<p><span style='color:" + color + ";'>" + pD.region + "</span> " + pD.year +"</p>";;
+            var second_line = '<p>' + pD.review + '</p>';
                   //var html  = "<b><span style='color:" + color + ";'>" + pD.region + "</span><br/>" +
                               //" Vintage " + pD.year + "<br/>"+ pD.review +"</b>";
                   // tooltipDiv.html(html)
@@ -38,7 +37,7 @@ d3.helper.tooltip = function(){
                   //   //.transition()
                   //     //.duration(200) // ms
                   //     .style("opacity", 1); // started as 0!
-            tooltipDiv.html(first_line + second_line + third_line);
+            tooltipDiv.html(first_line + second_line);
             //tooltipDiv.html(html);
         })
         .on('mousemove.tooltip', function(pD){
