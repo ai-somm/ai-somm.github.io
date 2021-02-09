@@ -11,8 +11,6 @@ title: Vintages
             font: 16px sans-serif;
   background-color: white;
 }
-        }
-
         .axis path,
         .axis line {
             fill: none;
@@ -79,6 +77,7 @@ var makeVis = function(data) {
                   .on("brush", brushmove)
                   .on("brushend", brushend);
 
+                  console.log(brush == null)
               // Define our axes
               var xAxis = d3.svg.axis()
                   .scale(xScale)
@@ -225,6 +224,6 @@ function reset_axis() {
    .select(".x.axis")
    .call(xAxis);
 }
-          };
+};
 
-        </script>
+</script>
