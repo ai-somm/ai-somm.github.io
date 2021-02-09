@@ -6,7 +6,7 @@ d3.helper.tooltip = function(){
 
     function tooltip(selection){
 
-        selection.on('mouseover.tooltip', function(pD, pI){
+        selection.on('mouseover.tooltip', function(pD){
             // Clean up lost tooltips
             d3.select("#vis-container").selectAll('div.tooltip').remove();
             // Append tooltip
@@ -15,30 +15,32 @@ d3.helper.tooltip = function(){
                            .attr('class', 'tooltip');
             var absoluteMousePos = d3.mouse(bodyNode);
             tooltipDiv.style({
-                //left: (absoluteMousePos[0])+'px',
-                //top: (absoluteMousePos[1])+'px',
+                left: (absoluteMousePos[0])+'px',
+                top: (absoluteMousePos[1])+'px',
                 'background-color': '#d8d5e4',
-                //width: '65px',
-                //height: '30px',
-                //padding: '5px',
-                //position: 'absolute',
+                width: '200px',
+                height: '30px',
+                padding: '5px',
+                position: 'absolute',
                 'z-index': 1001,
                 'box-shadow': '0 1px 2px 0 #656565'
             });
-                  var color = colorScale(pD.region);
-                  var html  = "<b><span style='color:" + color + ";'>" + pD.region + "</span><br/>" +
-                              " Vintage " + pD.year + "<br/>"+ pD.review +"</b>";
-
-                  tooltipDiv.html(html)
-                      .style("left", (d3.event.pageX + 15) + "px")
-                      .style("top", (d3.event.pageY - 28) + "px")
-                    //.transition()
-                      //.duration(200) // ms
-                      .style("opacity", 1); // started as 0!
-
+            var color = colorScale(pD.region);
+            var first_line = "<p><span style='color:" + color + ";'>" + pD.region + "</span></p>";
+            var second_line = "<p>Vintage " + pD.year +"</p>";
+            var third_line = '<p>' + pD.review + '</p>';
+                  //var html  = "<b><span style='color:" + color + ";'>" + pD.region + "</span><br/>" +
+                              //" Vintage " + pD.year + "<br/>"+ pD.review +"</b>";
+                  // tooltipDiv.html(html)
+                  //     .style("left", (d3.event.pageX + 15) + "px")
+                  //     .style("top", (d3.event.pageY - 28) + "px")
+                  //   //.transition()
+                  //     //.duration(200) // ms
+                  //     .style("opacity", 1); // started as 0!
+            tooltipDiv.html(first_line + second_line + third_line);
             //tooltipDiv.html(html);
         })
-        .on('mousemove.tooltip', function(pD, pI){
+        .on('mousemove.tooltip', function(pD){
             // Move tooltip
             var absoluteMousePos = d3.mouse(bodyNode);
             tooltipDiv.style({
@@ -46,7 +48,7 @@ d3.helper.tooltip = function(){
                 top: (absoluteMousePos[1] - 40)+'px'
             });
         })
-        .on('mouseout.tooltip', function(pD, pI){
+        .on('mouseout.tooltip', function(pD){
             // Remove tooltip
             tooltipDiv.remove();
         });
