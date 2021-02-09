@@ -23,21 +23,21 @@ d3.helper.tooltip = function(){
                 padding: '5px',
                 position: 'absolute',
                 'z-index': 1001,
-                //'opacity':1,
                 'box-shadow': '0 1px 2px 0 #656565'
             });
                   var color = colorScale(pD.region);
                   var html  = "<b><span style='color:" + color + ";'>" + pD.region + "</span><br/>" +
                               " Vintage " + pD.year + "<br/>"+
                   pD.review +"</b>";
-                  // tooltip.html(html)
-                  //     .style("left", (d3.event.pageX + 15) + "px")
-                  //     .style("top", (d3.event.pageY - 28) + "px")
-                  //   .transition()
-                  //     .duration(200) // ms
-                  //     .style("opacity", 1) // started as 0!
 
-            tooltipDiv.html(html);
+                  tooltip.html(html)
+                      .style("left", (d3.event.pageX + 15) + "px")
+                      .style("top", (d3.event.pageY - 28) + "px")
+                    .transition()
+                      .duration(200) // ms
+                      .style("opacity", 1) // started as 0!
+
+            //tooltipDiv.html(html);
         })
         .on('mousemove.tooltip', function(pD, pI){
             // Move tooltip
