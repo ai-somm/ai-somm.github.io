@@ -32,8 +32,8 @@ d3.helper.tooltip = function(){
                   tooltipDiv.html(html)
                       .style("left", (d3.event.pageX + 15) + "px")
                       .style("top", (d3.event.pageY - 28) + "px")
-                    .transition()
-                      .duration(200) // ms
+                    //.transition()
+                      //.duration(200) // ms
                       .style("opacity", 1); // started as 0!
 
             //tooltipDiv.html(html);
@@ -147,7 +147,7 @@ canvas.append("g")
     .append("text")
     .attr("class", "label")
     .attr("x", width) // x-offset from the xAxis, move label all the way to the right
-     //.attr("y", -6)    // y-offset from the xAxis, moves text UPWARD!
+     .attr("y", -6)    // y-offset from the xAxis, moves text UPWARD!
     .style("text-anchor", "end") // right-justify text
      .text("Vintage");
 
@@ -158,7 +158,7 @@ canvas.append("g")
     .append("text")
   .attr("class", "label")
   .attr("transform", "rotate(-90)") // although axis is rotated, text is not
-  //.attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
+  .attr("y", 25) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
   .style("text-anchor", "end")
   .text("Sentiment");
 
