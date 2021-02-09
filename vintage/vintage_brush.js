@@ -113,9 +113,10 @@ var xMin = d3.min(data, function(d) { return d.year; }) - 1;
 var xMax =  d3.max(data, function(d) { return d.year; }) + 1 ;
 var xDomain = Array.from(new Array(xMax - xMin + 1), (x, i) => i + xMin);
 
-var x = d3.scaleOrdinal()
-    .domain(xDomain )
-    .range([0, width]);
+var x = d3.scale.linear()
+.domain([ d3.min(data, function(d) { return d.year; }) - 1,
+  d3.max(data, function(d) { return d.year; }) + 1 ])
+.range([0, width]);
 
 var y = d3.scale.linear()
 .domain([ d3.min(data, function(d) { return d.uniscore; }) ,
