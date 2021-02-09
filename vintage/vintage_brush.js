@@ -15,8 +15,8 @@ d3.helper.tooltip = function(){
                            .attr('class', 'tooltip');
             var absoluteMousePos = d3.mouse(bodyNode);
             tooltipDiv.style({
-                left: (absoluteMousePos[0] + 10)+'px',
-                top: (absoluteMousePos[1] - 40)+'px',
+                left: (absoluteMousePos[0])+'px',
+                top: (absoluteMousePos[1])+'px',
                 'background-color': '#d8d5e4',
                 width: '65px',
                 height: '30px',
