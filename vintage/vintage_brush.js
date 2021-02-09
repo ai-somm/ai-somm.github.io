@@ -76,8 +76,8 @@ for (var i = 2; i <= 50; i++) {
     data.push({index: i, value: val});
     values.push(val);
 }
-console.log(data)
-console.log(values)
+console.log(data);
+console.log(values);
 
 var margin = {top: 20, right: 20, bottom: 60, left: 40},
     width = 960 - margin.left - margin.right,
