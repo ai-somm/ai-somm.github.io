@@ -15,27 +15,26 @@ d3.helper.tooltip = function(){
                            .attr('class', 'tooltip');
             var absoluteMousePos = d3.mouse(bodyNode);
             tooltipDiv.style({
-                left: (absoluteMousePos[0])+'px',
-                top: (absoluteMousePos[1])+'px',
+                //left: (absoluteMousePos[0])+'px',
+                //top: (absoluteMousePos[1])+'px',
                 'background-color': '#d8d5e4',
-                width: '65px',
-                height: '30px',
-                padding: '5px',
-                position: 'absolute',
+                //width: '65px',
+                //height: '30px',
+                //padding: '5px',
+                //position: 'absolute',
                 'z-index': 1001,
                 'box-shadow': '0 1px 2px 0 #656565'
             });
                   var color = colorScale(pD.region);
                   var html  = "<b><span style='color:" + color + ";'>" + pD.region + "</span><br/>" +
-                              " Vintage " + pD.year + "<br/>"+
-                  pD.review +"</b>";
+                              " Vintage " + pD.year + "<br/>"+ pD.review +"</b>";
 
-                  tooltip.html(html)
+                  tooltipDiv.html(html)
                       .style("left", (d3.event.pageX + 15) + "px")
                       .style("top", (d3.event.pageY - 28) + "px")
                     .transition()
                       .duration(200) // ms
-                      .style("opacity", 1) // started as 0!
+                      .style("opacity", 1); // started as 0!
 
             //tooltipDiv.html(html);
         })
@@ -148,7 +147,7 @@ canvas.append("g")
     .append("text")
     .attr("class", "label")
     .attr("x", width) // x-offset from the xAxis, move label all the way to the right
-     .attr("y", -6)    // y-offset from the xAxis, moves text UPWARD!
+     //.attr("y", -6)    // y-offset from the xAxis, moves text UPWARD!
     .style("text-anchor", "end") // right-justify text
      .text("Vintage");
 
@@ -159,7 +158,7 @@ canvas.append("g")
     .append("text")
   .attr("class", "label")
   .attr("transform", "rotate(-90)") // although axis is rotated, text is not
-  .attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
+  //.attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
   .style("text-anchor", "end")
   .text("Sentiment");
 
