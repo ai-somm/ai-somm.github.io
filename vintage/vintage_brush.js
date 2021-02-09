@@ -97,7 +97,7 @@ var margin = {top: 20, right: 20, bottom: 60, left: 40},
     height = 500 - margin.top - margin.bottom;
 
 // Add the visualization svg canvas to the vis-container <div>
-var canvas = d3.select("body").append("svg")
+var canvas = d3.select("#vis-container").append("svg")
                   .attr("width",  width  + margin.left + margin.right)
                   .attr("height", height + margin.top  + margin.bottom)
                 .append("g")
@@ -132,7 +132,7 @@ var yAxis = d3.svg.axis()
     .ticks(10);
 
 // using canvas instead
-//var svg = d3.select("body").append("svg")
+//var svg = d3.select("#vis-container").append("svg")
 //    .attr("width", width + margin.left + margin.right)
 //    .attr("height", height + margin.top + margin.bottom)
 //  .append("g")
