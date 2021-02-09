@@ -19,7 +19,7 @@ d3.helper.tooltip = function(){
                 top: (absoluteMousePos[1])+'px',
                 'background-color': '#d8d5e4',
                 width: '200px',
-                height: '300px',
+                height: '80px',
                 padding: '5px',
                 position: 'absolute',
                 'z-index': 1001,
@@ -110,16 +110,16 @@ var colorScale = d3.scale.category20();
 
 var xMin = d3.min(data, function(d) { return d.year; }) - 1;
 var xMax =  d3.max(data, function(d) { return d.year; }) + 1 ;
-var xDomain = Array.from(new Array(xMax - xMin + 1), (x, i) => i + xMin);
+//var xDomain = Array.from(new Array(xMax - xMin + 1), (x, i) => i + xMin);
 
-// var x = d3.scale.linear()
-// .domain([ d3.min(data, function(d) { return d.year; }) - 1,
-//   d3.max(data, function(d) { return d.year; }) + 1 ])
-// .range([0, width]);
+var x = d3.scale.linear()
+.domain([ d3.min(data, function(d) { return d.year; }) - 1,
+  d3.max(data, function(d) { return d.year; }) + 1 ])
+.range([0, width]);
 
-var x = d3.scale.ordinal()
-    .domain(xDomain)
-    .range([0, width]);
+// var x = d3.scale.ordinal()
+//     .domain(xDomain)
+//     .range([0, width]);
 
 var y = d3.scale.linear()
 .domain([ d3.min(data, function(d) { return d.uniscore; }) ,
