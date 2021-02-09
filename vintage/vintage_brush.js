@@ -199,10 +199,10 @@ points = canvas.selectAll(".dot")
 .attr("cx", function(d) { return x( d.year ); })     // x position
 .attr("cy", function(d) { return y( d.uniscore ); })  // y position
 .style("fill", function(d) { return colorScale(d.region); })
-   .append('path')
-    .attr('d', link)
-    .attr('stroke', function(d) { return colorScale(d.region); })
-    .attr('fill', function(d) { return colorScale(d.region); })
+   //.append('path')
+    //.attr('d', link)
+    //.attr('stroke', function(d) { return colorScale(d.region); })
+    //.attr('fill', function(d) { return colorScale(d.region); })
     .call(d3.helper.tooltip());
 
 points.on('mousedown', function(){
