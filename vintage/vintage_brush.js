@@ -22,7 +22,7 @@ d3.helper.tooltip = function(){
                 //height: '80px',
                 //padding: '5px',
                 //position: 'absolute',
-                'z-index': 1001,
+                //'z-index': 1001,
                 'box-shadow': '0 1px 2px 0 #656565'
             });
             var colorScale = d3.scale.category10();
@@ -38,17 +38,17 @@ d3.helper.tooltip = function(){
                   //     //.duration(200) // ms
                   //     .style("opacity", 1); // started as 0!
             tooltipDiv.html(first_line + second_line)
-                      .style("left", (d3.event.pageX ) + "px")
-                      .style("top", (d3.event.pageY ) + "px");
+                      .style("left", (d3.event.pageX + 15) + "px")
+                      .style("top", (d3.event.pageY - 28) + "px");
             //tooltipDiv.html(html);
         })
         .on('mousemove.tooltip', function(pD){
             // Move tooltip
             var absoluteMousePos = d3.mouse(bodyNode);
-            tooltipDiv.style({
-                left: (absoluteMousePos[0] + 10)+'px',
-                top: (absoluteMousePos[1] - 40)+'px'
-            });
+            //tooltipDiv.style({
+              //  left: (absoluteMousePos[0] + 10)+'px',
+              //  top: (absoluteMousePos[1] - 40)+'px'
+            //});
         })
         .on('mouseout.tooltip', function(pD){
             // Remove tooltip
@@ -169,7 +169,7 @@ canvas.append("g")
     .append("text")
   .attr("class", "label")
   .attr("transform", "rotate(-90)") // although axis is rotated, text is not
-  .attr("y", 25) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
+  .attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
   .style("text-anchor", "end")
   .text("Sentiment");
 
