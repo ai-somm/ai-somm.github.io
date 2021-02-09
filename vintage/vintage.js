@@ -172,7 +172,7 @@ function brushend() {
 }
 
 function transition_data() {
-  canvas.selectAll(".point")
+  canvas.selectAll(".dot")
     .data(data)
   .transition()
     .duration(500)
