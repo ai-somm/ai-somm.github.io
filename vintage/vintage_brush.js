@@ -219,7 +219,7 @@ points.on('mousedown', function(){
 function brushmove() {
   var extent = brush.extent();
   points.classed("selected", function(d) {
-    is_brushed = (extent[0[0] <= d.year) && (d.year <= extent[1][0]) && (extent[0][1] <= d.uniscore) && (d.uniscore <= extent[1][1]);
+    is_brushed = (extent[0][0] <= d.year) && (d.year <= extent[1][0]) && (extent[0][1] <= d.uniscore) && (d.uniscore <= extent[1][1]);
     return is_brushed;
   });
 }
