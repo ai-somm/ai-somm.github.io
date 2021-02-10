@@ -27,7 +27,7 @@ d3.helper.tooltip = function(){
             });
             var colorScale = d3.scale.category10();
             
-            var first_line = "<p><span style='color:" + color + ";'>" + pD.region + "</span> " + pD.year +"</p>";;
+            var first_line = "<p><span style='color:" + color + ";'>" + pD.region + "</span> " + pD.year +"</p>";
             var second_line = '<p>' + pD.review + '</p>';
             var color = colorScale(pD.region);
                   //var html  = "<b><span style='color:" + color + ";'>" + pD.region + "</span><br/>" +
@@ -125,12 +125,13 @@ var x = d3.scale.linear()
 //     .range([0, width]);
 
 var y = d3.scale.linear()
-.domain([ d3.min(data, function(d) { return d.uniscore; }) ,
-  d3.max(data, function(d) { return d.uniscore; }) ])
+.domain([ d3.min(data, function(d) { return d.uniscore; }) - 0.1 ,
+  d3.max(data, function(d) { return d.uniscore; }) + 0.1 ])
   .range([height, 0]); // flip order because y-axis origin is upper LEFT
 
 var brush = d3.svg.brush()
     .x(x)
+    .y(y)
     .on("brush", brushmove)
     .on("brushend", brushend);
 
@@ -218,7 +219,7 @@ points.on('mousedown', function(){
 function brushmove() {
   var extent = brush.extent();
   points.classed("selected", function(d) {
-    is_brushed = extent[0] <= d.year && d.year <= extent[1];
+    is_brushed = (extent[0[0] <= d.year) && (d.year <= extent[1][0]) && (extent[0][1] <= d.uniscore) && (d.uniscore <= extent[1][1]);
     return is_brushed;
   });
 }
@@ -233,10 +234,12 @@ function brushend() {
       .text("Clear Brush");
   }
 
-  x.domain(brush.extent());
+  x.domain([brush.extent()[0][0],brush.extent()[1][0]]);
+  y.domain((brush.extent()[0][1],brush.extent()[1][1]));
 
   transition_data();
   reset_axis();
+  reset_yxis();
 
   points.classed("selected", false);
   d3.select(".brush").call(brush.clear());
@@ -244,8 +247,11 @@ function brushend() {
   clear_button.on('click', function(){
     x.domain([ d3.min(data, function(d) { return d.year; }) - 1,
   d3.max(data, function(d) { return d.year; }) + 1 ]);
+    y.domain([ d3.min(data, function(d) { return d.uniscore; }) - 0.1,
+  d3.max(data, function(d) { return d.uniscore; }) + 0.1 ]);
     transition_data();
     reset_axis();
+    reset_yxis();
     clear_button.remove();
   });
 }
@@ -255,13 +261,20 @@ function transition_data() {
     .data(data)
   .transition()
     .duration(500)
-    .attr("cx", function(d) { return x(d.year); });
+    .attr("cx", function(d) { return x(d.year); })
+    .attr("cy", function(d) { return x(d.uniscore); });
 }
 
 function reset_axis() {
   canvas.transition().duration(500)
    .select(".x.axis")
    .call(xAxis);
+}
+
+function reset_yxis() {
+  canvas.transition().duration(500)
+   .select(".y.axis")
+   .call(yAxis);
 }
 
 };
