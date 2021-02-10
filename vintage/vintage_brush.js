@@ -239,7 +239,7 @@ function brushend() {
 
   transition_data();
   reset_axis();
-  reset_yxis();
+  //reset_yxis();
 
   points.classed("selected", false);
   d3.select(".brush").call(brush.clear());
@@ -251,7 +251,8 @@ function brushend() {
   d3.max(data, function(d) { return d.uniscore; }) + 0.1 ]);
     transition_data();
     reset_axis();
-    reset_yxis();
+    //reset_axis();
+    //reset_yxis();
     clear_button.remove();
   });
 }
@@ -265,15 +266,23 @@ function transition_data() {
     .attr("cy", function(d) { return x(d.uniscore); });
 }
 
+// function reset_axis() {
+//   canvas.transition().duration(500)
+//    .select(".x.axis")
+//    .call(xAxis);
+// }
+
+// function reset_yxis() {
+//   canvas.transition().duration(500)
+//    .select(".y.axis")
+//    .call(yAxis);
+// }
+
 function reset_axis() {
   canvas.transition().duration(500)
    .select(".x.axis")
-   .call(xAxis);
-}
-
-function reset_yxis() {
-  canvas.transition().duration(500)
    .select(".y.axis")
+   .call(xAxis)
    .call(yAxis);
 }
 
