@@ -88,13 +88,14 @@ for nod, gp in zip(nodes.id, nodes.group):
         #links_to_drop.append(np.where(links.target==nod))
         links_to_drop.extend(np.where(np.isin(links.target, nod))[0].tolist())
         
-nodes
+nodes = nodes.drop(nodes_to_drop)
+links = links.drop(links_to_drop)
 ### save to json file
 jsf = defaultdict(list)
 jsf['nodes'] = [{"id":ind, "group": grp} for ind, grp in zip(nodes.id, nodes.group)]
 jsf['links'] = [{"source": src, "target": tg, "value": vl} for src, tg, vl in zip(links.source, links.target, links.value)]
 
-
+filename = "burgundy02"
 
 
 if os.path.exists("/Users/sheng/somm-ai.github.io/kg/"+filename+".json"):
