@@ -69,7 +69,7 @@ Promise.all(promises).then(function (data) {
   data.forEach(function (eachDataset) {
     eachDataset.forEach(function (d) {
       d["uniscore"] = +d["uniscore"];
-      d["sentiment"] = new Date(d["sentiment"]);
+      d["sentiment"] = +d["sentiment"];
       if (
         d.hasOwnProperty(
           "year"
@@ -110,10 +110,10 @@ function updateChart(someData) {
     })
     .entries(someData[0]);
 
-  let selectedDate = new Date($("#sentiChoice").val()).toString();
+  let selectedSentiment = $("#sentiChoice").val();
 
   let filteredData = dataAdultLit.filter(
-    (each) => each.key === selectedDate
+    (each) => each.key === selectedSentiment
   )[0];
 
   filteredData =
@@ -125,7 +125,7 @@ function updateChart(someData) {
 
   // JOIN data to elements.
   let circles = svg.selectAll("circle").data(filteredData, function (d) {
-    return d["District"];
+    return d["uniscore"]; //column not used???
   });
 
   console.log(circles);
