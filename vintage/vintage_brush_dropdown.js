@@ -45,17 +45,13 @@ svg
   .style("text-anchor", "middle")
   .text("Sentiment");
 
-// Color scale: input a region name, output a color
-// let color = d3
-//   .scaleOrdinal()
-//   .domain([
-//     "Balochistan",
-//     "Federal Capital Territory",
-//     "Khyber Pakhtunkhwa",
-//     "Punjab",
-//     "Sindh",
-//   ])
-//   .range(["#440154ff", "#21908dff", "#fde725ff", "#129490", "#CE1483"]);
+//Color scale: input a region name, output a color
+let color = d3
+  .scaleOrdinal()
+  .domain([
+    "ARGENTINA", "SOUTH AUSTRALIA", "AUSTRIA", "CHILE", "ALSACE", "CHAMPAGNE", "LOIRE VALLEY", "SOUTHERN RHÔNE", "BORDEAUX - RED", "BORDEAUX - WHITE", "BURGUNDY - WHITE", "LANGUEDOC-ROUSSILLON", "NORTHERN RHÔNE", "GERMANY", "PIEMONTE", "TUSCANY", "NEW ZEALAND", "PORT AND THE DOURO", "SOUTH AFRICA", "CATALUNYA", "RIOJA AND RIBERA DEL DUERO", "ENGLAND", "NORTHERN CALIFORNIA", "BORDEAUX - SWEET", "BURGUNDY - RED" 
+  ])
+  .range(["Aqua", "Biege", "Blue", "BlueViolet", "Chocolate", "Coral", "Crimson", "Cyan", "DarkOrchid", "DeepPink", "Fuchsia", "Gold", "Green", "Grey", "HotPink", "Indigo", "Khaki", "Lime", "Magenta", "Maroon", "Navy", "Olive", "Purple", "Tomato", "Turquoise",]);
 let color = d3.schemePaired();//d3.scale.category20();
 
 //Read the data
