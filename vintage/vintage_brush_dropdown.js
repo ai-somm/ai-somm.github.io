@@ -86,17 +86,15 @@ Promise.all(promises).then(function (data) {
   updateChart(allData);
 });
 
-
-//Add in event listener for Year choice.
-$("#sentiChoice").on("change", function () {
-  updateChart(allData);
-});
-
 //Add in event listener for geographic choice.
 $("#geographicChoice").on("change", function () {
   updateChart(allData);
 });
 
+//Add in event listener for Year choice.
+$("#sentiChoice").on("change", function () {
+  updateChart(allData);
+});
 
 //Can I make updates based on new x-axis variable w/o update? If so, add to blog, i.e. rinse and repeat.
 
