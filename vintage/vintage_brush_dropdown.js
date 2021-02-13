@@ -33,7 +33,7 @@ svg
   .text("Vintage");
 
 // Add Y axis
-let y = d3.scaleLinear().domain([-0.1, 1.1]).range([height, 0]);
+let y = d3.scaleLinear().domain([0, 1.0]).range([height, 0]);
 svg.append("g").call(d3.axisLeft(y));
 
 //Add y-axis label:
