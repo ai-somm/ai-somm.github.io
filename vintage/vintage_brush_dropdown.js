@@ -50,7 +50,7 @@ let color = d3.scaleOrdinal()
     "BURGUNDY - WHITE", "LANGUEDOC-ROUSSILLON", "NORTHERN RHÔNE", 
     "GERMANY", "PIEMONTE", "TUSCANY", "NEW ZEALAND", "PORT AND THE DOURO", 
     "SOUTH AFRICA", "CATALUNYA", "RIOJA AND RIBERA DEL DUERO", "ENGLAND", 
-    "NORTHERN CALIFORNIA", "BORDEAUX - SWEET", "BURGUNDY - RED"])
+    "NORTHERN CALIFORNIA", "BORDEAUX - SWEET", "BURGUNDY - RED",])
   .range(["Aqua", "Biege", "Blue", "BlueViolet", "Chocolate", 
     "Coral", "Crimson", "Cyan", "DarkOrchid", "DeepPink", 
     "Fuchsia", "Gold", "Green", "Grey", "HotPink", "Indigo", 
@@ -86,21 +86,23 @@ Promise.all(promises).then(function (data) {
   updateChart(allData);
 });
 
-//Add in event listener for geographic choice.
-$("#geographicChoice").on("change", function () {
-  updateChart(allData);
-});
 
 //Add in event listener for Year choice.
 $("#sentiChoice").on("change", function () {
   updateChart(allData);
 });
 
+//Add in event listener for geographic choice.
+$("#geographicChoice").on("change", function () {
+  updateChart(allData);
+});
+
+
 //Can I make updates based on new x-axis variable w/o update? If so, add to blog, i.e. rinse and repeat.
 
 //Function that builds the right chart depending on user choice on website:
 function updateChart(someData) {
-  let dataAdultLit = d3
+  let dataJR = d3
     .nest()
     .key(function (d) {
       return d["sentiment"];
@@ -109,7 +111,7 @@ function updateChart(someData) {
 
   let selectedSentiment = $("#sentiChoice").val();
 
-  let filteredData = dataAdultLit.filter(
+  let filteredData = dataJR.filter(
     (each) => each.key === selectedSentiment
   )[0];
 
