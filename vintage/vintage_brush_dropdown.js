@@ -107,7 +107,7 @@ function updateChart(someData) {
     })
     .entries(someData[0]);
 
-  let selectedSentiment = $("#sentiChoice").val();
+  let selectedSentiment = new $("#sentiChoice").val();
 
   let filteredData = dataJR.filter(
     (each) => each.key === selectedSentiment
