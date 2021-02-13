@@ -89,7 +89,7 @@ $("#geographicChoice").on("change", function () {
 });
 
 //Add in event listener for Year choice.
-$("#yearChoice").on("change", function () {
+$("#sentiChoice").on("change", function () {
   updateChart(allData);
 });
 
@@ -104,7 +104,7 @@ function updateChart(someData) {
     })
     .entries(someData[0]);
 
-  let selectedDate = new Date($("#yearChoice").val()).toString();
+  let selectedDate = new Date($("#sentiChoice").val()).toString();
 
   let filteredData = dataAdultLit.filter(
     (each) => each.key === selectedDate
