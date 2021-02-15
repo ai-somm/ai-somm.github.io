@@ -501,6 +501,8 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+var color = d3.scaleOrdinal(d3.schemeCategory10);
+
 var tip = d3.tip().attr('class','d3-tip')
 .html(function(d){
   var x = links.filter(g=>g.source.name==d.name).map(t=>t.target.name).toString();
@@ -535,6 +537,7 @@ var ct = svg.append("g").selectAll(".node")
 
 var circle = ct.append("circle")
     .attr("r", 8)
+    .attr("fill", function(d) { return color(d.type); })
     .style("fill", function(d) { return "yellow";});
 
 var clabel = ct.append("text")
