@@ -485,6 +485,8 @@ links.forEach(function(link) {
   link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
 });
 
+console.log(nodes);
+
 var width = 1200,
     height = 1200;
 
@@ -501,12 +503,12 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var color = d3.scale.category10()
+var colorScale = d3.scale.category10()
 .range(['#ccfffb','#f3ccff','#ffd2cc']);
 
 var tip = d3.tip().attr('class','d3-tip')
 .html(function(d){
-  var x = links.filter(g=>g.source.name==d.name).map(t=>t.source.name).toString();
+  var x = links.filter(g=>g.source.name==d.name).map(t=>t.target.name).toString();
   var y = links.filter(g=>g.target.name==d.name).map(t=>t.target.name).toString();
   return "<span>" + "consists: " + y +  "</span><br><span>" + "ingredient of: " + x + "</span>";});
 
@@ -538,7 +540,7 @@ var ct = svg.append("g").selectAll(".node")
 
 var circle = ct.append("circle")
     .attr("r", 8)
-    .style("fill", function(d) { return color(d.type); })
+    .style("fill", function(d) { return colorScale(d.type); })
     //.style("fill", function(d) { return "yellow";});
 
 var clabel = ct.append("text")
