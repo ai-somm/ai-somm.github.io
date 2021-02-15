@@ -505,7 +505,7 @@ var color = d3.scale.category10();
 
 var tip = d3.tip().attr('class','d3-tip')
 .html(function(d){
-  var x = links.filter(g=>g.source.name==d.name).map(t=>t.target.name).toString();
+  var x = links.filter(g=>g.source.name==d.name).map(t=>t.source.name).toString();
   var y = links.filter(g=>g.target.name==d.name).map(t=>t.target.name).toString();
   return "<span>" + "consists: " + y +  "</span><br><span>" + "ingredient of: " + x + "</span>";});
 
