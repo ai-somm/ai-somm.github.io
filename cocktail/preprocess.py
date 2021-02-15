@@ -72,3 +72,8 @@ for it in all_ingredients:
 nodes.append({"name": "lemon", "type": "ingredient"})
     
 nodes.append({"name": "chartreuse", "type": "ingredient"})
+
+### reformulate nodes into a dict
+nodes1 = {}
+for node in nodes:
+    nodes1[node['name']] = node
