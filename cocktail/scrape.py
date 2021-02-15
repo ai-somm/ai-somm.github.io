@@ -32,7 +32,7 @@ HEADERS = {
 }
 DATA_DIR = 'data'
 
-save_path = os.path.join("/Users/sheng/somm-ai.github.io/cocktail", DATA_DIR)
+save_path = os.path.join("/Users/sheng/ai-somm.github.io/cocktail", DATA_DIR)
 os.chdir(save_path)
 
 class Scraper():

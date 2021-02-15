@@ -15,7 +15,7 @@ import os, json, ujson, pandas
 
 filename = "burgundy0"
 
-with open("/Users/sheng/somm-ai.github.io/kg/"+filename+".json","r") as js:
+with open("/Users/sheng/ai-somm.github.io/kg/"+filename+".json","r") as js:
     jsfile = ujson.load(js)
     
 nodes = pandas.DataFrame({"id": [x['id'] for x in jsfile['nodes']], "group": [x['group'] for x in jsfile['nodes']]})
@@ -24,9 +24,9 @@ links = pandas.DataFrame({"target": [x['target'] for x in jsfile['links']],
                           "value": [x['value'] for x in jsfile['links']], 
                           "source": [x['source'] for x in jsfile['links']]})
 
-nodes.to_csv("/users/sheng/somm-ai.github.io/kg/"+filename+"_nodes.csv", index=False)
+nodes.to_csv("/users/sheng/ai-somm.github.io/kg/"+filename+"_nodes.csv", index=False)
 
-links.to_csv("/users/sheng/somm-ai.github.io/kg/"+filename+"_links.csv", index=False)
+links.to_csv("/users/sheng/ai-somm.github.io/kg/"+filename+"_links.csv", index=False)
 
 
 ##### from two csv files (region_links.csv, region_nodes.csv) to one json file (region.json) 
@@ -34,9 +34,9 @@ from collections import defaultdict
 
 filename = "burgundy1"
 
-nodes = pandas.read_csv("/Users/sheng/somm-ai.github.io/kg/"+filename+"_nodes.csv")
+nodes = pandas.read_csv("/Users/sheng/ai-somm.github.io/kg/"+filename+"_nodes.csv")
 
-links = pandas.read_csv("/Users/sheng/somm-ai.github.io/kg/"+filename+"_links.csv")
+links = pandas.read_csv("/Users/sheng/ai-somm.github.io/kg/"+filename+"_links.csv")
 
 # check of all link ends are included in nodes, if not ERROR
 all_items = set(list(links.source)+list(links.target))
@@ -98,8 +98,8 @@ jsf['links'] = [{"source": src, "target": tg, "value": vl} for src, tg, vl in zi
 filename = "burgundy02"
 
 
-if os.path.exists("/Users/sheng/somm-ai.github.io/kg/"+filename+".json"):
+if os.path.exists("/Users/sheng/ai-somm.github.io/kg/"+filename+".json"):
     print("no overeriting!!")
 else:
-    with open("/Users/sheng/somm-ai.github.io/kg/"+filename+".json","w") as tjs:
+    with open("/Users/sheng/ai-somm.github.io/kg/"+filename+".json","w") as tjs:
         ujson.dump(jsf, tjs)

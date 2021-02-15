@@ -74,7 +74,7 @@ d3.helper.tooltip = function(){
 };
 
 // var data = [];
-// //d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score_uni.tsv", function loadCallback(error, data) {
+// //d3.tsv("https://ai-somm.github.io/vintage/jrvintages_score_uni.tsv", function loadCallback(error, data) {
 // //                data.forEach(function(d) { // convert strings to numbers
 // //                    d.uniscore = +d.uniscore;
 // //                    d.year = +d.year;
@@ -88,7 +88,7 @@ d3.helper.tooltip = function(){
 // }
 // console.log(data);
 
-d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score_uni.tsv", function loadCallback(error, data) {
+d3.tsv("https://ai-somm.github.io/vintage/jrvintages_score_uni.tsv", function loadCallback(error, data) {
                 data.forEach(function(d) { // convert strings to numbers
                     d.uniscore = +d.uniscore;
                     d.year = +d.year;

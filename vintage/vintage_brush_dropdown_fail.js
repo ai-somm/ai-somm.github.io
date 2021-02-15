@@ -59,7 +59,7 @@ let color = d3.scaleOrdinal()
 //let color = d3.schemePaired();//d3.scale.category20();
 
 //Read the data
-let promises = [d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score_uni.tsv")];
+let promises = [d3.tsv("https://ai-somm.github.io/vintage/jrvintages_score_uni.tsv")];
 let allData = [];
 
 Promise.all(promises).then(function (data) {

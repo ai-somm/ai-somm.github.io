@@ -35,8 +35,8 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-//d3.tsv("https://somm-ai.github.io/vintage/jrvintages_score1.tsv", function(data) {
-d3.tsv("https://somm-ai.github.io/vintage/jrv_wide_none.tsv", function(data){
+//d3.tsv("https://ai-somm.github.io/vintage/jrvintages_score1.tsv", function(data) {
+d3.tsv("https://ai-somm.github.io/vintage/jrv_wide_none.tsv", function(data){
     // list of grapes
     var allGroup = ["ARGENTINA", "SOUTH AUSTRALIA", "AUSTRIA", "CHILE", "ALSACE", "BORDEAUX - SWEET", "BURGUNDY - RED", "CHAMPAGNE", "LOIRE VALLEY", "SOUTHERN RHÔNE", "BORDEAUX - RED", "BORDEAUX - WHITE", "BURGUNDY - WHITE", "LANGUEDOC-ROUSSILLON", "NORTHERN RHÔNE", "GERMANY", "PIEMONTE", "TUSCANY", "NEW ZEALAND", "PORT AND THE DOURO", "SOUTH AFRICA", "CATALUNYA", "RIOJA AND RIBERA DEL DUERO", "ENGLAND", "NORTHERN CALIFORNIA"]
     var allGroupScore = ["V9.ARGENTINA", "V9.SOUTH AUSTRALIA", "V9.AUSTRIA", "V9.CHILE", "V9.ALSACE", "V9.BORDEAUX - SWEET", "V9.BURGUNDY - RED", "V9.CHAMPAGNE", "V9.LOIRE VALLEY", "V9.SOUTHERN RHÔNE", "V9.BORDEAUX - RED", "V9.BORDEAUX - WHITE", "V9.BURGUNDY - WHITE", "V9.LANGUEDOC-ROUSSILLON", "V9.NORTHERN RHÔNE", "V9.GERMANY", "V9.PIEMONTE", "V9.TUSCANY", "V9.NEW ZEALAND", "V9.PORT AND THE DOURO", "V9.SOUTH AFRICA", "V9.CATALUNYA", "V9.RIOJA AND RIBERA DEL DUERO", "V9.ENGLAND", "V9.NORTHERN CALIFORNIA"]
