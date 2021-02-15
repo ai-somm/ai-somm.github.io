@@ -933,7 +933,7 @@ var tip = d3.tip().attr('class','d3-tip')
   
   var y = links.filter(g=>g.target.name==d.name).map(t=>t.target.name).toString();
   var x = d.type == "cocktail"? d.text : y;
-  return "<span>" + d.name + ": " + x +  "</span>";});
+  return "<span>" + x +  "</span>";});
 
 var colors = {ingredient:"blue",category:"red",form:"green"};
 // Per-type markers, as they don't inherit styles.
