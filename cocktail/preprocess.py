@@ -64,8 +64,8 @@ ing2sub.append({"source": "whiskey", "target": "bourbon", "type":"category"})
 ing2sub.append({"source": "whiskey", "target": "scotch", "type":"category"})
 
 nodes = []
-for ct in list_of_cocktails:
-    nodes.append({"name": ct.strip(), "type": "cocktail"})
+for ct,rpp in zip(list_of_cocktails, recipes):
+    nodes.append({"name": ct.strip(), "type": "cocktail", "text": rpp})
 for it in all_ingredients:
     nodes.append({"name": it, "type": "ingredient"})
     
