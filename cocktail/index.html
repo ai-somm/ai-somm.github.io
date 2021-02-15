@@ -920,7 +920,7 @@ var tip = d3.tip().attr('class','d3-tip')
 .html(function(d){
   var x = links.filter(g=>g.source.name==d.name).map(t=>t.target.name).toString();
   // var y = links.filter(g=>g.target.name==d.name).map(t=>t.target.name).toString();
-  var z = nodes0[d.name].type == "cocktail" ? (nodes0[d.name].text).toString() : "Ingredient of: ".concat(x));
+  var z = nodes0[d.name].type == "cocktail" ? (nodes0[d.name].text).toString() : "Ingredient of: ".concat(x);
   return "<span>" + z + "</span>";});
 
 // var tip = d3.tip().attr('class','d3-tip')
