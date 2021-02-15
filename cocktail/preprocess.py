@@ -62,3 +62,13 @@ ing2sub.append({"source": "brandy", "target": "cognac", "type":"category"})
 ing2sub.append({"source": "brandy", "target": "calvados", "type":"category"})
 ing2sub.append({"source": "whiskey", "target": "bourbon", "type":"category"})
 ing2sub.append({"source": "whiskey", "target": "scotch", "type":"category"})
+
+nodes = []
+for ct in list_of_cocktails:
+    nodes.append({"name": ct.strip(), "type": "cocktail"})
+for it in all_ingredients:
+    nodes.append({"name": it, "type": "ingredient"})
+    
+nodes.append({"name": "lemon", "type": "ingredient"})
+    
+nodes.append({"name": "chartreuse", "type": "ingredient"})
