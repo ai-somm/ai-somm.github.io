@@ -1,0 +1,9 @@
+vermouth -> sweet vermouth, dry vermouth
+whiskey -> scotch, bourbon,Irish whiskey
+lemon -> lemon juice, a slice of lemon, lemon peel
+bitters -> Angostura bitters, Peychaud's bitters
+lime -> a slice of lime,a lime wedge, lime juice
+Chartreuse -> yellow/green
+rum -> dark rum, Jamaican rum,Puerto Rican rum,Demerara rum
+brandy - > apricot brandy, cognac, calvados
+gin -> London Dry Gin

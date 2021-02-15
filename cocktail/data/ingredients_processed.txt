@@ -1,0 +1,90 @@
+cognac,Creme de cacao,cream
+Campari,sweet Vermouth,a slice of lemon
+gin,apricot brandy,calvados
+gin,Maraschino liqueur,Creme de violette,lemon juice
+white rum,cognac,triple sec,lemon juice
+whiskey,sweet Vermouth,Campari
+brandy,Maraschino liqueur,curaçao,lemon juice,sugar syrup,Angostura bitters
+gin,Maraschino liqueur,orange bitters,lemon juice
+gin,lemon juice,raspberry syrup,egg white
+rum,lime juice,sugar
+gin,Vermouth,a lemon twist
+gin,lemon juice,sugar,soda water
+gin,sweet Vermouth,Fernet-Branca
+soda water,London dry gin,lemon juice,sugar
+gin,green Chartreuse,Maraschino liqueur,lime juice,ice
+whiskey,sweet Vermouth,bitters
+London Dry Gin,Sweet Vermouth,Maraschino Liqueur,Orange Bitters
+white rum,pineapple juice,grenadine,Maraschino liqueur
+gin,orange juice,grenadine,absinthe
+gin,sweet Vermouth,Campari,orange peel
+sugar,bitters,whiskey,a twist of lemon,a Maraschino cherry
+gin,apricot brandy,orange juice,lemon juice
+Jamaican rum,lime juice,sugar cane juice
+brandy,ruby port,egg yolk
+gin,lemon juice,lime juice,egg white,sugar,cream,orange flower water,soda water
+Drambuie,Scotch
+cognac,absinthe,Peychaud's bitters, sugar
+cognac,triple sec,lemon juice
+Creme de menthe,brandy
+gin,dry Vermouth,orange bitters,Maraschino liqueur,Absinthe
+rye whiskey,cognac,sweet Vermouth,Bénédictine,Peychaud's bitters
+whiskey,lemon juice,sugar,egg white
+gin,triple sec,lemon juice,egg white,cream
+Prosecco,peach purée,nectar
+vodka,coffee liqueur
+vodka,tomato juice,spices,Worcestershire sauce,hot sauces,garlic,herbs,horseradish,celery,olives,black pepper,lemon juice,lime juice,celery salt
+cachaça,sugar,lime
+sugar,Angostura bitters,Champagne,brandy,a Maraschino cherry
+gin,lemon juice,curaçao,Kina Lillet,absinthe
+vodka,triple sec,cranberry juice,lime juice
+cola,rum,lime juice,ice
+gin,Champagne,lemon juice,sugar
+Cognac,Amaretto liqueur
+Galliano,triple sec
+Creme de menthe,Creme de cacao,cream,ice
+rum,lime juice,Maraschino liqueur,grapefruit juice
+brandy,ginger ale,lemon peel
+coffee,Irish whiskey,sugar,cream
+Creme de cassis,white wine
+vodka,tequila,light rum,triple sec,gin,cola
+rum,Curaçao,orgeat syrup,lime juice
+tequila,triple sec,lime juice,salt
+champagne,orange juice
+bourbon,sugar,water,ice,mint
+white rum,sugar cane juice,lime juice,soda water,mint
+vodka,ginger beer,lime juice,a lime wedge
+rum,cream of coconut,pineapple juice,ice
+Peruvian pisco,lime juice,simple syrup,ice,egg white,Angostura bitters
+vodka,cranberry juice,grapefruit juice
+vodka,peach schnapps,orange juice,cranberry juice
+gin,Maraschino Liqueur,triple sec,Bénédictine,Grenadine,pineapple juice,lime juice,Angostura bitters
+tequila,orange juice,grenadine,syrup
+gin,vodka,Kina Lillet
+ice,Jamaican rum,Puerto Rican rum,Demerara rum,lime juice,grapefruit juice,Cinnamon Syrup,Grenadine,Falernum,Pernod,Angostura bitters,mint
+Gold rum,Galliano,pineapple juice,lime juice,Prosecco
+Gin,lemon juice,honey
+dry gin,lemon juice,sugar syrup,creme de mure,ice
+aguardiente,honey,lime juice
+Goslings Black Seal Rum,ginger beer,ice,a slice of lime
+vodka,coffee,coffee liqueur,sugar syrup
+Fernet-Branca,cola,ice
+Chambord,pineapple juice,volka
+Mezcal,Jamaica rum,Falernum,Maraschino Liqueur,lime juice,simple syrup,egg white
+vodka,lemon juice,triple secs,simple syrup
+mezcal,yellow Chartreuse,Aperol,Lime juice
+whiskey,Simple syrup,lemon juice,egg white,red wine
+aged rum,lime juice,simple syrup,Angostura bitters,mint,champagne
+tequila,lime juice,grapefruit soda,a lime wedge
+Bourbon whiskey,Aperol,Amaro Nonino,lemon juice
+whiskey,ginger,lemon juice
+vodka,Creme de cassis,sugar syrup,lemon juice
+gin,lime juice,simple syrup,mint
+vodka,elderflower cordial,honey syrup,red chili pepper,lemon juice
+prosecco,Aperol,soda water
+gin,brandy,lime juice,Angostura bitters,ginger beer
+Irish whiskey,sweet Vermouth,green Chartreuse,Angostura bitters
+tequila,lime juice,nectar
+Angostura bitters,orgeat syrup,lemon juice,rye whiskey
+grappa,lemon juice,honey,chamomile cordial,egg white
+white rum,Galliano,triple sec,lime juice

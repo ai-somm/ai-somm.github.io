@@ -23,7 +23,7 @@ import urllib.request
 system argument 0: the last page to be scraped
 '''
 #sys.path.append("/usr/local/bin/wget")
-BASE_URL = 'https://xkcd.com/{0}/'
+BASE_URL = 'https://en.m.wikipedia.org/wiki/List_of_IBA_official_cocktails'
 #BASE = 'https://imgflip.com'
 session = requests.Session()
 HEADERS = {
@@ -32,13 +32,13 @@ HEADERS = {
 }
 DATA_DIR = 'data'
 
-save_path = os.path.join("~/Dropbox/JobFolder/manga/xkcd/", DATA_DIR)
-os.chdir("/Users/shu/Dropbox/JobFolder/manga/xkcd/data/")
+save_path = os.path.join("/Users/sheng/somm-ai.github.io/cocktail", DATA_DIR)
+os.chdir(save_path)
 
 class Scraper():
     """Scraper for Winemag.com to collect wine reviews"""
 
-    def __init__(self, pages_to_scrape=(1,2413), num_jobs=1, clear_old_data=True):
+    def __init__(self, pages_to_scrape=(1,1), num_jobs=1, clear_old_data=True):
         self.pages_to_scrape = pages_to_scrape
         self.num_jobs = num_jobs
         self.clear_old_data = clear_old_data
@@ -59,21 +59,21 @@ class Scraper():
             self.clear_data_dir()
         if self.multiprocessing:
             link_list = [BASE_URL.format(page) for page in range(self.pages_to_scrape[0],self.pages_to_scrape[1] + 1)]
-            records = self.worker_pool.map(self.scrape_page, link_list)
+            self.worker_pool.map(self.scrape_page, link_list)
             self.worker_pool.terminate()
             self.worker_pool.join()
         else:
-            for page in range(self.pages_to_scrape[0], self.pages_to_scrape[1] + 1):
-                self.data.append(self.scrape_page(page, BASE_URL.format(page)))
-        print('Scrape finished...')
+            self.data.append(self.scrape_page(BASE_URL))
+            #for page in range(self.pages_to_scrape[0], self.pages_to_scrape[1] + 1):
+            #    self.data.append(self.scrape_page(page, BASE_URL.format(page)))
+            print('Scrape finished...')
         #self.condense_data()
         
             
                 
-            
-
-    def scrape_page(self, page, page_url, isolated_review_count=0, retry_count=0):
-        scrape_data = []
+    def scrape_page(self, page_url, isolated_review_count=0, retry_count=0):
+        list_of_cocktails = []
+        list_of_recipes = []
         try:
             response = self.session.get(page_url, headers=HEADERS)
         except:
@@ -86,43 +86,25 @@ class Scraper():
 
         soup = BeautifulSoup(response.content, 'html.parser')
         # Drop the first review-item; it's always empty
-        memes = soup.find_all("div", {"id": "comic"})
-        print(memes)
-        for meme in memes:
+        blocks = soup.find_all("dl")
+
+        for block in blocks:
             #self.cross_process_review_count += 1
             #isolated_review_count += 1
-            memeinfo = meme.find("img", title=True)
-            
-            try:
-                url0 = memeinfo['src']
-            except:
-                url0 = "NA"
-            try:
-                url1 = memeinfo['srcset']
-            except:
-                url1 = "NA"
-            title = memeinfo['title']
-            alt = memeinfo['alt']
-            scrape_data = [str(page), alt, title, url0, url1]
-            print(scrape_data)
-            if not url0 == "NA":
+            cocktails = block.find_all("dt")
+            recipes = block.find_all("dd")
+            assert len(cocktails) == len(recipes)
+            for cocktail, recipe in zip(cocktails, recipes):
                 try:
-                    subprocess.run(["/usr/local/bin/wget", "-r", "-nc", "https:"+url0])
-                    print("downloaded from "+url0)
-                except Exception as e:
-                    print("error:"+str(page))
-            elif not url1 == "NA":
-                url0 = url1.split(" ")[0]
+                    ct = cocktail.string
+                except:
+                    ct = "NA"
                 try:
-                    subprocess.run(["/usr/local/bin/wget", "-r", "-nc", "https:"+url0])
-                    print("downloaded from "+url0)
-                except Exception as e:
-                    print("error:"+str(page))
-            else:
-                pass
-            with open("xkcd_meta.txt", "a") as txt:
-                txt.write("\t".join(scrape_data)+"\n")
-        #return scrape_data
+                    rp = recipe.string
+                except:
+                    rp = "NA"
+                list_of_cocktails.append(ct)
+                list_of_recipes.append(rp)
             
             
                         
