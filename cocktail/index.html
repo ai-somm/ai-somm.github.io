@@ -501,7 +501,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var color = d3.scaleOrdinal(d3.schemeCategory10);
+var color = d3.scale.category10();
 
 var tip = d3.tip().attr('class','d3-tip')
 .html(function(d){
