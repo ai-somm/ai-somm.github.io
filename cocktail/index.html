@@ -537,7 +537,7 @@ var ct = svg.append("g").selectAll(".node")
 
 var circle = ct.append("circle")
     .attr("r", 8)
-    .attr("fill", function(d) { return color(d.type); })
+    .style("fill", function(d) { return color(d.type); })
     //.style("fill", function(d) { return "yellow";});
 
 var clabel = ct.append("text")
