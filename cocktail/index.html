@@ -505,7 +505,7 @@ var tip = d3.tip().attr('class','d3-tip')
 .html(function(d){
   var x = links.filter(g=>g.source.name==d.name).map(t=>t.target.name).toString();
   var y = links.filter(g=>g.target.name==d.name).map(t=>t.target.name).toString();
-  return "<span>" + "consists: " + y +  "</span><br><span>" + "ingredient of: " + y + "</span>";});
+  return "<span>" + "consists: " + y +  "</span><br><span>" + "ingredient of: " + x + "</span>";});
 
 var colors = {ingredient:"blue",category:"red",form:"green"};
 // Per-type markers, as they don't inherit styles.
