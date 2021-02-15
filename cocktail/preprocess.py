@@ -51,7 +51,7 @@ all_ingredients = [x.lower().strip() for x in list(set([item for sublist in ingr
 ing2sub = []
 texts = ["rum","lime","lemon",
          "chartreuse","bitters","whiskey",
-         "vermouth","gin","brandy"]
+         "vermouth","gin","brandy","syrup"]
 for i, ingred in enumerate(all_ingredients):
     for text in texts:
         if text in ingred and text != ingred:
@@ -70,7 +70,7 @@ for it in all_ingredients:
     nodes.append({"name": it, "type": "ingredient"})
     
 nodes.append({"name": "lemon", "type": "ingredient"})
-    
+nodes.append({"name": "syrup", "type": "ingredient"})
 nodes.append({"name": "chartreuse", "type": "ingredient"})
 
 ### reformulate nodes into a dict

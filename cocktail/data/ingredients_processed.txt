@@ -4,7 +4,7 @@ gin,apricot brandy,calvados
 gin,Maraschino liqueur,Creme de violette,lemon juice
 white rum,cognac,triple sec,lemon juice
 whiskey,sweet Vermouth,Campari
-brandy,Maraschino liqueur,curaçao,lemon juice,sugar syrup,Angostura bitters
+brandy,Maraschino liqueur,curaçao,lemon juice,simple syrup,Angostura bitters
 gin,Maraschino liqueur,orange bitters,lemon juice
 gin,lemon juice,raspberry syrup,egg white
 rum,lime juice,sugar
@@ -59,15 +59,15 @@ Peruvian pisco,lime juice,simple syrup,ice,egg white,Angostura bitters
 vodka,cranberry juice,grapefruit juice
 vodka,peach schnapps,orange juice,cranberry juice
 gin,Maraschino Liqueur,triple sec,Bénédictine,Grenadine,pineapple juice,lime juice,Angostura bitters
-tequila,orange juice,grenadine,syrup
+tequila,orange juice,grenadine,simple syrup
 gin,vodka,Kina Lillet
 ice,Jamaican rum,Puerto Rican rum,Demerara rum,lime juice,grapefruit juice,Cinnamon Syrup,Grenadine,Falernum,Pernod,Angostura bitters,mint
 Gold rum,Galliano,pineapple juice,lime juice,Prosecco
 Gin,lemon juice,honey
-dry gin,lemon juice,sugar syrup,creme de mure,ice
+dry gin,lemon juice,simple syrup,creme de mure,ice
 aguardiente,honey,lime juice
 Goslings Black Seal Rum,ginger beer,ice,a slice of lime
-vodka,coffee,coffee liqueur,sugar syrup
+vodka,coffee,coffee liqueur,simple syrup
 Fernet-Branca,cola,ice
 Chambord,pineapple juice,volka
 Mezcal,Jamaica rum,Falernum,Maraschino Liqueur,lime juice,simple syrup,egg white
@@ -76,9 +76,9 @@ mezcal,yellow Chartreuse,Aperol,Lime juice
 whiskey,Simple syrup,lemon juice,egg white,red wine
 aged rum,lime juice,simple syrup,Angostura bitters,mint,champagne
 tequila,lime juice,grapefruit soda,a lime wedge
-Bourbon whiskey,Aperol,Amaro Nonino,lemon juice
+Bourbon,Aperol,Amaro Nonino,lemon juice
 whiskey,ginger,lemon juice
-vodka,Creme de cassis,sugar syrup,lemon juice
+vodka,Creme de cassis,simple syrup,lemon juice
 gin,lime juice,simple syrup,mint
 vodka,elderflower cordial,honey syrup,red chili pepper,lemon juice
 prosecco,Aperol,soda water
