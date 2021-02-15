@@ -366,7 +366,7 @@ var links =
  {'source': 'egg white', 'target': 'Illegal', 'type': 'ingredient'},
  {'source': 'vodka', 'target': 'Lemon drop martini', 'type': 'ingredient'},
  {'source': 'lemon juice',  'target': 'Lemon drop martini',  'type': 'ingredient'},
- {'source': 'triple secs',  'target': 'Lemon drop martini',  'type': 'ingredient'},
+ {'source': 'triple sec',  'target': 'Lemon drop martini',  'type': 'ingredient'},
  {'source': 'simple syrup',  'target': 'Lemon drop martini',  'type': 'ingredient'},
  {'source': 'mezcal', 'target': 'Naked and Famous', 'type': 'ingredient'},
  {'source': 'yellow chartreuse','target': 'Naked and Famous','type': 'ingredient'},
@@ -506,7 +506,8 @@ var tip = d3.tip().attr('class','d3-tip')
 .html(function(d){
   var x = links.filter(g=>g.source.name==d.name).map(t=>t.target.name).toString();
   var y = links.filter(g=>g.target.name==d.name).map(t=>t.target.name).toString();
-  return "<span>" + "inbound: " + x +  "</span><br><span>" + "outbound: " + y + "</span>";});
+  return "<span>" + "inbound: " + x +  "</span><br><span>" + "outbound: " + y + "</span>"
+  console.log(d);});
 
 var colors = {ingredient:"blue",category:"red",form:"green"};
 // Per-type markers, as they don't inherit styles.
