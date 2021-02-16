@@ -6,9 +6,35 @@ title: Somm Into the Model
 	<p class="xkcd">Welcome to Somm Into the Model! This website is still under active developement.</p>
 
 	<hr>
-	<img src="/cover_noir.jpg" alt="sketch0" width="280" align=”left” hspace=”20” vspace=”20”>
+	<div class="w3-content w3-display-container">
+		<img class="mySlides" src="/cover_noir.jpg" alt="sketch0" style="width:30%" align="middle">
+	<img class="mySlides" src="/cover_vivid.jpg" alt="sketch1" style="width:30%" align="middle">
+	<img class="mySlides" src="/cover.jpg" alt="sketch2" style="width:30%" align="middle">
+	<button class="w3-button w3-display-left" onclick="plusDivs(-1)" align="left">&#10094;</button>
+	<button class="w3-button w3-display-right" onclick="plusDivs(+1)" align="right">&#10095;</button>
+	</div>
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+  	showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+ 	 var i;
+ 	 var x = document.getElementsByClassName("mySlides");
+ 	 if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+<!-- 	<img src="/cover_noir.jpg" alt="sketch0" width="280" align=”left” hspace=”20” vspace=”20”>
 	<img src="/cover_vivid.jpg" alt="sketch1" width="280" align=”left” hspace=”20” vspace=”20”>
-	<img src="/cover.jpg" alt="sketch2" width="280" align=”left” hspace=”20” vspace=”20”>
+	<img src="/cover.jpg" alt="sketch2" width="280" align=”left” hspace=”20” vspace=”20”> -->
 	<p class="xkcd"> There are <em>three distinctive ways</em> to navigate through this website as each section consists of <em>three distinctive parts</em> that can be read separately:</p>
 	<ul>
 		<li><b class="xkcd">Visualization</b>: each section starts with an interactive visualization (or visualizations) that encapsulates (encapsulate) the topic of the section, followed with descriptions of data sources, how to interact with the visualization, and any interesting insights wherein;</li>
