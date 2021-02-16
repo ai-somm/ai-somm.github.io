@@ -1,5 +1,5 @@
 
-d3.tsv("https://ai-somm.github.io/vintage/jrvintages_score_uni.tsv", function loadCallback(error, data) {
+d3.tsv("jrvintages_score_uni.tsv", function loadCallback(error, data) {
                 data.forEach(function(d) { // convert strings to numbers
                     d.uniscore = +d.uniscore;
                     d.year = +d.year;
