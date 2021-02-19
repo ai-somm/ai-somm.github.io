@@ -1,24 +1,28 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Map & Globe</title>
+---
+layout: globe
+title: World of Wine
+---
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
 
+
     <!-- Leaflet.js, a geographic mapping library. -->
     <link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.5/leaflet.css" /> 
     <script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.5/leaflet.js"></script>
 
-    <!-- A functional reactive model library. github.com/curran/model -->
-    <script src="https://curran.github.io/model/cdn/model-v0.2.4.js"></script>
+    <!-- A functional reactive model library. github.com/curran/model 
+    <script src="https://curran.github.io/model/cdn/model-v0.2.4.js"></script>-->
+    <script src="model-v0.2.4.js"></script>
 
-    <!-- Chiasm core and plugins. github.com/chiasm-project -->
-    <script src="https://chiasm-project.github.io/chiasm/chiasm-v0.2.0.js"></script>
-    <script src="https://chiasm-project.github.io/chiasm-component/chiasm-component-v0.2.0.js"></script>
-    <script src="https://chiasm-project.github.io/chiasm-layout/chiasm-layout-v0.2.1.js"></script>
+    <!-- Chiasm core and plugins. github.com/chiasm-project 
+    <script src="https://chiasm-project.github.io/chiasm/chiasm-v0.2.0.js"></script>-->
+    <script src="chiasm-v0.2.0.js"></script>
+     <!-- <script src="https://chiasm-project.github.io/chiasm-component/chiasm-component-v0.2.0.js"></script>-->
+    <script src="chiasm-component-v0.2.0.js"></script>
+    <!--<script src="https://chiasm-project.github.io/chiasm-layout/chiasm-layout-v0.2.1.js"></script>-->
+    <script src="chiasm-layout-v0.2.1.js"></script>
 
     <!-- Custom Chiasm plugins for this example. -->
     <script src="links.js"></script>
@@ -27,22 +31,18 @@
 
     <style>
 
-      body {
-        background-color: black;
-      }
-
       /* Make the chart container fill the page using CSS. */
       #chiasm-container {
         position: fixed;
         left: 20px;
         right: 20px;
-        top: 20px;
-        bottom: 20px;
+        top: 100px;
+        bottom: 100px;
       }
     </style>
 
   </head>
-  <body>
+
     <div id="chiasm-container"></div>
 
     <script>
@@ -90,5 +90,3 @@
       });
     
     </script>
-  </body>
-</html>
