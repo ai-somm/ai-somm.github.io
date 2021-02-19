@@ -17,8 +17,9 @@ function ChiasmLeaflet() {
 
   // Add the black & white style map layer.
   // Found by browsing http://leaflet-extras.github.io/leaflet-providers/preview/
-  L.tileLayer("http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png").addTo(map);
-  // Also try this http://{s}.tiles.earthatlas.info/natural-earth/{z}/{x}/{y}.png
+  //L.tileLayer("http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png").addTo(map);
+  L.tileLayer("http://{s}.tiles.earthatlas.info/natural-earth/{z}/{x}/{y}.png").addTo(map);
+  // Also try this 
 
   function getCenter(){
     var center = map.getCenter();
