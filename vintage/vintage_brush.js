@@ -162,7 +162,7 @@ canvas.append("g")
     .attr("x", width) // x-offset from the xAxis, move label all the way to the right
      .attr("y", -6)    // y-offset from the xAxis, moves text UPWARD!
     .style("text-anchor", "end") // right-justify text
-    .styles({ fill:"none", stroke:"#FFFFFF",  "stroke-width":"10" })
+    .style("stroke", "#fff")
      .text("Vintage");
 
 canvas.append("g")
@@ -174,7 +174,7 @@ canvas.append("g")
   .attr("transform", "rotate(-90)") // although axis is rotated, text is not
   .attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
   .style("text-anchor", "end")
-  .styles({ fill:"none", stroke:"#FFFFFF",  "stroke-width":"10" })
+  .style("stroke", "#fff")
   .text("Sentiment");
 
 
@@ -233,7 +233,7 @@ function brushend() {
       .attr("y", 460)
       .attr("x", 825)
       .attr("class", "clear-button")
-      .styles({ fill:"none", stroke:"#FFFFFF",  "stroke-width":"10" })
+      .style("stroke", "#fff")
       .text("Clear Brush");
   }
 
