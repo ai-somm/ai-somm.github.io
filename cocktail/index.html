@@ -17,12 +17,12 @@ path.link.category {
 }
  
 path.link.ingredient {
-  stroke:blue
+  stroke:aqua
   ;
 }
  
 path.link.form {
-  stroke:green;
+  stroke:ivory;
 }
 circle {
   fill: #ccc;
@@ -931,7 +931,7 @@ var tip = d3.tip().attr('class','d3-tip')
 //   var x = d.type == "cocktail"? d.text : y;
 //   return "<span>" + x +  "</span>";});
 
-var colors = {ingredient:"blue",category:"red",form:"green"};
+var colors = {ingredient:"aqua",category:"red",form:"ivory"};
 // Per-type markers, as they don't inherit styles.
 svg.append("defs").selectAll("marker")
     .data(["category", "ingredient", "form"])
