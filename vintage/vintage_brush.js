@@ -17,7 +17,7 @@ d3.helper.tooltip = function(){
             tooltipDiv.style({
                 //left: (absoluteMousePos[0])+'px',
                 //top: (absoluteMousePos[1])+'px',
-                'background-color': '#d8d5e4',
+                'background-color': 'black',
                 'color': 'red',
                 //width: '200px',
                 //height: '80px',
