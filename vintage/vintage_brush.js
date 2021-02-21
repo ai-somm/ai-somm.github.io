@@ -161,7 +161,7 @@ canvas.append("g")
     .attr("class", "label")
     .attr("x", width) // x-offset from the xAxis, move label all the way to the right
      .attr("y", -6)    // y-offset from the xAxis, moves text UPWARD!
-    .style("text-anchor", "end") // right-justify text
+    .style("text-anchor", "middle") // right-justify text
     .style("stroke", "#fff")
      .text("Vintage");
 
@@ -173,7 +173,7 @@ canvas.append("g")
   .attr("class", "label")
   .attr("transform", "rotate(-90)") // although axis is rotated, text is not
   .attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
-  .style("text-anchor", "end")
+  .style("text-anchor", "middle")
   .style("stroke", "#fff")
   .text("Sentiment");
 
