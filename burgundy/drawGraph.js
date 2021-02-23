@@ -27,15 +27,15 @@ function drawGraph(xText, yText) {
 	var cValue = function(d) { return d.Conf;},
 		color = d3.scale.category20();
 
-	// add the graph canvas to the vis-container of the webpage
-	var svg = d3.select("vis-container").append("svg")
+	// add the graph canvas to the body of the webpage
+	var svg = d3.select("body").append("svg")
 		.attr("width", width + margin.left + margin.right)
 		.attr("height", height + margin.top + margin.bottom)
 	  .append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 	// add the tooltip area to the webpage
-	var tooltip = d3.select("vis-container").append("div")
+	var tooltip = d3.select("body").append("div")
 		.attr("class", "tooltip")
 		.style("opacity", 0);
 
