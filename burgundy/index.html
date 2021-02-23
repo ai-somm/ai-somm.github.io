@@ -36,7 +36,7 @@ h1 {
 		}	
 </style>
 
-<p><span><label for="y-axis">Select y-axis</label></span>
+<p><span><label for="y-axis" class="xkcd">Select y-axis</label></span>
 <select id="y-value">
   <option value="Cmp">Cmp</option>
   <option value="Passing Attempts">Passing Attempts</option>
@@ -52,7 +52,7 @@ h1 {
   <option value="Rushing Avg">Rushing Avg</option>
   <option value="Rushing TD">Rushing TD</option>
 </select>
-<p><span><label for="x-axis">Select x-axis</label></span>
+<p><span><label for="x-axis" class="xkcd">Select x-axis</label></span>
 <select id="x-value">
   <option value="Cmp">Cmp</option>
   <option value="Passing Attempts">Passing Attempts</option>
@@ -69,152 +69,10 @@ h1 {
   <option value="Rushing TD">Rushing TD</option>
 </select>
 
-<button onclick="setGraph()">submit</button>
+<button onclick="setGraph()" class="xkcd">submit</button>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <div id="vis-container"><script language="javascript" type="text/javascript" src="drawGraph.js"></script></div>
-<script>
 
-function drawGraph(xText, yText) {
-	$('svg').remove();
-	var margin = {top: 20, right: 20, bottom: 30, left: 40},
-		width = 960 - margin.left - margin.right,
-		height = 500 - margin.top - margin.bottom;
-
-	/* 
-	 * value accessor - returns the value to encode for a given data object.
-	 * scale - maps value to a visual display encoding, such as a pixel position.
-	 * map function - maps from data value to display value
-	 * axis - sets up axis
-	 */ 
-
-	// setup x 
-	var xValue = function(d) { return d[xText];}, // data -> value
-		xScale = d3.scale.linear().range([0, width]), // value -> display
-		xMap = function(d) { return xScale(xValue(d));}, // data -> display
-		xAxis = d3.svg.axis().scale(xScale).orient("bottom");
-
-	// setup y
-	var yValue = function(d) { return d[yText];}, // data -> value
-		yScale = d3.scale.linear().range([height, 0]), // value -> display
-		yMap = function(d) { return yScale(yValue(d));}, // data -> display
-		yAxis = d3.svg.axis().scale(yScale).orient("left");
-
-	// setup fill color
-	var cValue = function(d) { return d.Conf;},
-		color = d3.scale.category20();
-
-	// add the graph canvas to the body of the webpage
-	var svg = d3.select("body").append("svg")
-		.attr("width", width + margin.left + margin.right)
-		.attr("height", height + margin.top + margin.bottom)
-	  .append("g")
-		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-	// add the tooltip area to the webpage
-	var tooltip = d3.select("body").append("div")
-		.attr("class", "tooltip")
-		.style("opacity", 0);
-
-	// load data
-	d3.csv("passing-stats-2014.csv", function(error, data) {
-
-	  // change string (from CSV) into number format
-	  data.forEach(function(d) {
-		d[yText] = +d[yText];
-		d[xText] = +d[xText];
-	//console.log (d.School);
-	//console.dir (d);
-	  });
-
-	  // don't want dots overlapping axis, so add in buffer to data domain
-	  xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
-	  yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
-
-	// scales w/o extra padding
-	//  xScale.domain([d3.min(data, xValue), d3.max(data, xValue)]);
-	//  yScale.domain([d3.min(data, yValue), d3.max(data, yValue)]);
-
-	  // x-axis
-	  svg.append("g")
-		  .attr("class", "x axis")
-		  .attr("transform", "translate(0," + height + ")")
-		  .call(xAxis)
-		.append("text")
-		  .attr("class", "label")
-		  .attr("x", width)
-		  .attr("y", -6)
-		  .style("text-anchor", "end")
-		  .style("stroke", "#fff")
-		  .text(xText);
-
-	  // y-axis
-	  svg.append("g")
-		  .attr("class", "y axis")
-		  .call(yAxis)
-		.append("text")
-		  .attr("class", "label")
-		  .attr("transform", "rotate(-90)")
-		  .attr("y", 6)
-		  .attr("dy", ".71em")
-		  .style("text-anchor", "end")
-		  .style("stroke", "#fff")
-		  .text(yText);
-
-	  // draw dots
-	  svg.selectAll(".dot")
-		  .data(data)
-		.enter().append("circle")
-		  .attr("class", "dot")
-		  .attr("r", 3.5)
-		  .attr("cx", xMap)
-		  .attr("cy", yMap)
-		  .style("fill", function(d) { return color(cValue(d));}) 
-		  .on("mouseover", function(d) {
-			  tooltip.transition()
-				   .duration(200)
-				   .style("opacity", .9);
-			  tooltip.html(d["Player"] + "<br/> " + d.School + "<br/>(" + xValue(d) 
-				+ ", " + yValue(d) + ")")
-				   .style("left", (d3.event.pageX + 10) + "px")
-				   .style("top", (d3.event.pageY - 28) + "px");
-		  })
-		  .on("mouseout", function(d) {
-			  tooltip.transition()
-				   .duration(500)
-				   .style("opacity", 0);
-		  });
-
-	  // draw legend
-	  var legend = svg.selectAll(".legend")
-		  .data(color.domain())
-		.enter().append("g")
-		  .attr("class", "legend")
-		  .attr("transform", function(d, i) { return "translate(10," + (i+7) * 20 + ")"; });
-
-	  // draw legend colored rectangles
-	  legend.append("rect")
-		  .attr("x", width - 18)
-		  .attr("width", 18)
-		  .attr("height", 18)
-		  .style("fill", color);
-
-	  // draw legend text
-	  legend.append("text")
-		  .attr("x", width - 24)
-		  .attr("y", 9)
-		  .attr("dy", ".35em")
-		  .style("text-anchor", "end")
-		  .style("stroke", "#fff")
-		  .text(function(d) { return d;})
-	});
-}
-
-drawGraph('Passing TD', 'Rushing TD');
-
-function setGraph() {
-	drawGraph($('#x-value').val(), $('#y-value').val());
-}
-</script>
 </div>
