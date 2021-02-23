@@ -1,80 +1,4 @@
----
-layout: default
-title: Burgundy
----
-<div class="blurb">
-  <style>
-body {
-  font: 16px sans-serif;
-  background-color: black;
-  color: white;
-}
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #fff;
-  shape-rendering: crispEdges;
-}
-
-.dot {
-  stroke: #fff;
-}
-
-.tooltip {
-  position: absolute;
-  width: 200px;
-  height: 28px;
-  pointer-events: none;
-}
-h1 {
-		text-align: center;
-		}
-
-		h2 {
-		text-align: left;
-		}	
-</style>
-
-<p><span><label for="y-axis">Select y-axis</label></span>
-<select id="y-value">
-  <option value="Cmp">Cmp</option>
-  <option value="Passing Attempts">Passing Attempts</option>
-  <option value="Pct">Pct</option>
-  <option value="Passing Yards">Passing Yards</option> 
-  <option value="Y/A">Y/A</option>
-  <option value="AY/A">AY/A</option>
-  <option value="Passing TD">Passing TD</option>
-  <option value="Interceptions">Interceptions</option>
-  <option value="Rates">Rates</option>
-  <option value="Rushing Attempts">Rushing Attempts</option>
-  <option value="Rushing Yards">Rushing Yards</option>
-  <option value="Rushing Avg">Rushing Avg</option>
-  <option value="Rushing TD">Rushing TD</option>
-</select>
-<p><span><label for="x-axis">Select x-axis</label></span>
-<select id="x-value">
-  <option value="Cmp">Cmp</option>
-  <option value="Passing Attempts">Passing Attempts</option>
-  <option value="Pct">Pct</option>
-  <option value="Passing Yards">Passing Yards</option> 
-  <option value="Y/A">Y/A</option>
-  <option value="AY/A">AY/A</option>
-  <option value="Passing TD">Passing TD</option>
-  <option value="Interceptions">Interceptions</option>
-  <option value="Rates">Rates</option>
-  <option value="Rushing Attempts">Rushing Attempts</option>
-  <option value="Rushing Yards">Rushing Yards</option>
-  <option value="Rushing Avg">Rushing Avg</option>
-  <option value="Rushing TD">Rushing TD</option>
-</select>
-
-<button onclick="setGraph()">submit</button>
-
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-<div id="vis-container"><script language="javascript" type="text/javascript" src="drawGraph.js"></script></div>
-<script>
 
 function drawGraph(xText, yText) {
 	$('svg').remove();
@@ -105,15 +29,15 @@ function drawGraph(xText, yText) {
 	var cValue = function(d) { return d.Conf;},
 		color = d3.scale.category20();
 
-	// add the graph canvas to the body of the webpage
-	var svg = d3.select("body").append("svg")
+	// add the graph canvas to the vis-container of the webpage
+	var svg = d3.select("vis-container").append("svg")
 		.attr("width", width + margin.left + margin.right)
 		.attr("height", height + margin.top + margin.bottom)
 	  .append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 	// add the tooltip area to the webpage
-	var tooltip = d3.select("body").append("div")
+	var tooltip = d3.select("vis-container").append("div")
 		.attr("class", "tooltip")
 		.style("opacity", 0);
 
@@ -216,5 +140,3 @@ drawGraph('Passing TD', 'Rushing TD');
 function setGraph() {
 	drawGraph($('#x-value').val(), $('#y-value').val());
 }
-</script>
-</div>
