@@ -1,5 +1,3 @@
-
-
 function drawGraph(xText, yText) {
 	$('svg').remove();
 	var margin = {top: 20, right: 20, bottom: 30, left: 40},
