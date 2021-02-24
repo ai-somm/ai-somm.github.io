@@ -24,7 +24,7 @@ function drawGraph(xText, yText) {
 		yAxis = d3.svg.axis().scale(yScale).orient("left");
 
 	// setup fill color
-	var cValue = function(d) { return d.Commune;},
+	var cValue = function(d) { return d.Conf;},
 		color = d3.scale.category20();
 
 	// add the graph canvas to the body of the webpage
@@ -46,7 +46,7 @@ function drawGraph(xText, yText) {
 	  data.forEach(function(d) {
 		d[yText] = +d[yText];
 		d[xText] = +d[xText];
-	//console.log (d.Parcel);
+	//console.log (d.School);
 	//console.dir (d);
 	  });
 
@@ -89,7 +89,7 @@ function drawGraph(xText, yText) {
 		  .data(data)
 		.enter().append("circle")
 		  .attr("class", "dot")
-		  .attr("r", 5.5)
+		  .attr("r", 3.5)
 		  .attr("cx", xMap)
 		  .attr("cy", yMap)
 		  .style("fill", function(d) { return color(cValue(d));}) 
@@ -97,7 +97,7 @@ function drawGraph(xText, yText) {
 			  tooltip.transition()
 				   .duration(200)
 				   .style("opacity", .9);
-			  tooltip.html(d["Domaine"] + "<br/> " + d.Parcel + "<br/>(" + xValue(d) 
+			  tooltip.html(d["Player"] + "<br/> " + d.School + "<br/>(" + xValue(d) 
 				+ ", " + yValue(d) + ")")
 				   .style("left", (d3.event.pageX + 10) + "px")
 				   .style("top", (d3.event.pageY - 28) + "px");
@@ -133,7 +133,7 @@ function drawGraph(xText, yText) {
 	});
 }
 
-drawGraph('New Oak', 'Wholecluster');
+drawGraph('Passing TD', 'Rushing TD');
 
 function setGraph() {
 	drawGraph($('#x-value').val(), $('#y-value').val());
