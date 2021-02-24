@@ -40,7 +40,7 @@ function drawGraph(xText, yText) {
 		.style("opacity", 0);
 
 	// load data
-	d3.csv("passing-stats-2014.csv", function(error, data) {
+	d3.csv("Burgundy.csv", function(error, data) {
 
 	  // change string (from CSV) into number format
 	  data.forEach(function(d) {
