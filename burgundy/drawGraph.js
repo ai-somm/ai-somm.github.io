@@ -133,7 +133,7 @@ function drawGraph(xText, yText) {
 	});
 }
 
-drawGraph('New Oak', 'Wholecluster');
+drawGraph('New Oak', 'Barrel Aging (Month)');
 
 function setGraph() {
 	drawGraph($('#x-value').val(), $('#y-value').val());
