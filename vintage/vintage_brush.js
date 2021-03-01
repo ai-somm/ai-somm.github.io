@@ -89,7 +89,7 @@ d3.helper.tooltip = function(){
 // }
 // console.log(data);
 
-d3.tsv("https://ai-somm.com/vintage/jrvintages_score1.tsv", function loadCallback(error, data) {
+d3.tsv("https://ai-somm.com/vintage/jrvintages_score_uni.tsv", function loadCallback(error, data) {
                 data.forEach(function(d) { // convert strings to numbers
                     d.uniscore = +d.uniscore;
                     d.year = +d.year;
