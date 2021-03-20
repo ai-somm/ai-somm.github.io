@@ -58,7 +58,9 @@ div.d3-tip {
 <body>
 <script src="d3.v3.min.js"></script>
 <script src="d3.tip.v0.6.3.js"></script>
+<div id="chart" align="center">
 <h4 class='xkcd' style="color:purple;" name="winetalk">Visualization</h4>
+</div>
 <script>
 
 // var nodes = {};
@@ -913,7 +915,7 @@ var force = d3.layout.force()
     .on("tick", tick)
     .start();
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#chart").append("svg")
     .attr("width", width)
     .attr("height", height);
 
