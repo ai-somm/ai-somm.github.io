@@ -1,0 +1,113 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Domaine Simon Bize",
+        "description": "Iconic winery started by Simon Bize, suceeded by Patrick Bize, whose wife Chisa Bize and sister Marielle Bize are winemakers now.",
+        "address": "12 Rue Chanoine Donin, 21420 Savigny-lès-Beaune, France"
+      },
+      "geometry": {
+        "coordinates": [4.8156, 47.0619],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Domaine Comtes Lafon",
+        "description": "Iconic Meursault producer heralded by Dominique Lafon, joined by new generation Lea and Pierre Lafon.",
+        "address": "5 Rue Pierre Joigneaux, Meursault 21190, Burgundy"
+      },
+      "geometry": {
+        "coordinates": [4.7713, 46.9801],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "DOMAINE ARNAUD ENTE",
+        "description": "Arnaud and his wife, Marie-Odile, work primarily on their own to craft an exquisite range of micro-production white Burgundies from Meursault and Puligny-Montrachet. Precision, purity, elegance, and finesse are the best descriptors of the Ente style.",
+        "address": "12 Rue de Mazeray, 21190 Meursault, France"
+      },
+      "geometry": {
+        "coordinates": [4.770382968548151, 46.97529660560525],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Domaine Marquis d'Angerville",
+        "description": "Iconic Volnay producer with monopole Clos des Ducs",
+        "address": "4 Rue de Mont, 21190 Volnay, France"
+      },
+      "geometry": {
+        "coordinates": [4.780827657670231, 47.00278653566156],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Domaine Sylvain Pataille",
+        "description": "Iconic Marsannay producer who pioneered single-vineyard Aligote Dore bottling.",
+        "address": "14 Rue Neuve, 21160 Marsannay-la-Côte, France"
+      },
+      "geometry": {
+        "coordinates": [4.990297231491092, 47.27098658650348],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Domaine Romanée Conti",
+        "description": "The most iconic Burgundy producer of all time, owned by Aubert de Vaillaine and Leroy families.",
+        "address": "1 Place de l'Église, 21700 Vosne-Romanée, France"
+      },
+      "geometry": {
+        "coordinates": [4.955048663914937,47.1622086965405],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Domaine Jean Grivot",
+        "description": "One of the iconic and pioneering domaines in Burgundy in 1980s",
+        "address": "6 Rue de la Croix Rameau, 21700 Vosne-Romanée, France"
+      },
+      "geometry": {
+        "coordinates": [4.95570342115825, 47.16264208139241],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Domaine Raveneau",
+        "description": "The most iconic Chablis producer by Raveneau Francois.",
+        "address": "9 Rue de Chichée, 89800 Chablis, France"
+      },
+      "geometry": {
+        "coordinates": [3.8021346454709337,47.8113079219589],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Domaine Hubert et Laurent Lignier",
+        "description": "One of the most iconic producers in Morey-Saint-Denis.",
+        "address": "45 Gr Grande Rue, 21220 Morey-Saint-Denis, France"
+      },
+      "geometry": {
+        "coordinates": [4.965148959044966,47.19495977418429],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

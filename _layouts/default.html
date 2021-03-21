@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
- 
+  <meta charset='utf-8' />
     <title>{{ page.title }}</title>
     <!--<link rel="stylesheet" href="/css/main.css">-->
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
@@ -11,7 +11,22 @@
   <script src="https://ai-somm.com/d3.v4.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
 <link rel="stylesheet" href="https://ai-somm.github.io/font-awesome.min.css">
+
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+
 <style>
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
 
 .fa {
   padding: 7px;
