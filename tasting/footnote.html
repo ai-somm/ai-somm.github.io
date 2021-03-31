@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+</head>
+<body>
+
+<p>I am a sentence that needs some additional information<sup><a href="#footnote-1-text" rel="footnote" id="footnote-1-link">1</a></sup></p>
+
+<h4>Footnotes</h4>
+
+<ol>
+	<li id="footnote-1-text">This is some more information. <a href="#footnote-1-link">Back</a></li>
+</ol>
+
+<script>
+	$('a[rel="footnote"]').hover(
+		function(){
+			$($(this).attr('href')).addClass('hovering');
+		},
+		function(){
+			$($(this).attr('href')).removeClass('hovering');
+		}
+	);
+</script>
+</body></html>
