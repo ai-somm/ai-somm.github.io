@@ -8,7 +8,7 @@ brandy,Maraschino liqueur,curaçao,lemon juice,sugar syrup,Angostura bitters
 gin,Maraschino liqueur,orange bitters,lemon juice
 gin,lemon juice,raspberry syrup,egg white
 rum,lime juice,sugar
-gin,Vermouth,a lemon twist
+gin,Vermouth,a lemon twist,olives
 gin,lemon juice,sugar,soda water
 gin,sweet Vermouth,Fernet-Branca
 soda water,London dry gin,lemon juice,sugar
