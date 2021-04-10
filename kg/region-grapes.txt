@@ -1,47 +1,303 @@
 ITALY
 VALLE D’AOSTA 
-Reds Cornalin Fumin Mayolet Nebbiolo (Picotener) Petit Rouge Prëmetta (Prié Rouge) Vuillermin Whites Moscato Bianco Prié PIEDMONT Reds Barbera Brachetto Barbera Croatina Dolcetto Freisa Grignolino Malvasia di Casorzo Malvasia di Schierano Moscato Bianco Moscato Nero Nebbiolo Pelaverga Ruché Uva Rara Vespolina Whites Arneis Cortese Erbaluce Moscato Bianco Nascetta Timorasso Vermentino (Favorita) 
-LOMBARDY Reds Barbera Croatina Groppello Moscato di Scanzo Nebbiolo (Chiavennasca) Uva Rara Vespolina Whites Moscato Bianco Verdea 
-TRENTINO-ALTO ADIGE Reds Enantio Lagrein Marzemino Moscato Rosa Schiava Teroldego Whites Moscato Giallo Nosiola 
-VENETO Reds Casetta Corvina Corvinone Croatina Molinara Raboso Rondinella Whites Durella Garganega Glera Marzemina Bianca Moscato Verdicchio (Trebbiano di Soave) Verdiso Vespaiola 
-FRIULI VENEZIA GIULIA Reds Pignolo Refosco Schioppettino Tazzelenghe Whites Malvasia Istriana Picolit Ribolla Gialla Tocai Friulano Verduzzo Friulano Vitovska 
-LIGURIA 
-Reds Dolcetto (Ormeasco) Rossese Whites Albarola Bosco Pigato Vermentino 
-EMILIA-ROMAGNA 
-Reds Barbera Centesimino Lambrusco Sangiovese Uva Longanesi Whites Albana Pignoletto Malvasia di Candia Aromatica Trebbiano Romagnolo 
-TUSCANY 
+Reds Cornalin Fumin Mayolet Nebbiolo (Picotener) Petit Rouge Prëmetta (Prié Rouge) Vuillermin Whites Moscato Bianco Prié 
+PIEDMONT 
+Reds Barbera
+Brachetto
+Barbera
+Croatina
+Dolcetto
+Freisa
+Grignolino
+Malvasia di Casorzo
+Malvasia di Schierano
+Moscato Bianco
+Moscato Nero
+Nebbiolo
+Pelaverga
+Ruché
+Uva Rara
+Vespolina
+Whites
+Arneis
+Cortese
+Erbaluce
+Moscato
+Bianco
+Nascetta
+Timorasso
+Vermentino
+(Favorita)
+
+LOMBARDY
+Reds
+Barbera
+Croatina
+Groppello
+Moscato di Scanzo
+Chiavennasca
+Uva Rara
+Vespolina
+Whites
+Moscato Bianco
+Verdea
+
+
+TRENTINO-ALTO ADIGE 
 Reds 
-Aleatico Canaiolo Nero Ciliegiolo Colorino Malvasia Nera Sangiovese 
-Whites 
-Ansonica Biancone Malvasia Bianca Lunga Moscato Bianco Trebbiano Toscano Vernaccia di San Gimignano 
-UMBRIA 
-Reds 
-Cornetta Sagrantino Sangiovese 
-Whites Grechetto Trebbiano Spoletino 
-MARCHE 
-Reds 
-Lacrima Montepulciano Sangiovese Vernaccia Nera Whites 
-Biancame Cococciola Passerina Pecorino Verdicchio 
-LAZIO 
-Reds 
-Aleatico Cesanese Montepulciano (Violone) Nero Buono Sangiovese Whites Bellone Bombino Bianco Malvasia Bianca di Candia Malvasia del Lazio Moscato di Terracina Passerina Trebbiano Toscano ABRUZZO Reds Montepulciano Sangiovese 
-Whites 
-Montonico Bianco Pecorino Trebbiano Abruzzese 
-CAMPANIA 
-Reds 
-Aglianico Pallagrello Nero Piedirosso 
-Whites 
-Asprinio Biancolella Coda di Volpe Bianca Falanghina Fiano Forastera Greco Pallagrello Bianco 
-MOLISE 
-Reds Montepulciano Sangiovese Tintilia 
-Whites Cococciola 
-PUGLIA 
-Reds Aleatico Bombino Nero Malvasia Nera Negro Amaro Primitivo Susumaniello Uva di Troia Whites Bianco d’Alessano Bombino Bianco Malvasia Bianca Moscato Bianco Pampanuto Verdeca 
-BASILICATA Reds Aglianico Whites Malvasia Bianca di Basilicata Moscato Bianco CALABRIA Reds Gaglioppo Magliocco Whites Malvasia di Lipari (Greco Bianco) Mantonico Bianco SARDINIA Reds Cagnulari Cannonao (Grenache) Carignano Whites Malvasia di Lipari (Malvasia di Sardegna) Nuragus Vermentino Vernaccia di Oristano 
-SICILY Reds Frappato Nerello Cappuccio Nerello Mascalese Nero d’Avola (Calabrese) Nocera Perricone Whites Ansonica (Inzolia) Carricante Catarratto Bianco Grillo Malvasia di Lipari Moscato Bianco Zibibbo (Muscat of Alexandria)
+Enantio
+Lagrein
+Marzemino
+Moscato
+Rosa
+Schiava
+Teroldego
+
+Whites
+Moscato Giallo
+Nosiola
+
+VENETO
+Reds
+Casetta
+Corvina
+Corvinone
+Croatina
+Molinara
+Raboso
+Rondinella
+Whites
+Durella
+Garganega
+Glera
+Marzemina Bianca
+Moscato
+Verdicchio
+(Trebbiano di Soave)
+Verdiso
+Vespaiola
+
+FRIULI VENEZIA GIULIA Reds 
+Pignolo
+Refosco
+Schioppettino
+Tazzelenghe
+Whites
+Malvasia Istriana
+Picolit
+Ribolla Gialla
+Tocai Friulano
+Verduzzo Friulano
+Vitovska
+
+LIGURIA
+
+Reds
+Dolcetto
+(Ormeasco)
+Rossese
+Whites
+Albarola
+Bosco
+Pigato
+Vermentino
+
+EMILIA-ROMAGNA
+
+Reds
+Barbera
+Centesimino
+Lambrusco
+Sangiovese
+Uva Longanesi
+Whites
+Albana
+Pignoletto
+Malvasia di Candia
+Aromatica
+Trebbiano Romagnolo
+
+TUSCANY
+
+Reds
+
+Aleatico
+Canaiolo Nero
+Ciliegiolo
+Colorino
+Malvasia Nera
+Sangiovese
+
+Whites
+
+Ansonica
+Biancone
+Malvasia Bianca Lunga
+Moscato Bianco
+Trebbiano Toscano
+Vernaccia di San Gimignano
+
+UMBRIA
+
+Reds
+
+Cornetta
+Sagrantino
+Sangiovese
+
+Whites
+Grechetto
+Trebbiano Spoletino
+
+MARCHE
+
+Reds
+
+Lacrima
+Montepulciano
+Sangiovese
+Vernaccia Nera
+Whites
+
+Biancame
+Cococciola
+Passerina
+Pecorino
+Verdicchio
+
+LAZIO
+
+Reds
+
+Aleatico
+Cesanese
+Montepulciano
+(Violone)
+Nero Buono
+Sangiovese
+Whites
+Bellone
+Bombino Bianco
+Malvasia Bianca di Candia
+Malvasia del Lazio
+Moscato di Terracina
+Passerina
+Trebbiano Toscano
+
+ABRUZZO
+Reds
+Montepulciano
+Sangiovese
+
+Whites
+
+Montonico Bianco
+Pecorino
+Trebbiano Abruzzese
+
+CAMPANIA
+
+Reds
+
+Aglianico
+Pallagrello Nero
+Piedirosso
+
+Whites
+
+Asprinio
+Biancolella
+Coda di Volpe Bianca
+Falanghina
+Fiano
+Forastera
+Greco
+Pallagrello Bianco
+
+MOLISE
+
+Reds
+Montepulciano
+Sangiovese
+Tintilia
+
+Whites
+Cococciola
+
+PUGLIA
+
+Reds
+Aleatico
+Bombino Nero
+Malvasia Nera
+Negro Amaro
+Primitivo
+Susumaniello
+Uva di Troia
+Whites
+Bianco d’Alessano
+Bombino
+Bianco
+Malvasia Bianca
+Moscato Bianco
+Pampanuto
+Verdeca
+
+BASILICATA
+Reds
+Aglianico
+Whites
+Malvasia
+Bianca di Basilicata
+Moscato
+Bianco
+
+CALABRIA
+Reds
+Gaglioppo
+Magliocco
+Whites
+Malvasia di Lipari
+(Greco Bianco)
+Mantonico
+Bianco
+
+SARDINIA
+Reds
+Cagnulari
+Cannonao
+(Grenache)
+Carignano
+Whites
+Malvasia di Lipari
+(Malvasia di Sardegna)
+Nuragus
+Vermentino
+Vernaccia di Oristano
+
+SICILY
+Reds
+Frappato
+Nerello Cappuccio
+Nerello Mascalese
+Nero d’Avola
+(Calabrese)
+Nocera
+Perricone
+Whites
+Ansonica
+(Inzolia)
+Carricante
+Catarratto Bianco
+Grillo
+Malvasia di Lipari
+Moscato Bianco
+Zibibbo
+(Muscat of Alexandria)
 
 PORTUGAL
-Vinho Verde: Monção, Melgaço, Lima, Basto, Cávado, Ave, Amarante, Baião, Sousa, Paiva
+Vinho Verde:
+Monção, Melgaço, Lima, Basto, Cávado, Ave, Amarante, Baião, Sousa, Paiva
 Whites
 Loureiro
 Trajadura
@@ -139,8 +395,6 @@ LEBANON
 
 ARMENIA
 
-
-
 GERMANY
 
 AUSTRIA
@@ -152,5 +406,3 @@ NEW ZEALAND
 AUSTRALIA
 
 SOUTH AFRICA
-
-
