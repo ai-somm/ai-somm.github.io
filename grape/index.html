@@ -2,7 +2,7 @@
 layout: default
 title: Grape Varieties 
 ---
-<div class="blurb">
+<h4 class='xkcd' style="color:purple;" name="winetalk">Visualizations</h4>
 <style>
 
 .links line {
@@ -22,9 +22,9 @@ text {
 }
 
 </style>
-<h4 class='xkcd' style="color:purple;" name="winetalk">Visualizations</h4>
-<svg width="1000" height="1000"></svg>
-<script src="/kg/d3.v4.min.js"></script>
+<svg width="1200" height="1200"></svg>
+
+<script src="d3.v4.min.js"></script>
 <script>
 
 var svg = d3.select("svg"),
@@ -38,7 +38,9 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-d3.json("grape0.json", function(error, graph) {
+//d3.json("burgundy01.json", function(error, graph) {
+//d3.json("burgundy02.json", function(error, graph) {
+d3.json("grapes0.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg.append("g")
@@ -112,10 +114,7 @@ function dragended(d) {
 }
 
 </script>
-
-	<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://ai-somm.com/grape/tsne3_sbf_guildsomm_grapes_flavor.html" height="800" width="100%"></iframe>
-
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://ai-somm.com/grape/tsne3_sbf_guildsomm_grapes_flavor.html" height="800" width="100%"></iframe>
 <h4 class='xkcd' style="color:fuchsia;" name="winetalk">Wine Talk</h4>
 
-	<h4 class='xkcd' style="color:aqua;" name="aitalk">AI Talk</h4>
-</div>
+  <h4 class='xkcd' style="color:aqua;" name="aitalk">AI Talk</h4>
