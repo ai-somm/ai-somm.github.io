@@ -133,6 +133,22 @@ nodes[nodes.group.isnull()]
 links[links.value.isna()]
 links[links.value.isnull()]
 
+# check if all nodes are connected
+linked_nodes = list(set(list(links.source) + list(links.target)))
+for node in nodes.id:
+    if node not in linked_nodes:
+        print(node)
+  
+node_dict = defaultdict(int)
+# check which nodes are duplicated
+for node in nodes.id:
+    if node_dict[node] == 0:
+        node_dict[node] += 1
+    else:
+        print(node)
+        
+    
+
 # crosswalk maps source-target-groups to link value
 # key: str(node_a.group)+"-"+str(node_b.group)
 crosswalk = defaultdict(int)
@@ -174,10 +190,11 @@ jsf = defaultdict(list)
 jsf['nodes'] = [{"id":ind, "group": grp} for ind, grp in zip(nodes.id, nodes.group)]
 jsf['links'] = [{"source": src, "target": tg, "value": vl} for src, tg, vl in zip(links.source, links.target, links.value)]
 
-filename = "grapes0"
+filename = "grapes01"
 
 
 if os.path.exists("/Users/sheng/ai-somm.github.io/grape/"+filename+".json"):
     print("no overeriting!!")
 else:
     with open("/Users/sheng/ai-somm.github.io/grape/"+filename+".json","w") as tjs:
+        ujson.dump(jsf, tjs)
