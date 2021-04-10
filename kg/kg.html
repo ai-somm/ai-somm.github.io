@@ -1,7 +1,9 @@
-<html>
-  <head>
-  <meta charset='utf-8' /></head>
-  <body>
+---
+layout: globe
+title: Knowledge Graph
+---
+ <h4 class='xkcd' style="color:purple;" name="winetalk">Visualization</h4>
+
 <style>
 
 .links line {
@@ -37,9 +39,9 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-//d3.json("miserables.json", function(error, graph) {
 //d3.json("burgundy01.json", function(error, graph) {
 d3.json("burgundy02.json", function(error, graph) {
+//d3.json("grapes0.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg.append("g")
@@ -113,5 +115,9 @@ function dragended(d) {
 }
 
 </script>
-</body>
-</html>
+ 
+  <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://ai-somm.com/globe/mapbox0.html" height="800" width="100%"></iframe>
+
+    <h4 class='xkcd' style="color:fuchsia;" name="winetalk">Wine Talk</h4>
+
+  <h4 class='xkcd' style="color:aqua;" name="aitalk">AI Talk</h4>
