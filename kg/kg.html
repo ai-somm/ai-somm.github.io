@@ -1,7 +1,7 @@
----
-layout: default
-title: Knowledge Graph
----
+<html>
+  <head>
+  <meta charset='utf-8' /></head>
+  <body>
 <style>
 
 .links line {
@@ -37,9 +37,9 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
+//d3.json("miserables.json", function(error, graph) {
 //d3.json("burgundy01.json", function(error, graph) {
-//d3.json("burgundy02.json", function(error, graph) {
-d3.json("grapes0.json", function(error, graph) {
+d3.json("burgundy02.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg.append("g")
@@ -113,3 +113,5 @@ function dragended(d) {
 }
 
 </script>
+</body>
+</html>

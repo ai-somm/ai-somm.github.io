@@ -236,8 +236,7 @@ Susumaniello
 Uva di Troia
 Whites
 Bianco d’Alessano
-Bombino
-Bianco
+Bombino Bianco
 Malvasia Bianca
 Moscato Bianco
 Pampanuto
@@ -247,10 +246,8 @@ BASILICATA
 Reds
 Aglianico
 Whites
-Malvasia
-Bianca di Basilicata
-Moscato
-Bianco
+Malvasia Bianca di Basilicata
+Moscato Bianco
 
 CALABRIA
 Reds
@@ -259,8 +256,7 @@ Magliocco
 Whites
 Malvasia di Lipari
 (Greco Bianco)
-Mantonico
-Bianco
+Mantonico Bianco
 
 SARDINIA
 Reds
