@@ -48,7 +48,7 @@
       {"name": "Latitude"},
       {"name": "Altitude"},
       {"name": "Mountain ranges"},
-            {"name": "Ocean currents"}      
+      {"name": "Ocean currents"}      
      ]
     },
     {
@@ -59,15 +59,15 @@
       {"name": "aspect"},
       {"name": "slope"}
       ]},
-            {"name": "Large bodies of water", 
-            "children": [
+      {"name": "Large bodies of water", 
+      "children": [
             {"name": "sea"},
             {"name": "river"},
             {"name": "lake"}
-            ]},
+        ]},
 
       {"name": "Vegetation", 
-      "children":[{"name":"forest stands"}]},
+      "children":[{"name":"forest stands"}]}
      ]
     },
     {
