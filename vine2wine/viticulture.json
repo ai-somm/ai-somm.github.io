@@ -11,49 +11,39 @@
 "name": "Temperate climate zone \u2014 the vine\u2019s natural home",
 "children": [
 {
-"name": "Maritime climates",
-"children": []
+"name": "Maritime climates"
 },
 {
-"name": "Mediterranean climates",
-"children": []
+"name": "Mediterranean climates"
 },
 {
-"name": "A Continental climates",
-"children": []
+"name": "A Continental climates"
 },
 {
-"name": "Continentality",
-"children": []
+"name": "Continentality"
 }
 ]
 },
 {
-"name": "Nontemperate climates",
-"children": []
+"name": "Nontemperate climates"
 },
 {
 "name": "Temperature as the driving force",
 "children": [
 {
-"name": "Heat degree days / heat summation",
-"children": []
+"name": "Heat degree days / heat summation"
 },
 {
-"name": "Biologically effective heat degree days",
-"children": []
+"name": "Biologically effective heat degree days"
 },
 {
-"name": "Mean temperature of the warmest month",
-"children": []
+"name": "Mean temperature of the warmest month"
 },
 {
-"name": "Growing season temperature",
-"children": []
+"name": "Growing season temperature"
 },
 {
-"name": "European Union zones of production",
-"children": []
+"name": "European Union zones of production"
 }
 ]
 }
@@ -63,39 +53,31 @@
 "name": "KEY CLIMATE PARAMETERS",
 "children": [
 {
-"name": "Temperature",
-"children": []
+"name": "Temperature"
 },
 {
-"name": "Sunlight",
-"children": []
+"name": "Sunlight"
 },
 {
 "name": "Precipitation",
 "children": [
 {
-"name": "dew",
-"children": []
+"name": "dew"
 },
 {
-"name": "fog",
-"children": []
+"name": "fog"
 },
 {
-"name": "mist",
-"children": []
+"name": "mist"
 },
 {
-"name": "rain",
-"children": []
+"name": "rain"
 },
 {
-"name": "hail",
-"children": []
+"name": "hail"
 },
 {
-"name": "sleet",
-"children": []
+"name": "sleet"
 }
 ]
 }
@@ -108,22 +90,18 @@
 "name": "Latitude",
 "children": [
 {
-"name": "snow",
-"children": []
+"name": "snow"
 }
 ]
 },
 {
-"name": "Altitude",
-"children": []
+"name": "Altitude"
 },
 {
-"name": "Mountain ranges",
-"children": []
+"name": "Mountain ranges"
 },
 {
-"name": "Ocean currents",
-"children": []
+"name": "Ocean currents"
 }
 ]
 },
@@ -134,12 +112,10 @@
 "name": "Topography",
 "children": [
 {
-"name": "aspect",
-"children": []
+"name": "aspect"
 },
 {
-"name": "slope",
-"children": []
+"name": "slope"
 }
 ]
 },
@@ -147,16 +123,13 @@
 "name": "Large bodies of water",
 "children": [
 {
-"name": "sea",
-"children": []
+"name": "sea"
 },
 {
-"name": "river",
-"children": []
+"name": "river"
 },
 {
-"name": "lake",
-"children": []
+"name": "lake"
 }
 ]
 },
@@ -164,20 +137,17 @@
 "name": "Vegetation",
 "children": [
 {
-"name": "forest stands",
-"children": []
+"name": "forest stands"
 }
 ]
 }
 ]
 },
 {
-"name": "CANOPY CLIMATE microclimate",
-"children": []
+"name": "CANOPY CLIMATE microclimate"
 },
 {
-"name": "CLIMATE CHANGE",
-"children": []
+"name": "CLIMATE CHANGE"
 }
 ]
 },
@@ -188,16 +158,13 @@
 "name": "SOIL PHYSICAL PROPERTIES",
 "children": [
 {
-"name": "Texture",
-"children": []
+"name": "Texture"
 },
 {
-"name": "Structure",
-"children": []
+"name": "Structure"
 },
 {
-"name": "Water and air",
-"children": []
+"name": "Water and air"
 }
 ]
 },
@@ -205,12 +172,10 @@
 "name": "BIOLOGICAL ASPECTS",
 "children": [
 {
-"name": "Organic matter and humus",
-"children": []
+"name": "Organic matter and humus"
 },
 {
-"name": "Soil Organisms",
-"children": []
+"name": "Soil Organisms"
 }
 ]
 },
@@ -221,18 +186,15 @@
 "name": "Nutrient status",
 "children": [
 {
-"name": "Macronutrients",
-"children": []
+"name": "Macronutrients"
 },
 {
-"name": "Micronutrients",
-"children": []
+"name": "Micronutrients"
 }
 ]
 },
 {
-"name": "Soil acidity and PH",
-"children": []
+"name": "Soil acidity and PH"
 }
 ]
 },
@@ -240,12 +202,10 @@
 "name": "SOIL TYPES \u2014 PARENT MATERIAL / BEDROCK",
 "children": [
 {
-"name": "Viticulturally important bedrocks",
-"children": []
+"name": "Viticulturally important bedrocks"
 },
 {
-"name": "Soil profile",
-"children": []
+"name": "Soil profile"
 }
 ]
 }
@@ -258,36 +218,28 @@
 "name": "PARTS OF THE VINE",
 "children": [
 {
-"name": "Roots",
-"children": []
+"name": "Roots"
 },
 {
-"name": "Trunk and arms",
-"children": []
+"name": "Trunk and arms"
 },
 {
-"name": "Buds and nodes",
-"children": []
+"name": "Buds and nodes"
 },
 {
-"name": "Shoots",
-"children": []
+"name": "Shoots"
 },
 {
-"name": "Canes",
-"children": []
+"name": "Canes"
 },
 {
-"name": "Leaves and petioles",
-"children": []
+"name": "Leaves and petioles"
 },
 {
-"name": "Tendrils",
-"children": []
+"name": "Tendrils"
 },
 {
-"name": "Inflorescences flowers berries and bunches",
-"children": []
+"name": "Inflorescences flowers berries and bunches"
 }
 ]
 },
@@ -295,85 +247,68 @@
 "name": "ANNUAL GROWTH CYCLE OF THE VINE",
 "children": [
 {
-"name": "Budburst and shoot growth vegetative cycle",
-"children": []
+"name": "Budburst and shoot growth vegetative cycle"
 },
 {
-"name": "Inflorescence initiation reproductive cycle",
-"children": []
+"name": "Inflorescence initiation reproductive cycle"
 },
 {
-"name": "Flowering or bloom reproductive cycle",
-"children": []
+"name": "Flowering or bloom reproductive cycle"
 },
 {
-"name": "Fruit set or berry set reproductive cycle",
-"children": []
+"name": "Fruit set or berry set reproductive cycle"
 },
 {
-"name": "Berry development formation and ripening including v\u00e9raison reproductive cycle",
-"children": []
+"name": "Berry development formation and ripening including v\u00e9raison reproductive cycle"
 },
 {
-"name": "Harvest",
-"children": []
+"name": "Harvest"
 },
 {
-"name": "Wood ripening leaf fall and dormancy vegetative cycle",
-"children": []
+"name": "Wood ripening leaf fall and dormancy vegetative cycle"
 }
 ]
 },
 {
-"name": "LIFE GROWTH CYCLE OF THE VINE",
-"children": []
+"name": "LIFE GROWTH CYCLE OF THE VINE"
 },
 {
 "name": "THE GRAPE BERRY",
 "children": [
 {
-"name": "Anatomy",
-"children": []
+"name": "Anatomy"
 },
 {
 "name": "Constituents",
 "children": [
 {
-"name": "Sugars",
-"children": []
+"name": "Sugars"
 },
 {
-"name": "Acids",
-"children": []
+"name": "Acids"
 },
 {
-"name": "Phenolic compounds",
-"children": []
+"name": "Phenolic compounds"
 },
 {
-"name": "Other flavour and aroma compounds",
-"children": []
+"name": "Other flavour and aroma compounds"
 }
 ]
 },
 {
-"name": "Ripening",
-"children": []
+"name": "Ripening"
 },
 {
 "name": "Defining ripeness",
 "children": [
 {
-"name": "Sugar ripeness",
-"children": []
+"name": "Sugar ripeness"
 },
 {
-"name": "Technical ripeness",
-"children": []
+"name": "Technical ripeness"
 },
 {
-"name": "Physiological ripeness",
-"children": []
+"name": "Physiological ripeness"
 }
 ]
 }
@@ -388,24 +323,19 @@
 "name": "SPREGIES",
 "children": [
 {
-"name": "Vitis vinifera",
-"children": []
+"name": "Vitis vinifera"
 },
 {
-"name": "Vitis berlandieri",
-"children": []
+"name": "Vitis berlandieri"
 },
 {
-"name": "Vitis labrusca",
-"children": []
+"name": "Vitis labrusca"
 },
 {
-"name": "Vitis riparia",
-"children": []
+"name": "Vitis riparia"
 },
 {
-"name": "Vitis rupestris",
-"children": []
+"name": "Vitis rupestris"
 }
 ]
 },
@@ -413,32 +343,25 @@
 "name": "ROOTSTOCKS",
 "children": [
 {
-"name": "Phylloxera",
-"children": []
+"name": "Phylloxera"
 },
 {
-"name": "Nematodes",
-"children": []
+"name": "Nematodes"
 },
 {
-"name": "Tolerance to high lime levels",
-"children": []
+"name": "Tolerance to high lime levels"
 },
 {
-"name": "Acidity",
-"children": []
+"name": "Acidity"
 },
 {
-"name": "Salinity",
-"children": []
+"name": "Salinity"
 },
 {
-"name": "Drought stress",
-"children": []
+"name": "Drought stress"
 },
 {
-"name": "Vigour effects",
-"children": []
+"name": "Vigour effects"
 }
 ]
 }
@@ -451,16 +374,13 @@
 "name": "PROPAGATION",
 "children": [
 {
-"name": "Cuttings",
-"children": []
+"name": "Cuttings"
 },
 {
-"name": "Grafting",
-"children": []
+"name": "Grafting"
 },
 {
-"name": "Vine nurseries",
-"children": []
+"name": "Vine nurseries"
 }
 ]
 },
@@ -468,24 +388,19 @@
 "name": "SELECTION",
 "children": [
 {
-"name": "Hybrids interspecific grapevines",
-"children": []
+"name": "Hybrids interspecific grapevines"
 },
 {
-"name": "Crosses intraspecific grapevines",
-"children": []
+"name": "Crosses intraspecific grapevines"
 },
 {
-"name": "Mass selection s\u00e9lection massale",
-"children": []
+"name": "Mass selection s\u00e9lection massale"
 },
 {
-"name": "Clonal selection",
-"children": []
+"name": "Clonal selection"
 },
 {
-"name": "Genetic engineering",
-"children": []
+"name": "Genetic engineering"
 }
 ]
 }
@@ -498,48 +413,37 @@
 "name": "THE MAIN WHITE CULTIVARS",
 "children": [
 {
-"name": "Chardonnay",
-"children": []
+"name": "Chardonnay"
 },
 {
-"name": "Chenin blanc",
-"children": []
+"name": "Chenin blanc"
 },
 {
-"name": "Muscat",
-"children": []
+"name": "Muscat"
 },
 {
-"name": "Pinot blanc",
-"children": []
+"name": "Pinot blanc"
 },
 {
-"name": "Riesling",
-"children": []
+"name": "Riesling"
 },
 {
-"name": "Sauvignon blanc",
-"children": []
+"name": "Sauvignon blanc"
 },
 {
-"name": "Semillon",
-"children": []
+"name": "Semillon"
 },
 {
-"name": "Ugni blanc",
-"children": []
+"name": "Ugni blanc"
 },
 {
-"name": "Viognier",
-"children": []
+"name": "Viognier"
 },
 {
-"name": "Gewirztraminer",
-"children": []
+"name": "Gewirztraminer"
 },
 {
-"name": "Pinot gris / Pinot grigio",
-"children": []
+"name": "Pinot gris / Pinot grigio"
 }
 ]
 },
@@ -547,44 +451,34 @@
 "name": "THE MAIN BLACK CULTIVARS",
 "children": [
 {
-"name": "Cabernet franc",
-"children": []
+"name": "Cabernet franc"
 },
 {
-"name": "Cabernet sauvignon",
-"children": []
+"name": "Cabernet sauvignon"
 },
 {
-"name": "Garnacha",
-"children": []
+"name": "Garnacha"
 },
 {
-"name": "Merlot",
-"children": []
+"name": "Merlot"
 },
 {
-"name": "Nebbiolo",
-"children": []
+"name": "Nebbiolo"
 },
 {
-"name": "Pinot Noir",
-"children": []
+"name": "Pinot Noir"
 },
 {
-"name": "Sangiovese",
-"children": []
+"name": "Sangiovese"
 },
 {
-"name": "Syrah / shiraz",
-"children": []
+"name": "Syrah / shiraz"
 },
 {
-"name": "Tempranillo",
-"children": []
+"name": "Tempranillo"
 },
 {
-"name": "Zinfandel",
-"children": []
+"name": "Zinfandel"
 }
 ]
 },
@@ -592,16 +486,13 @@
 "name": "THE MAIN CROSSES",
 "children": [
 {
-"name": "Muller-Thurgau",
-"children": []
+"name": "Muller-Thurgau"
 },
 {
-"name": "Ruby cabernet",
-"children": []
+"name": "Ruby cabernet"
 },
 {
-"name": "Pinotage",
-"children": []
+"name": "Pinotage"
 }
 ]
 },
@@ -609,16 +500,13 @@
 "name": "THE MAIN HYBRIDS",
 "children": [
 {
-"name": "Seyval blanc",
-"children": []
+"name": "Seyval blanc"
 },
 {
-"name": "Rondo",
-"children": []
+"name": "Rondo"
 },
 {
-"name": "Vidal",
-"children": []
+"name": "Vidal"
 }
 ]
 }
@@ -628,47 +516,37 @@
 "name": "Site Selection",
 "children": [
 {
-"name": "ENVIRONMENT",
-"children": []
+"name": "ENVIRONMENT"
 },
 {
-"name": "PRACTICAL AND COMMERCIAL CONSIDERATIONS",
-"children": []
+"name": "PRACTICAL AND COMMERCIAL CONSIDERATIONS"
 },
 {
-"name": "MATCHING VARIETY AND SITE",
-"children": []
+"name": "MATCHING VARIETY AND SITE"
 },
 {
 "name": "MANAGING SITE",
 "children": [
 {
-"name": "Terrior",
-"children": []
+"name": "Terrior"
 },
 {
-"name": "Precision viticulture",
-"children": []
+"name": "Precision viticulture"
 },
 {
-"name": "Global positioning system GPS",
-"children": []
+"name": "Global positioning system GPS"
 },
 {
-"name": "Geographical information systems GIS",
-"children": []
+"name": "Geographical information systems GIS"
 },
 {
-"name": "Remote sensing",
-"children": []
+"name": "Remote sensing"
 },
 {
-"name": "Soil sensing",
-"children": []
+"name": "Soil sensing"
 },
 {
-"name": "Yield monitoring",
-"children": []
+"name": "Yield monitoring"
 }
 ]
 }
@@ -681,12 +559,10 @@
 "name": "VINEYARD DESIGN",
 "children": [
 {
-"name": "Spacing / density",
-"children": []
+"name": "Spacing / density"
 },
 {
-"name": "Row Orientation",
-"children": []
+"name": "Row Orientation"
 }
 ]
 },
@@ -697,40 +573,32 @@
 "name": "Soil preparation",
 "children": [
 {
-"name": "Soil disinfection",
-"children": []
+"name": "Soil disinfection"
 },
 {
-"name": "Subsoil Cultivation",
-"children": []
+"name": "Subsoil Cultivation"
 },
 {
-"name": "Soil analysis",
-"children": []
+"name": "Soil analysis"
 },
 {
-"name": "Soil amendments / additions / ameliorations",
-"children": []
+"name": "Soil amendments / additions / ameliorations"
 }
 ]
 }
 ]
 },
 {
-"name": "Drainage",
-"children": []
+"name": "Drainage"
 },
 {
-"name": "Terracing",
-"children": []
+"name": "Terracing"
 },
 {
-"name": "Machine and hand planting",
-"children": []
+"name": "Machine and hand planting"
 },
 {
-"name": "Care of young plants",
-"children": []
+"name": "Care of young plants"
 }
 ]
 },
@@ -744,28 +612,22 @@
 "name": "Macronutrients",
 "children": [
 {
-"name": "Nitrogen N",
-"children": []
+"name": "Nitrogen N"
 },
 {
-"name": "Potassium K",
-"children": []
+"name": "Potassium K"
 },
 {
-"name": "Phosphorus P",
-"children": []
+"name": "Phosphorus P"
 },
 {
-"name": "Calcium Ca",
-"children": []
+"name": "Calcium Ca"
 },
 {
-"name": "Magnesium Mg",
-"children": []
+"name": "Magnesium Mg"
 },
 {
-"name": "Sulfur S",
-"children": []
+"name": "Sulfur S"
 }
 ]
 },
@@ -773,45 +635,36 @@
 "name": "Micronutrients",
 "children": [
 {
-"name": "Iron Fe",
-"children": []
+"name": "Iron Fe"
 },
 {
-"name": "Manganese Mn",
-"children": []
+"name": "Manganese Mn"
 },
 {
-"name": "Molybdenum Mo",
-"children": []
+"name": "Molybdenum Mo"
 },
 {
-"name": "Copper Cu",
-"children": []
+"name": "Copper Cu"
 },
 {
-"name": "Zinc Zn",
-"children": []
+"name": "Zinc Zn"
 },
 {
-"name": "Boron B",
-"children": []
+"name": "Boron B"
 }
 ]
 },
 {
-"name": "Measuring deficiencies soil petiole and leaf analysis",
-"children": []
+"name": "Measuring deficiencies soil petiole and leaf analysis"
 },
 {
 "name": "Remedying deficiencies synthetic and organic fertilisers",
 "children": [
 {
-"name": "Inorganic / synthetic fertilisers",
-"children": []
+"name": "Inorganic / synthetic fertilisers"
 },
 {
-"name": "Organic fertilisers",
-"children": []
+"name": "Organic fertilisers"
 }
 ]
 }
@@ -821,49 +674,41 @@
 "name": "GROUND COVERS",
 "children": [
 {
-"name": "Cover crops",
-"children": []
+"name": "Cover crops"
 },
 {
 "name": "Mulches",
 "children": [
 {
-"name": "Composts",
-"children": []
+"name": "Composts"
 },
 {
-"name": "Animal manures",
-"children": []
+"name": "Animal manures"
 }
 ]
 }
 ]
 },
 {
-"name": "SOIL COMPACTION",
-"children": []
+"name": "SOIL COMPACTION"
 },
 {
 "name": "WATER MANAGEMENT drainage and irrigation",
 "children": [
 {
-"name": "Flood and furrow irrigation",
-"children": []
+"name": "Flood and furrow irrigation"
 },
 {
-"name": "Sprinkler irrigation",
-"children": []
+"name": "Sprinkler irrigation"
 },
 {
 "name": "Drip irrigation",
 "children": [
 {
-"name": "Regulated deficit irrigation RDI",
-"children": []
+"name": "Regulated deficit irrigation RDI"
 },
 {
-"name": "Partial rootzone drying PRD",
-"children": []
+"name": "Partial rootzone drying PRD"
 }
 ]
 }
@@ -878,16 +723,13 @@
 "name": "VINE TRAINING",
 "children": [
 {
-"name": "Head training",
-"children": []
+"name": "Head training"
 },
 {
-"name": "Cordon training",
-"children": []
+"name": "Cordon training"
 },
 {
-"name": "Reasons for training",
-"children": []
+"name": "Reasons for training"
 }
 ]
 },
@@ -895,16 +737,13 @@
 "name": "PRUNING",
 "children": [
 {
-"name": "Organisation",
-"children": []
+"name": "Organisation"
 },
 {
-"name": "Balancing the vine and site",
-"children": []
+"name": "Balancing the vine and site"
 },
 {
-"name": "Managing yields and quality",
-"children": []
+"name": "Managing yields and quality"
 }
 ]
 },
@@ -912,20 +751,16 @@
 "name": "PRUNING METHODS",
 "children": [
 {
-"name": "Spur pruning",
-"children": []
+"name": "Spur pruning"
 },
 {
-"name": "Cane pruning",
-"children": []
+"name": "Cane pruning"
 },
 {
-"name": "Mechanical pruning",
-"children": []
+"name": "Mechanical pruning"
 },
 {
-"name": "Summer pruning",
-"children": []
+"name": "Summer pruning"
 }
 ]
 },
@@ -933,40 +768,31 @@
 "name": "TRELLIS DESIGNS",
 "children": [
 {
-"name": "Untrellised vines",
-"children": []
+"name": "Untrellised vines"
 },
 {
-"name": "Single stake",
-"children": []
+"name": "Single stake"
 },
 {
-"name": "Single wire",
-"children": []
+"name": "Single wire"
 },
 {
-"name": "Multiple wire",
-"children": []
+"name": "Multiple wire"
 },
 {
-"name": "Lyre",
-"children": []
+"name": "Lyre"
 },
 {
-"name": "Vertical shoot positioning VSP",
-"children": []
+"name": "Vertical shoot positioning VSP"
 },
 {
-"name": "Scott Henry",
-"children": []
+"name": "Scott Henry"
 },
 {
-"name": "Geneva double curtain GDC",
-"children": []
+"name": "Geneva double curtain GDC"
 },
 {
-"name": "Minimal pruning MPCT",
-"children": []
+"name": "Minimal pruning MPCT"
 }
 ]
 },
@@ -974,35 +800,28 @@
 "name": "CANOPY MANAGEMENT",
 "children": [
 {
-"name": "Shade and sun",
-"children": []
+"name": "Shade and sun"
 },
 {
-"name": "Vegetative vigour",
-"children": []
+"name": "Vegetative vigour"
 },
 {
 "name": "Summer pruning",
 "children": [
 {
-"name": "Shoot thinning",
-"children": []
+"name": "Shoot thinning"
 },
 {
-"name": "Shoot positioning",
-"children": []
+"name": "Shoot positioning"
 },
 {
-"name": "Trimming",
-"children": []
+"name": "Trimming"
 },
 {
-"name": "Leaf removal (leaf plucking)",
-"children": []
+"name": "Leaf removal (leaf plucking)"
 },
 {
-"name": "Green harvesting (bunch thinning)",
-"children": []
+"name": "Green harvesting (bunch thinning)"
 }
 ]
 }
@@ -1017,24 +836,19 @@
 "name": "PESTS",
 "children": [
 {
-"name": "Phylloxera",
-"children": []
+"name": "Phylloxera"
 },
 {
-"name": "Nematodes",
-"children": []
+"name": "Nematodes"
 },
 {
-"name": "Grape moths",
-"children": []
+"name": "Grape moths"
 },
 {
-"name": "Spider mites",
-"children": []
+"name": "Spider mites"
 },
 {
-"name": "Birds",
-"children": []
+"name": "Birds"
 }
 ]
 },
@@ -1042,53 +856,42 @@
 "name": "DISEASES",
 "children": [
 {
-"name": "Grey rot",
-"children": []
+"name": "Grey rot"
 },
 {
-"name": "Downy mildew peronospora",
-"children": []
+"name": "Downy mildew peronospora"
 },
 {
-"name": "Powdery mildew oidium",
-"children": []
+"name": "Powdery mildew oidium"
 },
 {
 "name": "Trunk diseases",
 "children": [
 {
-"name": "Eutypa dieback (dead arm)",
-"children": []
+"name": "Eutypa dieback (dead arm)"
 },
 {
-"name": "Esca (black measles / Petri disease/black goo)",
-"children": []
+"name": "Esca (black measles / Petri disease/black goo)"
 },
 {
-"name": "Other trunk diseases",
-"children": []
+"name": "Other trunk diseases"
 }
 ]
 },
 {
-"name": "Phomopsis (excoriose)",
-"children": []
+"name": "Phomopsis (excoriose)"
 },
 {
-"name": "Pierce\u2019s disease",
-"children": []
+"name": "Pierce\u2019s disease"
 },
 {
-"name": "Grapevine yellows",
-"children": []
+"name": "Grapevine yellows"
 },
 {
-"name": "Leafroll virus",
-"children": []
+"name": "Leafroll virus"
 },
 {
-"name": "Fanleaf virus",
-"children": []
+"name": "Fanleaf virus"
 }
 ]
 },
@@ -1096,16 +899,13 @@
 "name": "WEEDS",
 "children": [
 {
-"name": "Ploughing hoeing / tilling",
-"children": []
+"name": "Ploughing hoeing / tilling"
 },
 {
-"name": "Herbicides",
-"children": []
+"name": "Herbicides"
 },
 {
-"name": "Ground covers",
-"children": []
+"name": "Ground covers"
 }
 ]
 },
@@ -1113,40 +913,31 @@
 "name": "HAZARDS",
 "children": [
 {
-"name": "Winter freeze",
-"children": []
+"name": "Winter freeze"
 },
 {
-"name": "Spring frost",
-"children": []
+"name": "Spring frost"
 },
 {
-"name": "Excess heat",
-"children": []
+"name": "Excess heat"
 },
 {
-"name": "Drought",
-"children": []
+"name": "Drought"
 },
 {
-"name": "Excess rain",
-"children": []
+"name": "Excess rain"
 },
 {
-"name": "Hail",
-"children": []
+"name": "Hail"
 },
 {
-"name": "Strong wind",
-"children": []
+"name": "Strong wind"
 },
 {
-"name": "Chlorosis",
-"children": []
+"name": "Chlorosis"
 },
 {
-"name": "Coulure and millerandage",
-"children": []
+"name": "Coulure and millerandage"
 }
 ]
 }
@@ -1156,29 +947,24 @@
 "name": "Legislation",
 "children": [
 {
-"name": "INTERNATIONAL ORGANISATION OF VINE AND WINE OIV",
-"children": []
+"name": "INTERNATIONAL ORGANISATION OF VINE AND WINE OIV"
 },
 {
 "name": "EUROPEAN UNION EU",
 "children": [
 {
-"name": "Grape growing",
-"children": []
+"name": "Grape growing"
 },
 {
-"name": "Winemaking",
-"children": []
+"name": "Winemaking"
 }
 ]
 },
 {
-"name": "NATIONAL RULES",
-"children": []
+"name": "NATIONAL RULES"
 },
 {
-"name": "VITICULTURAL MANAGEMENT SYSTEMS",
-"children": []
+"name": "VITICULTURAL MANAGEMENT SYSTEMS"
 }
 ]
 }
