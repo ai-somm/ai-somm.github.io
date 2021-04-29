@@ -3,7 +3,9 @@ layout: default
 title: From Vine To Wine
 ---
 <div class="blurb">
-
+<!--
+  https://bl.ocks.org/mbostock/4339083
+--> 
 
 <style>
 
@@ -54,7 +56,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("viti.json", function(error, flare) {
+d3.json("viticulture.json", function(error, flare) {
   if (error) throw error;
 
   root = flare;

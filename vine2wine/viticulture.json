@@ -1,0 +1,1336 @@
+{
+"name": "Viticulture",
+"children": [
+{
+"name": "Climate and Weather",
+"children": [
+{
+"name": "REGIONAL CLIMATE CLASSIFICATIONS",
+"children": [
+{
+"name": "Temperate climate zone \u2014 the vine\u2019s natural home",
+"children": [
+{
+"name": "Maritime climates",
+"children": []
+},
+{
+"name": "Mediterranean climates",
+"children": []
+},
+{
+"name": "A Continental climates",
+"children": []
+},
+{
+"name": "Continentality",
+"children": []
+}
+]
+},
+{
+"name": "Nontemperate climates",
+"children": []
+},
+{
+"name": "Temperature as the driving force",
+"children": [
+{
+"name": "Heat degree days / heat summation",
+"children": []
+},
+{
+"name": "Biologically effective heat degree days",
+"children": []
+},
+{
+"name": "Mean temperature of the warmest month",
+"children": []
+},
+{
+"name": "Growing season temperature",
+"children": []
+},
+{
+"name": "European Union zones of production",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "KEY CLIMATE PARAMETERS",
+"children": [
+{
+"name": "Temperature",
+"children": []
+},
+{
+"name": "Sunlight",
+"children": []
+},
+{
+"name": "Precipitation",
+"children": [
+{
+"name": "dew",
+"children": []
+},
+{
+"name": "fog",
+"children": []
+},
+{
+"name": "mist",
+"children": []
+},
+{
+"name": "rain",
+"children": []
+},
+{
+"name": "hail",
+"children": []
+},
+{
+"name": "sleet",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "REGIONAL CLIMATE macroclimate",
+"children": [
+{
+"name": "Latitude",
+"children": [
+{
+"name": "snow",
+"children": []
+}
+]
+},
+{
+"name": "Altitude",
+"children": []
+},
+{
+"name": "Mountain ranges",
+"children": []
+},
+{
+"name": "Ocean currents",
+"children": []
+}
+]
+},
+{
+"name": "SITE CLIMATE mesoclimate",
+"children": [
+{
+"name": "Topography",
+"children": [
+{
+"name": "aspect",
+"children": []
+},
+{
+"name": "slope",
+"children": []
+}
+]
+},
+{
+"name": "Large bodies of water",
+"children": [
+{
+"name": "sea",
+"children": []
+},
+{
+"name": "river",
+"children": []
+},
+{
+"name": "lake",
+"children": []
+}
+]
+},
+{
+"name": "Vegetation",
+"children": [
+{
+"name": "forest stands",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "CANOPY CLIMATE microclimate",
+"children": []
+},
+{
+"name": "CLIMATE CHANGE",
+"children": []
+}
+]
+},
+{
+"name": "Soil",
+"children": [
+{
+"name": "SOIL PHYSICAL PROPERTIES",
+"children": [
+{
+"name": "Texture",
+"children": []
+},
+{
+"name": "Structure",
+"children": []
+},
+{
+"name": "Water and air",
+"children": []
+}
+]
+},
+{
+"name": "BIOLOGICAL ASPECTS",
+"children": [
+{
+"name": "Organic matter and humus",
+"children": []
+},
+{
+"name": "Soil Organisms",
+"children": []
+}
+]
+},
+{
+"name": "SOIL CHEMICAL COMPOSITION",
+"children": [
+{
+"name": "Nutrient status",
+"children": [
+{
+"name": "Macronutrients",
+"children": []
+},
+{
+"name": "Micronutrients",
+"children": []
+}
+]
+},
+{
+"name": "Soil acidity and PH",
+"children": []
+}
+]
+},
+{
+"name": "SOIL TYPES \u2014 PARENT MATERIAL / BEDROCK",
+"children": [
+{
+"name": "Viticulturally important bedrocks",
+"children": []
+},
+{
+"name": "Soil profile",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "The Vine Plant",
+"children": [
+{
+"name": "PARTS OF THE VINE",
+"children": [
+{
+"name": "Roots",
+"children": []
+},
+{
+"name": "Trunk and arms",
+"children": []
+},
+{
+"name": "Buds and nodes",
+"children": []
+},
+{
+"name": "Shoots",
+"children": []
+},
+{
+"name": "Canes",
+"children": []
+},
+{
+"name": "Leaves and petioles",
+"children": []
+},
+{
+"name": "Tendrils",
+"children": []
+},
+{
+"name": "Inflorescences flowers berries and bunches",
+"children": []
+}
+]
+},
+{
+"name": "ANNUAL GROWTH CYCLE OF THE VINE",
+"children": [
+{
+"name": "Budburst and shoot growth vegetative cycle",
+"children": []
+},
+{
+"name": "Inflorescence initiation reproductive cycle",
+"children": []
+},
+{
+"name": "Flowering or bloom reproductive cycle",
+"children": []
+},
+{
+"name": "Fruit set or berry set reproductive cycle",
+"children": []
+},
+{
+"name": "Berry development formation and ripening including v\u00e9raison reproductive cycle",
+"children": []
+},
+{
+"name": "Harvest",
+"children": []
+},
+{
+"name": "Wood ripening leaf fall and dormancy vegetative cycle",
+"children": []
+}
+]
+},
+{
+"name": "LIFE GROWTH CYCLE OF THE VINE",
+"children": []
+},
+{
+"name": "THE GRAPE BERRY",
+"children": [
+{
+"name": "Anatomy",
+"children": []
+},
+{
+"name": "Constituents",
+"children": [
+{
+"name": "Sugars",
+"children": []
+},
+{
+"name": "Acids",
+"children": []
+},
+{
+"name": "Phenolic compounds",
+"children": []
+},
+{
+"name": "Other flavour and aroma compounds",
+"children": []
+}
+]
+},
+{
+"name": "Ripening",
+"children": []
+},
+{
+"name": "Defining ripeness",
+"children": [
+{
+"name": "Sugar ripeness",
+"children": []
+},
+{
+"name": "Technical ripeness",
+"children": []
+},
+{
+"name": "Physiological ripeness",
+"children": []
+}
+]
+}
+]
+}
+]
+},
+{
+"name": "Species and Rootstocks",
+"children": [
+{
+"name": "SPREGIES",
+"children": [
+{
+"name": "Vitis vinifera",
+"children": []
+},
+{
+"name": "Vitis berlandieri",
+"children": []
+},
+{
+"name": "Vitis labrusca",
+"children": []
+},
+{
+"name": "Vitis riparia",
+"children": []
+},
+{
+"name": "Vitis rupestris",
+"children": []
+}
+]
+},
+{
+"name": "ROOTSTOCKS",
+"children": [
+{
+"name": "Phylloxera",
+"children": []
+},
+{
+"name": "Nematodes",
+"children": []
+},
+{
+"name": "Tolerance to high lime levels",
+"children": []
+},
+{
+"name": "Acidity",
+"children": []
+},
+{
+"name": "Salinity",
+"children": []
+},
+{
+"name": "Drought stress",
+"children": []
+},
+{
+"name": "Vigour effects",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "Propagation and Selection",
+"children": [
+{
+"name": "PROPAGATION",
+"children": [
+{
+"name": "Cuttings",
+"children": []
+},
+{
+"name": "Grafting",
+"children": []
+},
+{
+"name": "Vine nurseries",
+"children": []
+}
+]
+},
+{
+"name": "SELECTION",
+"children": [
+{
+"name": "Hybrids interspecific grapevines",
+"children": []
+},
+{
+"name": "Crosses intraspecific grapevines",
+"children": []
+},
+{
+"name": "Mass selection s\u00e9lection massale",
+"children": []
+},
+{
+"name": "Clonal selection",
+"children": []
+},
+{
+"name": "Genetic engineering",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "Cultivars",
+"children": [
+{
+"name": "THE MAIN WHITE CULTIVARS",
+"children": [
+{
+"name": "Chardonnay",
+"children": []
+},
+{
+"name": "Chenin blanc",
+"children": []
+},
+{
+"name": "Muscat",
+"children": []
+},
+{
+"name": "Pinot blanc",
+"children": []
+},
+{
+"name": "Riesling",
+"children": []
+},
+{
+"name": "Sauvignon blanc",
+"children": []
+},
+{
+"name": "Semillon",
+"children": []
+},
+{
+"name": "Ugni blanc",
+"children": []
+},
+{
+"name": "Viognier",
+"children": []
+},
+{
+"name": "Gewirztraminer",
+"children": []
+},
+{
+"name": "Pinot gris / Pinot grigio",
+"children": []
+}
+]
+},
+{
+"name": "THE MAIN BLACK CULTIVARS",
+"children": [
+{
+"name": "Cabernet franc",
+"children": []
+},
+{
+"name": "Cabernet sauvignon",
+"children": []
+},
+{
+"name": "Garnacha",
+"children": []
+},
+{
+"name": "Merlot",
+"children": []
+},
+{
+"name": "Nebbiolo",
+"children": []
+},
+{
+"name": "G Pinctno",
+"children": []
+},
+{
+"name": "Sangiovese",
+"children": []
+},
+{
+"name": "Syrah / shiraz",
+"children": []
+},
+{
+"name": "Tempranillo",
+"children": []
+},
+{
+"name": "Zinfandel",
+"children": []
+}
+]
+},
+{
+"name": "THE MAIN CROSSES",
+"children": [
+{
+"name": "Muller-Thurgau",
+"children": []
+},
+{
+"name": "Ruby cabernet",
+"children": []
+},
+{
+"name": "Pinotage",
+"children": []
+}
+]
+},
+{
+"name": "THE MAIN HYBRIDS",
+"children": [
+{
+"name": "Seyval blanc",
+"children": []
+},
+{
+"name": "Rondo",
+"children": []
+},
+{
+"name": "Vidal",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "Site Selection",
+"children": [
+{
+"name": "ENVIRONMENT",
+"children": []
+},
+{
+"name": "PRACTICAL AND COMMERCIAL CONSIDERATIONS",
+"children": []
+},
+{
+"name": "MATCHING VARIETY AND SITE",
+"children": []
+},
+{
+"name": "MANAGING SITE",
+"children": [
+{
+"name": "Terrior",
+"children": []
+},
+{
+"name": "Precision viticulture",
+"children": []
+},
+{
+"name": "Global positioning system GPS",
+"children": []
+},
+{
+"name": "Geographical information systems GIS",
+"children": []
+},
+{
+"name": "Remote sensing",
+"children": []
+},
+{
+"name": "Soil sensing",
+"children": []
+},
+{
+"name": "Yield monitoring",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "Vineyard Establishment",
+"children": [
+{
+"name": "VINEYARD DESIGN",
+"children": [
+{
+"name": "Spacing / density",
+"children": []
+},
+{
+"name": "Row Orientation",
+"children": []
+}
+]
+},
+{
+"name": "SITE PREPARATION AND PLANTING",
+"children": [
+{
+"name": "Soil preparation",
+"children": [
+{
+"name": "Soil disinfection",
+"children": []
+},
+{
+"name": "Subsoil Cultivation",
+"children": []
+},
+{
+"name": "Soil analysis",
+"children": []
+},
+{
+"name": "Soil amendments / additions / ameliorations",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "Drainage",
+"children": []
+},
+{
+"name": "Terracing",
+"children": []
+},
+{
+"name": "Machine and hand planting",
+"children": []
+},
+{
+"name": "Care of young plants",
+"children": []
+}
+]
+},
+{
+"name": "Soil and Water Management",
+"children": [
+{
+"name": "NUTRITION",
+"children": [
+{
+"name": "Macronutrients",
+"children": [
+{
+"name": "Nitrogen N",
+"children": []
+},
+{
+"name": "Potassium K",
+"children": []
+},
+{
+"name": "Phosphorus P",
+"children": []
+},
+{
+"name": "Calcium Ca",
+"children": []
+},
+{
+"name": "Magnesium Mg",
+"children": []
+},
+{
+"name": "Sulfur S",
+"children": []
+}
+]
+},
+{
+"name": "Micronutrients",
+"children": [
+{
+"name": "Iron Fe",
+"children": []
+},
+{
+"name": "Manganese Mn",
+"children": []
+},
+{
+"name": "Molybdenum Mo",
+"children": []
+},
+{
+"name": "Copper Cu",
+"children": []
+},
+{
+"name": "Zinc Zn",
+"children": []
+},
+{
+"name": "Boron B",
+"children": []
+}
+]
+},
+{
+"name": "Measuring deficiencies soil petiole and leaf analysis",
+"children": []
+},
+{
+"name": "Remedying deficiencies synthetic and organic fertilisers",
+"children": [
+{
+"name": "Inorganic / synthetic fertilisers",
+"children": []
+},
+{
+"name": "Organic fertilisers",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "GROUND COVERS",
+"children": [
+{
+"name": "Cover crops",
+"children": []
+},
+{
+"name": "Mulches",
+"children": [
+{
+"name": "Composts",
+"children": []
+},
+{
+"name": "Animal manures",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "SOIL COMPACTION",
+"children": []
+},
+{
+"name": "WATER MANAGEMENT drainage and irrigation",
+"children": [
+{
+"name": "Flood and furrow irrigation",
+"children": []
+},
+{
+"name": "Sprinkler irrigation",
+"children": []
+},
+{
+"name": "Drip irrigation",
+"children": [
+{
+"name": "Regulated deficit irrigation RDI",
+"children": []
+},
+{
+"name": "Partial rootzone drying PRD",
+"children": []
+}
+]
+}
+]
+}
+]
+},
+{
+"name": "Vine Structure",
+"children": [
+{
+"name": "VINE TRAINING",
+"children": [
+{
+"name": "Head training",
+"children": []
+},
+{
+"name": "Cordon training",
+"children": []
+},
+{
+"name": "Reasons for training",
+"children": []
+}
+]
+},
+{
+"name": "PRUNING",
+"children": [
+{
+"name": "Organisation",
+"children": []
+},
+{
+"name": "Balancing the vine and site",
+"children": []
+},
+{
+"name": "Managing yields and quality",
+"children": []
+}
+]
+},
+{
+"name": "PRUNING METHODS",
+"children": [
+{
+"name": "Spur pruning",
+"children": []
+},
+{
+"name": "Cane pruning",
+"children": []
+},
+{
+"name": "Mechanical pruning",
+"children": []
+},
+{
+"name": "Summer pruning",
+"children": []
+}
+]
+},
+{
+"name": "TRELLIS DESIGNS",
+"children": [
+{
+"name": "Untrellised vines",
+"children": []
+},
+{
+"name": "Single stake",
+"children": []
+},
+{
+"name": "Single wire",
+"children": []
+},
+{
+"name": "Multiple wire",
+"children": []
+},
+{
+"name": "Lyre",
+"children": []
+},
+{
+"name": "Vertical shoot positioning VSP",
+"children": []
+},
+{
+"name": "Scott Henry",
+"children": []
+},
+{
+"name": "Geneva double curtain GDC",
+"children": []
+},
+{
+"name": "Minimal pruning MPCT",
+"children": []
+}
+]
+},
+{
+"name": "CANOPY MANAGEMENT",
+"children": [
+{
+"name": "Shade and sun",
+"children": []
+},
+{
+"name": "Vegetative vigour",
+"children": []
+},
+{
+"name": "Summer pruning",
+"children": [
+{
+"name": "Shoot thinning",
+"children": []
+},
+{
+"name": "Shoot positioning",
+"children": []
+},
+{
+"name": "Trimming",
+"children": []
+},
+{
+"name": "Leaf removal (leaf plucking)",
+"children": []
+},
+{
+"name": "Green harvesting (bunch thinning)",
+"children": []
+}
+]
+}
+]
+}
+]
+},
+{
+"name": "Pest Disease Weed and Hazard Management",
+"children": [
+{
+"name": "PESTS",
+"children": [
+{
+"name": "Phylloxera",
+"children": []
+},
+{
+"name": "Nematodes",
+"children": []
+},
+{
+"name": "Grape moths",
+"children": []
+},
+{
+"name": "Spider mites",
+"children": []
+},
+{
+"name": "Birds",
+"children": []
+}
+]
+},
+{
+"name": "DISEASES",
+"children": [
+{
+"name": "Grey rot",
+"children": []
+},
+{
+"name": "Downy mildew peronospora",
+"children": []
+},
+{
+"name": "Powdery mildew oidium",
+"children": []
+},
+{
+"name": "Trunk diseases",
+"children": [
+{
+"name": "Eutypa dieback (dead arm)",
+"children": []
+},
+{
+"name": "Esca (black measles / Petri disease/black goo)",
+"children": []
+},
+{
+"name": "Other trunk diseases",
+"children": []
+}
+]
+},
+{
+"name": "Phomopsis (excoriose)",
+"children": []
+},
+{
+"name": "Pierce\u2019s disease",
+"children": []
+},
+{
+"name": "Grapevine yellows",
+"children": []
+},
+{
+"name": "Leafroll virus",
+"children": []
+},
+{
+"name": "Fanleaf virus",
+"children": []
+}
+]
+},
+{
+"name": "WEEDS",
+"children": [
+{
+"name": "Ploughing hoeing / tilling",
+"children": []
+},
+{
+"name": "Herbicides",
+"children": []
+},
+{
+"name": "Ground covers",
+"children": []
+}
+]
+},
+{
+"name": "HAZARDS",
+"children": [
+{
+"name": "Winter freeze",
+"children": []
+},
+{
+"name": "Spring frost",
+"children": []
+},
+{
+"name": "Excess heat",
+"children": []
+},
+{
+"name": "Drought",
+"children": []
+},
+{
+"name": "Excess rain",
+"children": []
+},
+{
+"name": "Hail",
+"children": []
+},
+{
+"name": "Strong wind",
+"children": []
+},
+{
+"name": "Chlorosis",
+"children": []
+},
+{
+"name": "Coulure and millerandage",
+"children": []
+}
+]
+}
+]
+},
+{
+"name": "Legislation",
+"children": [
+{
+"name": "INTERNATIONAL ORGANISATION OF VINE AND WINE OIV",
+"children": []
+},
+{
+"name": "EUROPEAN UNION EU",
+"children": [
+{
+"name": "Grape growing",
+"children": []
+},
+{
+"name": "Winemaking",
+"children": []
+}
+]
+},
+{
+"name": "NATIONAL RULES",
+"children": []
+},
+{
+"name": "VITICULTURAL MANAGEMENT SYSTEMS",
+"children": []
+}
+]
+},
+{
+"name": "Legislation",
+"children": [
+{
+"name": "INTERNATIONAL ORGANISATION OF VINE AND WINE OIV",
+"children": []
+},
+{
+"name": "EUROPEAN UNION EU",
+"children": [
+{
+"name": "Grape growing",
+"children": []
+},
+{
+"name": "Winemaking",
+"children": []
+}
+]
+},
+{
+"name": "NATIONAL RULES",
+"children": []
+},
+{
+"name": "VITICULTURAL MANAGEMENT SYSTEMS",
+"children": []
+}
+]
+},
+{
+"name": "Legislation",
+"children": [
+{
+"name": "INTERNATIONAL ORGANISATION OF VINE AND WINE OIV",
+"children": []
+},
+{
+"name": "EUROPEAN UNION EU",
+"children": [
+{
+"name": "Grape growing",
+"children": []
+},
+{
+"name": "Winemaking",
+"children": []
+}
+]
+},
+{
+"name": "NATIONAL RULES",
+"children": []
+},
+{
+"name": "VITICULTURAL MANAGEMENT SYSTEMS",
+"children": []
+}
+]
+},
+{
+"name": "Legislation",
+"children": [
+{
+"name": "INTERNATIONAL ORGANISATION OF VINE AND WINE OIV",
+"children": []
+},
+{
+"name": "EUROPEAN UNION EU",
+"children": [
+{
+"name": "Grape growing",
+"children": []
+},
+{
+"name": "Winemaking",
+"children": []
+}
+]
+},
+{
+"name": "NATIONAL RULES",
+"children": []
+},
+{
+"name": "VITICULTURAL MANAGEMENT SYSTEMS",
+"children": []
+}
+]
+},
+{
+"name": "Legislation",
+"children": [
+{
+"name": "INTERNATIONAL ORGANISATION OF VINE AND WINE OIV",
+"children": []
+},
+{
+"name": "EUROPEAN UNION EU",
+"children": [
+{
+"name": "Grape growing",
+"children": []
+},
+{
+"name": "Winemaking",
+"children": []
+}
+]
+},
+{
+"name": "NATIONAL RULES",
+"children": []
+},
+{
+"name": "VITICULTURAL MANAGEMENT SYSTEMS",
+"children": []
+}
+]
+},
+{
+"name": "Legislation",
+"children": [
+{
+"name": "INTERNATIONAL ORGANISATION OF VINE AND WINE OIV",
+"children": []
+},
+{
+"name": "EUROPEAN UNION EU",
+"children": [
+{
+"name": "Grape growing",
+"children": []
+},
+{
+"name": "Winemaking",
+"children": []
+}
+]
+},
+{
+"name": "NATIONAL RULES",
+"children": []
+},
+{
+"name": "VITICULTURAL MANAGEMENT SYSTEMS",
+"children": []
+}
+]
+}
+]
+}
