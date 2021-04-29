@@ -78,6 +78,9 @@
 },
 {
 "name": "sleet"
+},
+{
+"name": "snow"
 }
 ]
 }
@@ -87,12 +90,7 @@
 "name": "REGIONAL CLIMATE macroclimate",
 "children": [
 {
-"name": "Latitude",
-"children": [
-{
-"name": "snow"
-}
-]
+"name": "Latitude"
 },
 {
 "name": "Altitude"
