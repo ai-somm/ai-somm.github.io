@@ -1,0 +1,598 @@
+{
+"name": "Maturation",
+"children": [
+{
+"name": "Maturation in Bulk",
+"children": [
+{
+"name": "VESSELS",
+"children": [
+{
+"name": "Largely inert containers"
+},
+{
+"name": "Oak"
+}
+]
+},
+{
+"name": "CONDITIONS",
+"children": [
+{
+"name": "Temperature"
+},
+{
+"name": "Oxygen",
+"children": [
+{
+"name": "Oxidation risk"
+},
+{
+"name": "Desired oxygenation / microoxygenation"
+},
+{
+"name": "Oxygen elsewhere"
+}
+]
+}
+]
+},
+{
+"name": "INERT GASES",
+"children": [
+{
+"name": "Objectives"
+},
+{
+"name": "Options"
+}
+]
+}
+]
+},
+{
+"name": "Oak",
+"children": [
+{
+"name": "SPECIES",
+"children": [
+{
+"name": "Quercus alba"
+},
+{
+"name": "Quercus petraea"
+},
+{
+"name": "Quercus robur"
+}
+]
+},
+{
+"name": "ORIGIN",
+"children": [
+{
+"name": "European oak"
+},
+{
+"name": "American oak"
+}
+]
+},
+{
+"name": "SEASONING AND TOASTING",
+"children": [
+{
+"name": "Seasoning"
+},
+{
+"name": "Toasting"
+}
+]
+},
+{
+"name": "AGE SIZE AND TIME",
+"children": [
+{
+"name": "Age of oak barrel"
+},
+{
+"name": "Size of barrel"
+},
+{
+"name": "Time spent in barrel"
+}
+]
+},
+{
+"name": "HANDLING AND HYGIENE"
+},
+{
+"name": "OAK ALTERNATIVES",
+"children": [
+{
+"name": "Staves"
+},
+{
+"name": "Chips"
+},
+{
+"name": "Oak powders"
+}
+]
+}
+]
+},
+{
+"name": "Yeast Lees",
+"children": [
+{
+"name": "LEES AGEING sur lie",
+"children": [
+{
+"name": "White wine"
+},
+{
+"name": "Redwine"
+},
+{
+"name": "Sparkling wine"
+}
+]
+},
+{
+"name": "FILMFORMING YEASTS"
+},
+{
+"name": "SPOILAGE YEASTS"
+}
+]
+},
+{
+"name": "Wine Treatments",
+"children": [
+{
+"name": "BLENDING"
+},
+{
+"name": "ADJUSTING ACIDITY AND pH"
+},
+{
+"name": "LOWERING ALCOHOL",
+"children": [
+{
+"name": "Low-tech options"
+},
+{
+"name": "High-tech options",
+"children": [
+{
+"name": "Reverse osmosis"
+},
+{
+"name": "Spinning cone column"
+}
+]
+}
+]
+}
+]
+},
+{
+"name": "Clarification",
+"children": [
+{
+"name": "SEDIMENTATION (gravitational settling and racking)"
+},
+{
+"name": "CENTRIFUGATION"
+},
+{
+"name": "FILTRATION",
+"children": [
+{
+"name": "Principles and practice"
+},
+{
+"name": "Depth filtration",
+"children": [
+{
+"name": "Earth filtration (diatomaceous earth / Kieselguhr)"
+},
+{
+"name": "Sheet / pad filter plate and frame"
+}
+]
+},
+{
+"name": "Absolute filtration membrane",
+"children": [
+{
+"name": "Membrane filters cartridge filters"
+},
+{
+"name": "Reverse osmosis"
+}
+]
+}
+]
+},
+{
+"name": "FINING",
+"children": [
+{
+"name": "Casein"
+},
+{
+"name": "Gelatin"
+},
+{
+"name": "Albumin"
+},
+{
+"name": "Isinglass"
+},
+{
+"name": "Polyvinyl polypyrrolidone (PVPP)"
+},
+{
+"name": "Bentonite"
+},
+{
+"name": "Silica gel / silica sol (eg kieselsol)"
+},
+{
+"name": "Oenological tannins"
+},
+{
+"name": "Charcoal"
+},
+{
+"name": "Gum arabic"
+}
+]
+}
+]
+},
+{
+"name": "Stabilisation",
+"children": [
+{
+"name": "CHEMICAL INSTABILITY",
+"children": [
+{
+"name": "Tartrate instability",
+"children": [
+{
+"name": "Cold stabilisation"
+},
+{
+"name": "Contact process"
+},
+{
+"name": "Metatartaric acid"
+},
+{
+"name": "Carboxymethylcellulose (CMC)"
+},
+{
+"name": "Ion exchange"
+},
+{
+"name": "Electrodialysis"
+},
+{
+"name": "Calcium tartrate"
+}
+]
+},
+{
+"name": "Oxidative haze"
+},
+{
+"name": "Reduction"
+},
+{
+"name": "Protein haze"
+},
+{
+"name": "Phenolic haze"
+},
+{
+"name": "Metal hazes"
+}
+]
+},
+{
+"name": "MICROBIOLOGICAL SPOILAGE",
+"children": [
+{
+"name": "Yeast",
+"children": [
+{
+"name": "Saccharomyces cerevisiae"
+},
+{
+"name": "Brettanomyces"
+},
+{
+"name": "Film-forming yeasts"
+}
+]
+},
+{
+"name": "Bacteria",
+"children": [
+{
+"name": "Lactic acid bacteria"
+},
+{
+"name": "Acetic acid bacteria"
+}
+]
+}
+]
+}
+]
+},
+{
+"name": "Primary Packaging",
+"children": [
+{
+"name": "CONTAINERS",
+"children": [
+{
+"name": "Glass bottles"
+},
+{
+"name": "Baginbox"
+},
+{
+"name": "Composite cartons"
+},
+{
+"name": "Pouches"
+},
+{
+"name": "Cans"
+},
+{
+"name": "Polyethylene terephthalate PET"
+}
+]
+},
+{
+"name": "BOTTLE CLOSURES",
+"children": [
+{
+"name": "Single-piece cork"
+},
+{
+"name": "Technical cork"
+},
+{
+"name": "Synthetic"
+},
+{
+"name": "Screwcap (roll on pilfer proof \u2014 ROPP / roll on tamper-evident - ROTE)"
+},
+{
+"name": "Crown cap"
+},
+{
+"name": "Vinolok"
+},
+{
+"name": "Zork"
+}
+]
+}
+]
+},
+{
+"name": "Secondary Packaging",
+"children": [
+{
+"name": "BOTTLE LABELS",
+"children": [
+{
+"name": "Legal requirements"
+},
+{
+"name": "Ingredients and allergens listing"
+},
+{
+"name": "Marketing information"
+}
+]
+},
+{
+"name": "CARTONS"
+}
+]
+},
+{
+"name": "The Technical Specification",
+"children": [
+{
+"name": "ALCOHOL"
+},
+{
+"name": "TITRATABLE ACIDITY total acidity"
+},
+{
+"name": "WOLATILE ACIDITY acetic acid"
+},
+{
+"name": "pH"
+},
+{
+"name": "FREE SULFUR DIOXIDE"
+},
+{
+"name": "TOTAL SULFUR DIOXIDE"
+},
+{
+"name": "REDUCING SUGARS"
+},
+{
+"name": "DISSOLVED OXYGEN"
+},
+{
+"name": "DISSOLVED CARBON DIOXIDE"
+},
+{
+"name": "OTHER"
+}
+]
+},
+{
+"name": "Packing",
+"children": [
+{
+"name": "QUALITY ASSURANCE QA / QUALITY CONTROL QC",
+"children": [
+{
+"name": "Bulk wine storage"
+},
+{
+"name": "Hazard analysis and critical control points (HACCP)"
+}
+]
+},
+{
+"name": "PREPARATION FOR PACKING",
+"children": [
+{
+"name": "International Standards Organisation (ISO)"
+}
+]
+},
+{
+"name": "PACKING SYSTEMS",
+"children": [
+{
+"name": "Bottle",
+"children": [
+{
+"name": "Bottling under cold conditions cold sterile bottling"
+},
+{
+"name": "Bottling under hot conditions"
+}
+]
+},
+{
+"name": "Bag-in-box"
+},
+{
+"name": "Other",
+"children": [
+{
+"name": "Composite cartons"
+},
+{
+"name": "Pouches"
+},
+{
+"name": "Polyethylene terephthalate PET packs"
+},
+{
+"name": "Cans"
+}
+]
+}
+]
+},
+{
+"name": "BOTTLE SHOCK (bottle sickness)"
+}
+]
+},
+{
+"name": "Transport and Logistics"
+},
+{
+"name": "Bottle Ageing",
+"children": [
+{
+"name": "EFFECT ON WINE"
+},
+{
+"name": "CONDITIONS"
+}
+]
+},
+{
+"name": "Wine Faults",
+"children": [
+{
+"name": "OXIDATION"
+},
+{
+"name": "REDUCTIVE ODOURS"
+},
+{
+"name": "SULFUR DIOXIDE"
+},
+{
+"name": "VOLATILE ACIDITY acetic acid"
+},
+{
+"name": "MOULDY MUSTY TAINTS",
+"children": [
+{
+"name": "TCA (2 4 6 - trichloroanisole)"
+},
+{
+"name": "TBA (2 4 6 - tribromophenol)"
+},
+{
+"name": "Geosmin"
+},
+{
+"name": "Guaiacol"
+}
+]
+},
+{
+"name": "MICROBIAL TAINTS",
+"children": [
+{
+"name": "Acetobacter (acetic acid bacteria)"
+},
+{
+"name": "Unintentional malolactic fermentation (lactic acid bacteria)"
+},
+{
+"name": "Mousiness (lactic acid bacteria)"
+},
+{
+"name": "Geranium taint (lactic acid bacteria)"
+},
+{
+"name": "Refermentation (Saccharomyces)"
+},
+{
+"name": "Brett Brettanomyces / Dekkera"
+},
+{
+"name": "Filmforming yeasts"
+}
+]
+},
+{
+"name": "GUAIACOL"
+},
+{
+"name": "SMOKE TAINT"
+},
+{
+"name": "TARTRATES"
+},
+{
+"name": "LIGHT STRUCK"
+}
+]
+}
+]
+}

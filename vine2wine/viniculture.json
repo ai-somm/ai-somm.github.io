@@ -1,0 +1,713 @@
+{
+"name": "Viniculture",
+"children": [
+{
+"name": "Harvesting",
+"children": [
+{
+"name": "SETTING THE HARVEST DATE",
+"children": [
+{
+"name": "Grape ripeness"
+},
+{
+"name": "Grape health"
+},
+{
+"name": "Weather"
+},
+{
+"name": "Availability of resources o"
+}
+]
+},
+{
+"name": "HAND HARVEST"
+},
+{
+"name": "MACHINE HARVEST"
+}
+]
+},
+{
+"name": "Transport from Vineyard to Winery",
+"children": [
+{
+"name": "PHYSICAL DAMAGE"
+},
+{
+"name": "OXIDATION"
+},
+{
+"name": "MICROBIAL CONTAMINATION"
+},
+{
+"name": "LOSS"
+}
+]
+},
+{
+"name": "Sulfur Dioxide",
+"children": [
+{
+"name": "FORMS",
+"children": [
+{
+"name": "Bound or fixed sulfur dioxide"
+},
+{
+"name": "Free sulfur dioxide"
+}
+]
+},
+{
+"name": "PROTECTIVE PROPERTIES",
+"children": [
+{
+"name": "Antioxidant"
+},
+{
+"name": "Antiseptic antimicrobial"
+},
+{
+"name": "Antioxidasic antienzymatic"
+},
+{
+"name": "Wine refreshment"
+}
+]
+},
+{
+"name": "PREPARATIONS",
+"children": [
+{
+"name": "Matches"
+},
+{
+"name": "Tablets"
+},
+{
+"name": "Liquid"
+},
+{
+"name": "Potassium metabisulfite"
+}
+]
+},
+{
+"name": "LEGALITIES"
+},
+{
+"name": "EXCESS SULFUR DIOXIDE"
+}
+]
+},
+{
+"name": "Grape Processing",
+"children": [
+{
+"name": "SORTING"
+},
+{
+"name": "DESTEMMING"
+},
+{
+"name": "CRUSHING"
+},
+{
+"name": "PRESSING",
+"children": [
+{
+"name": "Basket press vertical screw press"
+},
+{
+"name": "Horizontal screw press"
+},
+{
+"name": "Pneumatic air bag presses"
+},
+{
+"name": "Continuous screw press"
+}
+]
+}
+]
+},
+{
+"name": "Must Treatments",
+"children": [
+{
+"name": "PREFERMENTATION EXTRACTION (maceration)",
+"children": [
+{
+"name": "Skin contact \u2014 white cultivars"
+},
+{
+"name": "Cold soak \u2014 black cultivars"
+},
+{
+"name": "Flash release flash d\u00e9tente"
+},
+{
+"name": "Thermovinification"
+}
+]
+},
+{
+"name": "PREFERMENTATION CLARIFICATION",
+"children": [
+{
+"name": "Sedimentation"
+},
+{
+"name": "Clarification agents",
+"children": [
+{
+"name": "Pectolytic enzymes"
+},
+{
+"name": "Fining agents"
+}
+]
+},
+{
+"name": "Centrifugation"
+},
+{
+"name": "Flotation"
+}
+]
+},
+{
+"name": "MUST CONCENTRATION",
+"children": [
+{
+"name": "Enrichment (chaptalisation)"
+},
+{
+"name": "Reverse osmosis"
+},
+{
+"name": "Vacuum evaporation (vacuum distillation)"
+},
+{
+"name": "Cryoextraction (freeze concentration)"
+}
+]
+},
+{
+"name": "ACID ADJUSTMENT",
+"children": [
+{
+"name": "Acidification"
+},
+{
+"name": "Deacidification",
+"children": [
+{
+"name": "Calcium carbonate addition"
+},
+{
+"name": "Potassium bicarbonate addition"
+},
+{
+"name": "Double salt deacidification"
+}
+]
+}
+]
+},
+{
+"name": "OTHER ADJUSTMENTS",
+"children": [
+{
+"name": "Enzymes"
+},
+{
+"name": "Yeast nutrients"
+},
+{
+"name": "Tannin"
+},
+{
+"name": "Bentonite"
+},
+{
+"name": "Sulfur dioxide"
+},
+{
+"name": "Ascorbic acid"
+}
+]
+},
+{
+"name": "MANAGING OXYGEN",
+"children": [
+{
+"name": "Enzyme control"
+},
+{
+"name": "Reductive handling"
+},
+{
+"name": "Oxidative handling",
+"children": [
+{
+"name": "Hyperoxidation"
+}
+]
+}
+]
+}
+]
+},
+{
+"name": "Yeast",
+"children": [
+{
+"name": "INDIGENOUS YEASTS (wild yeasts)"
+},
+{
+"name": "INOCULATED YEASTS (cultured yeasts)"
+},
+{
+"name": "YEAST AFTER FERMENTATION"
+}
+]
+},
+{
+"name": "Alcoholic Fermentation",
+"children": [
+{
+"name": "THEORY OF FERMENTATION",
+"children": [
+{
+"name": "Requirements for fermentation"
+},
+{
+"name": "Products of fermentation"
+}
+]
+},
+{
+"name": "FERMENTATION VESSELS",
+"children": [
+{
+"name": "Stainless steel"
+},
+{
+"name": "Cement"
+},
+{
+"name": "Wood"
+},
+{
+"name": "Earthenware baked clay"
+}
+]
+},
+{
+"name": "MONITORING DENSITY"
+},
+{
+"name": "MANAGING OXYGEN"
+},
+{
+"name": "MANAGING TEMPERATURE",
+"children": [
+{
+"name": "Temperature requirements"
+},
+{
+"name": "Effect of temperature on rate of fermentation"
+},
+{
+"name": "Methods of temperature control"
+}
+]
+},
+{
+"name": "MANAGING CARBON DIOXIDE"
+},
+{
+"name": "MANAGING YEASTS",
+"children": [
+{
+"name": "Nutrients"
+},
+{
+"name": "Oxygen"
+},
+{
+"name": "Temperature"
+},
+{
+"name": "Stuck fermentation"
+},
+{
+"name": "Hydrogen sulfide"
+},
+{
+"name": "Autolysis"
+}
+]
+}
+]
+},
+{
+"name": "Malolactic Fermentation",
+"children": [
+{
+"name": "DEFINITION"
+},
+{
+"name": "EFFECTS"
+},
+{
+"name": "CONTROL",
+"children": [
+{
+"name": "Detering malolactic fermentation"
+},
+{
+"name": "Encouraging malolactic fermentation"
+},
+{
+"name": "Risks"
+}
+]
+}
+]
+},
+{
+"name": "Making Still Dry White Wine",
+"children": [
+{
+"name": "TEMPERATURE"
+},
+{
+"name": "OAK"
+},
+{
+"name": "ORANGE WINE"
+}
+]
+},
+{
+"name": "Making Still Dry Ros\u00e9 Wine",
+"children": [
+{
+"name": "BLEEDING / DRAWING OFF (saignage)"
+},
+{
+"name": "DIRECT PRESSING (pressurage direct)"
+},
+{
+"name": "BLENDING"
+}
+]
+},
+{
+"name": "Making Still Dry Red Wine",
+"children": [
+{
+"name": "STALK AND WHOLE BERRY OPTIONS"
+},
+{
+"name": "PHENOLIC COMPOUNDS",
+"children": [
+{
+"name": "Types of compound",
+"children": [
+{
+"name": "Anthocyanins"
+},
+{
+"name": "Tannins"
+}
+]
+},
+{
+"name": "Role of oxygen to bind anthocyanins to tannins"
+},
+{
+"name": "Effects on wine style"
+}
+]
+},
+{
+"name": "PHENOLIC EXTRACTION (maceration): AIMS AND ISSUES",
+"children": [
+{
+"name": "Time"
+},
+{
+"name": "Temperature"
+},
+{
+"name": "Mixing"
+}
+]
+},
+{
+"name": "EXTRACTION (maceration): MECHANICS",
+"children": [
+{
+"name": "Prefermentation maceration"
+},
+{
+"name": "During fermentation maceration",
+"children": [
+{
+"name": "Punching down (pigeage)"
+},
+{
+"name": "Pumping over (remontage)"
+},
+{
+"name": "Rack and return (d\u00e9lestage)"
+},
+{
+"name": "Submerged cap"
+},
+{
+"name": "Rotovinification"
+},
+{
+"name": "Carbonic maceration (mac\u00e9ration carbonique)"
+}
+]
+},
+{
+"name": "Postfermentation maceration"
+}
+]
+},
+{
+"name": "PRESSING",
+"children": [
+{
+"name": "Freerun wine"
+},
+{
+"name": "Press wine"
+}
+]
+}
+]
+},
+{
+"name": "Making Sparkling Wine",
+"children": [
+{
+"name": "FACTORS INFLUENCING FLAVOUR",
+"children": [
+{
+"name": "Cultivars"
+},
+{
+"name": "The base wine"
+},
+{
+"name": "Time on lees \u2014 autolysis"
+},
+{
+"name": "Dosage liqueur d\u2019exp\u00e9dition"
+},
+{
+"name": "Quality and style of bubble"
+}
+]
+},
+{
+"name": "FERMENTATION IN BOTTLE",
+"children": [
+{
+"name": "Second fermentation in bottle \u2014 traditional and transfer PRCUNOG cccecra erect terceee tee",
+"children": [
+{
+"name": "Factors unique to the traditional method"
+},
+{
+"name": "Factors unique to the transfer method"
+}
+]
+},
+{
+"name": "Single fermentation in bottle ancestral method m\u00e9thode ancestrale / m\u00e9thode rurale"
+}
+]
+},
+{
+"name": "TANK FERMENTATION",
+"children": [
+{
+"name": "Tank method cuve close / Charmat / Martinotti"
+},
+{
+"name": "Modified tank method Asti variation"
+}
+]
+},
+{
+"name": "OTHER METHODS",
+"children": [
+{
+"name": "Carbonation"
+},
+{
+"name": "Russian continuous method"
+}
+]
+}
+]
+},
+{
+"name": "Making Sweet Wine",
+"children": [
+{
+"name": "CONCENTRATION OF SUGARS ON THE VINE",
+"children": [
+{
+"name": "Late harvest vendange tardive"
+},
+{
+"name": "Desiccation cut cane passerillage"
+},
+{
+"name": "Noble rot Botrytis cinerea",
+"children": [
+{
+"name": "Tokaj"
+},
+{
+"name": "Sauternes"
+},
+{
+"name": "Germany"
+}
+]
+},
+{
+"name": "Ice wine eiswein"
+}
+]
+},
+{
+"name": "CONCENTRATION OF SUGARS OFF THE VINE",
+"children": [
+{
+"name": "Recioto"
+},
+{
+"name": "Vin Santo"
+},
+{
+"name": "Straw wine vin de paille / strohwein"
+},
+{
+"name": "Pantelleria"
+}
+]
+},
+{
+"name": "OTHER METHODS",
+"children": [
+{
+"name": "Blocked fermentation"
+},
+{
+"name": "Addition of sweetening agent",
+"children": [
+{
+"name": "Unfermented grape juice suissreserve"
+},
+{
+"name": "Rectified concentrated grape must RCGM"
+}
+]
+}
+]
+}
+]
+},
+{
+"name": "Making Fortified Wine",
+"children": [
+{
+"name": "CULTIVARS"
+},
+{
+"name": "THEINITIAL VINIFICATION"
+},
+{
+"name": "FORTIFICATION",
+"children": [
+{
+"name": "Purpose"
+},
+{
+"name": "Type of spirit used"
+},
+{
+"name": "Timing",
+"children": [
+{
+"name": "During fermentation"
+},
+{
+"name": "After fermentation"
+}
+]
+}
+]
+},
+{
+"name": "AGEING PROCESSES",
+"children": [
+{
+"name": "Reductive ageing"
+},
+{
+"name": "Biological ageing via filmforming yeasts"
+},
+{
+"name": "Oxidative ageing",
+"children": [
+{
+"name": "Sherry"
+},
+{
+"name": "Port"
+},
+{
+"name": "Madeira"
+},
+{
+"name": "Vins doux naturels VDNs"
+},
+{
+"name": "Rutherglen fortified wines"
+}
+]
+},
+{
+"name": "Combination ageing"
+}
+]
+},
+{
+"name": "OTHER FACTORS",
+"children": [
+{
+"name": "Blending"
+},
+{
+"name": "Sweetening"
+}
+]
+}
+]
+}
+]
+}
