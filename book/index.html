@@ -3,8 +3,139 @@ layout: default
 title: Book
 ---
 <div class="blurb">
-	<img src="https://ai-somm.com/bookcover.png" alt="bookcover" width="50%">
-<h5 class='xkcd'>Somm Into The Mode: Artificial Intelligence for Wine Professionals and Enthusiasts.</h5>
+  <style>
+body {
+  font: 16px sans-serif;
+  background-color: black;
+  color: white;
+}
 
-<h5 class='xkcd'>To be released in August 2021!</h5>
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #fff;
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+h1 {
+		text-align: center;
+		}
+
+		h2 {
+		text-align: left;
+		}	
+</style>
+
+<div class="blurb">
+	<img src="/book/cover.png" alt="bookcover" width="50%">
+<h4 class='xkcd'>Neural Networks and Nebbiolo: Artificial Intelligence for Wine.</h4>
+
+<h4 class='xkcd'>To be released in August 2021!</h4>
+
+	<h4 class='xkcd' style="color:orange" name="intro">About the Book</h4>
+
+
+
+		<h4 class='xkcd' style="color:orange" name="contents">Contents</h4>
+<embed src="/book/contents.pdf" width="500" height="375" 
+ type="application/pdf">
+
+
+
+		<h4 class='xkcd' style="color:orange" name="preview">Preview of Chapters</h4>
+
+<h5 class='xkcd'>
+<b>Chapter 1</b> discusses in-depth about what wine professionals and enthusiasts love (and hate): blind tasting. It has been an essential part of training for wine professionals. %And those with exceptional abilities to describe, guess or deduce the wines with astonishing precision are recognized and lauded. 
+However, it does appears that everyone has his or her own unique marker or method, on top of the generally accepted so-called ``deductive tasting``. I detail some of the many schools of thought about how to conduct deductive tasting, highlighting their major flaws and inconsistencies, while illustrating how this exact problem corresponds to some of the most classic machine learning methods, which in turn could be used to prevent pitfalls and identify the optimal strategy of deduction.
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 2</b> gets into the weeds of the vast body of wine knowledge touching on various distinct yet intertwined subjects such as geology, geography, chemistry, viticulture, viniculture, economics, etc. A solid grasp of a large body of wine knowledge is fundamental to being a qualified wine professional, just as how knowledge graphs are fundamental to various AI models and their generalizability and flexibility. We recount the important roles knowledge graphs have been playing in modern AI ecosystems, and illustrate with examples how knowledge graphs could be integrated to build question-answering systems like chatbox applications tailored to the wine industry.
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 3</b> broaches the classic topic of wine pairing, whether it be with food, or music and art. Given the textual description of a dish and the identify of a bottle of wine, how could AI methods be used to help determine their compatibility? Given a random food image, how would AI models recommend a wine to pair with, with rationales? Furthermore, given a bottle wine, how could we generate a recipe for a dish that goes well with it, with personal preference customization? We will break down each of the scenarios, and explain AI solutions module by module.
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 4</b> explores the colorful landscape of wine maps, by comparing various wine map collections and cartography projects. Map-making, or cartography, has long been a labor intensive and time-consuming process that requires extensive and in-depth knowledge of visual design, geography, perception, aesthetics, etc., on the part of cartographers or designers, despite the powerful modern softwares like Adobe Illustrator and ArcGIS that have partially eased the process. When it comes artisanal wine maps that are artistically stylized, however, manual hand-drawing appears inevitable. Could AI help automatically generate artistic maps with style and precision in no time? The answer is yes, yet not without challenges.
+
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 5</b> describes the phenomena of flying winemakers, and globe-trotting wine professionals and enthusiasts, and introduces the wine equivalents of the fun game \href{https://www.geoguessr.com/}{GeoGuesser}: VineyardGuesser --- given an image of a vineyard, guess where it is located in the world, and CellarGuesser --- given an image of a cellar, guess which winery it is! Can you achieve more correct guesses than our AI Guesser? You might be surprised. We will discuss the ins and outs of image geolocalization and how it applies to vineyards and cellars.
+
+<h5 class='xkcd'>
+<b>Chapter 6</b> details the fascinating world of grape varieties. Which grape varieties in the world are similar in terms of fruit profile, or structure, or growing patterns? What are the varieties that share something in common with both Riesling and Viognier? To answer such questions and many more, with the help of some of the widely used methods in AI, we produce a comprehensive map of the world's thousands \textit{vitis vinifera}, from which links and associations among grape varieties could be easily identified. Could AI help with grape variety identification in the vineyard with a single photo of the grape vine on the ground? The answers are indeed positive, with the help of fine-grained visual classification applications in computer vision.
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 7</b> maps out the kaleidoscopic space of (craft) cocktails as a semantic network\footnote{A network of interconnected concepts.}. What makes a cocktail creative? There is a popular misconception that a great idea strikes from out of the blue, much like the apple that supposedly fell on Newton’s head. In fact, almost every idea, no matter how groundbreaking or innovative, depends closely on those that came before. We analyze the creativity of craft cocktails through the lens of semantic networks and network theory, and provide creative tools and insights for aspiring mixologists. Furthermore, with the help of recent advancement in text generation technologies, we demonstrate how to automatically generate creative cocktail recipes, given minimal inputs.%“Coming up with an idea is best compared to inventive cooking: combing existing ingredients or modifying a recipe to come up with something new,” says Professor Olivier Toubia, who researches idea generation and social networks.
+
+
+
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 8</b> examines some of the world's best curated wine lists and explores what makes a great wine list in a data-driven manner. We introduce AI methods particularly adapted to parse a wine list, provide a comprehensive evaluation of any given wine list, and ultimately, generate a wine list given certain constraints such as budget, restaurant theme, perceived creativity, target consumer segments, etc., envisioning the future of AI assistants to wine directors at Michelin-starred restaurants and rustic bistros alike.
+
+
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 9</b> seeks to tease out the causal effects of \textit{Terrior} vs. \textit{Vignerons} on wine quality, as opposed to spurious correlation, by introducing the most classic methods in Econometrics\footnote{The subject of the application of statistical methods to economic data for meaningful interpretation of economic behaviors and activities.} and Statistical Learning\footnote{The sub-field of machine learning drawing from the fields of statistics and functional analysis.} of causal inference, as well as their modern renditions in AI research.
+
+
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 10</b> touches on the good old problem of trust-building among supply chain partners in the wine industry. Unsurprisingly, this is by no means a problem unique to the wine industry, therefore we review research efforts and practical insights over the past decade or so on the topics of automatic deception detection, and information concealment detection in text and speech with practical demos as potential solutions to such issues in the wine industry.
+
+
+
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 11</b> elaborates on the worldwide wine auction scene. What are the optimal strategies for the auctioneer and the bidders, respectively? What are some pitfalls corresponding to different mechanism designs from the perspective of wine bidders? How could we induce truth-telling and perhaps greater market efficiency with mechanism design of auctions? In this chapter, we delve deep into the classic game theory and mechanism design that prove wildly relevant in the modern world, and how deep learning has changed the landscape for the better during the past decade. 
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 12</b> summarizes the entire life cycle of wine from vine to glass, with various interactive visualizations of viticulture and viniculture processes and strategies. More importantly, I detail existing and potential applications of AI techniques to every step of the production production and distribution processes by conducting a comprehensive review of the landscape of AI for Agriculture or Viticulture, AI for Disaster and Crisis Response, AI for Logistics, and AI for Marketing.
+</h5>
+
+<h5 class='xkcd'>
+<b>Chapter 13</b>
+</h5>
+
+
+
+<h4 class='xkcd' style="color:orange" name="author">About the Author</h4>
+<div class="container">
+<img src="/book/avatar6.jpg" alt="Avartar" width="175" align=”right”>
+	<br>
+
+Shengli Hu is an AI research scientist in New York City. Her research experience and interests lie in intersdisciplinary research bridging social sciences, computational linguistics, computer vision, and speech. She has published in top conferences and journals in natural language
+processing, computer vision, speech, and applied statistics including Association of Computational
+Linguistics (ACL), Empirical Methods in Natural Language Processing (EMNLP), European
+Conference on Computer Vision (ECCV), Computer Vision and Pattern Recognition (CVPR), InterSpeech, and Annals of Applied Statistics (AoAS). Her research works have been featured in <b>spotlight talks</b>, and nominated for <b>Best Paper Award</b>s. Shengli Hu received her PhD from <b>Cornell University</b> in 2019.
+
+<br>
+
+She is also a wine professional with credentials including Diploma in Wine with Merit by Wine and Spirits Education Trust (WSET), Certified Sommelier by The Court of Master Sommelier, Certified Specialist of Wine by The Society of Wine Educators, and Certified Specialist of Spirits by The Society of Wine Educators. She is the author of the book <b>Neural Networks and Nebbiolo: Artificial Intelligence for Wine</b>, with its online platform <a href="https://ai-somm.github.io">AI FOR WINE</a> (under active development), set to be released late 2021. She is currently working towards Master of Wine by the Institute of Master of Wine.
+
+
+</div>
+
+
+
 </div>
