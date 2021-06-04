@@ -57,7 +57,7 @@ type="text/css"
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2hlbmdsaWgiLCJhIjoiY2ttaTVyZzdqMGR2eDJvbXFiZDhqYzhpYiJ9.PAMZvNynhpM6fPDWU9nC6g';
  
 var beforeTileset = 'shenglih.d1l96z7d';
-var afterTileset = 'shenglih.1crq3nna';
+var afterTileset = 'shenglih.1crq3nna'; // https://studio.mapbox.com/tilesets/shenglih.d1l96z7d
  
 var beforeMap = new mapboxgl.Map({
 container: 'before',
@@ -66,7 +66,7 @@ style: {
 'sources': {
 'raster-tiles': {
 'type': 'raster',
-'url': 'mapbox://' + beforeTileset,
+'url': 'https://studio.mapbox.com/tilesets/' + beforeTileset, //'mapbox://' + beforeTileset,
 'tileSize': 256
 }
 },
@@ -91,7 +91,7 @@ style: {
 'sources': {
 'raster-tiles': {
 'type': 'raster',
-'url': 'mapbox://' + afterTileset,
+'url': 'https://studio.mapbox.com/tilesets/' + afterTileset,//'mapbox://' + afterTileset,
 'tileSize': 256
 }
 },
