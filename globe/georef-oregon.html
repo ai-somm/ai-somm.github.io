@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Demo: Georeference imagery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+<link
+href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css"
+rel="stylesheet"
+/>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+<link
+rel="stylesheet"
+href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css"
+type="text/css"
+/>
+</head>
+<body>
+<style>
+body {
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+ 
+#map {
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
+}
+ 
+body * {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+ 
+.map {
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
+}
+</style>
+<div id="comparison-container">
+<div id="streets" class="map"></div>
+<div id="historic" class="map"></div>
+</div>
+<script>
+var style1 = 'cj173dx4q001l2so0pyozfnuf';
+var style2 = 'cj173cqom001s2smz3yyvto8z';
+ 
+// add the map
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2hlbmdsaWgiLCJhIjoiY2twZzBmdnBvMDJ3cDJ2bWg3N2MzbjZqMiJ9.2OTAxwU83MaunWUQTEZlVw';
+ 
+var streetsMap = new mapboxgl.Map({
+container: 'streets',
+style: 'mapbox://styles/examples/' + style1,
+center: [-122.58862880207116, 45.53387784078623],
+zoom: 12.6
+});
+ 
+var historicMap = new mapboxgl.Map({
+container: 'historic',
+style: 'mapbox://styles/examples/' + style2
+});
+ 
+var container = '#comparison-container';
+ 
+var map = new mapboxgl.Compare(streetsMap, historicMap, container);
+</script>
+</body>
+</html>
