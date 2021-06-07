@@ -174,7 +174,7 @@
       map.on('click', 'trees-point', function (e) {
         new mapboxgl.Popup()
           .setLngLat(e.features[0].geometry.coordinates)
-          .setHTML('<b>DBH:</b> ' + e.features[0].properties.dbh)
+          .setHTML('<b>Event index/description:</b> ' + e.features[0].properties.dbh)
           .addTo(map);
       });
     </script>
