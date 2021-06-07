@@ -1,118 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>Demo: Processing satellite imagery</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
-<link
-href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
-rel="stylesheet"
-/>
-<style>
-body {
-margin: 0;
-padding: 0;
-}
-#map {
-position: absolute;
-top: 0;
-bottom: 0;
-width: 100%;
-}
-</style>
-</head>
-<body>
-<style>
-body {
-overflow: hidden;
-}
- 
-body * {
--webkit-touch-callout: none;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-}
- 
-.map {
-position: absolute;
-top: 0;
-bottom: 0;
-width: 100%;
-}
-</style>
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
-<link
-rel="stylesheet"
-href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css"
-type="text/css"
-/>
-<div id="comparison-container">
-<div id="before" class="map"></div>
-<div id="after" class="map"></div>
-</div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoic2hlbmdsaWgiLCJhIjoiY2ttaTVyZzdqMGR2eDJvbXFiZDhqYzhpYiJ9.PAMZvNynhpM6fPDWU9nC6g';
- 
-var beforeTileset = 'shenglih.d1l96z7d';
-var afterTileset = 'shenglih.1crq3nna'; // https://studio.mapbox.com/tilesets/shenglih.d1l96z7d
- 
-var beforeMap = new mapboxgl.Map({
-container: 'before',
-style: {
-'version': 8,
-'sources': {
-'raster-tiles': {
-'type': 'raster',
-'url': 'https://studio.mapbox.com/tilesets/' + beforeTileset, //'mapbox://' + beforeTileset,
-'tileSize': 256
-}
-},
-'layers': [
-{
-'id': 'simple-tiles',
-'type': 'raster',
-'source': 'raster-tiles',
-'minzoom': 0,
-'maxzoom': 22
-}
-]
-},
-center: [55.172, 25.0859],
-zoom: 11
-});
- 
-var afterMap = new mapboxgl.Map({
-container: 'after',
-style: {
-'version': 8,
-'sources': {
-'raster-tiles': {
-'type': 'raster',
-'url': 'https://studio.mapbox.com/tilesets/' + afterTileset,//'mapbox://' + afterTileset,
-'tileSize': 256
-}
-},
-'layers': [
-{
-'id': 'simple-tiles',
-'type': 'raster',
-'source': 'raster-tiles',
-'minzoom': 0,
-'maxzoom': 22
-}
-]
-},
-center: [55.172, 25.0859],
-zoom: 11
-});
- 
-// A selector or reference to HTML element
-var container = '#comparison-container';
- 
-var map = new mapboxgl.Compare(beforeMap, afterMap, container, {});
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo: Georeference imagery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      body * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+    <div id="comparison-container">
+      <div id="streets" class="map"></div>
+      <div id="historic" class="map"></div>
+    </div>
+    <script>
+      //var style1 = 'cj173dx4q001l2so0pyozfnuf';
+      //var style2 = 'cj173cqom001s2smz3yyvto8z';
+
+      // add the map
+      mapboxgl.accessToken = 'pk.eyJ1Ijoic2hlbmdsaWgiLCJhIjoiY2twZzBmdnBvMDJ3cDJ2bWg3N2MzbjZqMiJ9.2OTAxwU83MaunWUQTEZlVw';
+
+      var streetsMap = new mapboxgl.Map({
+        container: 'streets',
+        style: 'mapbox://styles/shenglih/ckpm5vwzq0c3p17nyc04ikuel',//'mapbox://styles/examples/' + style1,
+        center: [-79.999732, 40.4374],
+        zoom: 11
+      });
+
+      var historicMap = new mapboxgl.Map({
+        container: 'historic',
+        style: 'mapbox://styles/shenglih/ckpm6xmib4gqt17kvncjww8rl'//'mapbox://styles/examples/' + style2
+      });
+
+      var container = '#comparison-container';
+
+      var map = new mapboxgl.Compare(streetsMap, historicMap, container);
+    </script>
+  </body>
 </html>
