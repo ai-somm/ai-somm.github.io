@@ -9,6 +9,9 @@
       href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css"
       rel="stylesheet"
     />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+    
     <style>
       body {
         margin: 0;
@@ -35,6 +38,9 @@
         zoom: 11
       });
 
+var marker = new mapboxgl.Marker() // initialize a new marker
+  .setLngLat([-79.999732, 40.4374]) // Marker [lng, lat] coordinates
+  .addTo(map); // Add the marker to the map
 
       var geocoder = new MapboxGeocoder({ // Initialize the geocoder
         accessToken: mapboxgl.accessToken, // Set the access token
@@ -57,8 +63,24 @@
           'type': 'geojson',
           'data': './trees.geojson'
         });
+        map.addSource('single-point', {
+          'type': 'geojson',
+          'data': {
+            'type': 'FeatureCollection',
+            'features': []
+          }
+        });
 
         map.addLayer(
+          {
+          'id': 'point',
+          'source': 'single-point',
+          'type': 'circle',
+          'paint': {
+            'circle-radius': 10,
+            'circle-color': '#448ee4'
+          }
+        },
           {
             'id': 'trees-heat',
             'type': 'heatmap',
