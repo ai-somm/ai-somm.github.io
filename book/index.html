@@ -3,7 +3,238 @@ layout: default
 title: Book
 ---
 <div class="blurb">
+
+
+      <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
+    <!--<link rel="stylesheet" type="text/css" href="inspector.css">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta charset="utf-8">-->
+  <script src="https://ai-somm.com/d3.v4.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+<link rel="stylesheet" href="https://ai-somm.github.io/font-awesome.min.css">
+
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
   <style>
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  color: navy;
+}
+
+.fa {
+  padding: 7px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+  
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-mail-forward {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+  
+.fa-delicious {
+  background: #2c4762;
+  color: white;
+
+}
+
+    @font-face {
+      font-family: xkcd;
+      src: url('https://cdn.rawgit.com/ipython/xkcd-font/master/xkcd-script/font/xkcd-script.woff') format('woff');
+    }
+    .xkcd {
+      font-family: xkcd;
+    }    
+
+    .navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: aliceblue;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #fff;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  height: inherit;
+  width: inherit;
+}
+
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
 body {
   font: 16px sans-serif;
   background-color: black;
@@ -28,44 +259,49 @@ body {
   pointer-events: none;
 }
 h1 {
-		text-align: center;
-		}
+    text-align: center;
+    }
 
-		h2 {
-		text-align: left;
-		}	
+    h2 {
+    text-align: left;
+    } 
 </style>
 
 <div class="blurb">
-	<img src="/book/cover.png" alt="bookcover" width="50%">
+  <img src="/book/cover.png" alt="bookcover" width="50%">
 <h4 class='xkcd'>Neural Networks and Nebbiolo: Artificial Intelligence for Wine.</h4>
 
 <h5 class='xkcd'>To be released in August 2021!</h5>
 
-	<h4 class='xkcd' style="color:orange" name="intro">About the Book</h4>
+  <h4 class='xkcd' style="color:orange" name="intro">About the Book</h4>
+
 
 <h4 class='xkcd' style="color:orange" name="author">About the Author</h4>
 <div class="container">
 <img src="/book/portrait12.jpg" alt="Avartar" width="35%" align=”right”>
+  <br>
+
 <h5 class='xkcd'>
 Shengli Hu is an AI research scientist in New York City. Her research experience and interests lie in intersdisciplinary research bridging social sciences, computational linguistics, computer vision, and speech. She has published in top conferences and journals in natural language
 processing, computer vision, speech, and applied statistics including Association of Computational
-Linguistics (ACL), Empirical Methods in Natural Language Processing (EMNLP), European
-Conference on Computer Vision (ECCV), Computer Vision and Pattern Recognition (CVPR), InterSpeech, and Annals of Applied Statistics (AoAS). Her research works have been featured in <b style="color:orange">spotlight talks</b>, and nominated for <b style="color:orange">Best Paper Award</b>s. Shengli Hu received her PhD from <b style="color:orange">Cornell University</b> in 2019.
+Linguistics (<a style="color:orange">ACL</a>), Empirical Methods in Natural Language Processing (EMNLP), European
+Conference on Computer Vision (<a style="color:orange">ECCV</a>), Computer Vision and Pattern Recognition (<a style="color:orange">CVPR</a>), <a style="color:orange">InterSpeech</a>, and Annals of Applied Statistics (<a style="color:orange">AoAS</a>). Her research works have been featured in <a style="color:orange">spotlight talks</a>, and nominated for <a style="color:orange">Best Paper Award</a>s. Shengli Hu received her PhD from <a style="color:orange">Cornell University</a> in 2019.
 </h5>
+<br>
 <h5 class='xkcd'>
-She is also a wine professional with credentials including Diploma in Wine with Merit by Wine and Spirits Education Trust (WSET), Certified Sommelier by The Court of Master Sommelier, Certified Specialist of Wine by The Society of Wine Educators, and Certified Specialist of Spirits by The Society of Wine Educators. She is the author of the book <b style="color:orange">Neural Networks and Nebbiolo: Artificial Intelligence for Wine</b>, with its online platform <a href="https://ai-somm.github.io">AI FOR WINE</a> (under active development), set to be released late 2021. She is currently working towards Master of Wine by the Institute of Master of Wine.
+She is also a wine professional with credentials including <a style="color:orange">Diploma in Wine with Merit by Wine and Spirits Education Trust (WSET)</a>, <a style="color:orange">Certified Sommelier by The Court of Master Sommelier</a>, <a style="color:orange">Certified Specialist of Wine by The Society of Wine Educators</a>, and <a style="color:orange">Certified Specialist of Spirits by The Society of Wine Educators</a>. She is the author of the book <a style="color:orange">Neural Networks and Nebbiolo: Artificial Intelligence for Wine</a>, with its online platform <a href="https://ai-somm.github.io">AI FOR WINE</a> (under active development), set to be released late 2021. She is currently working towards Master of Wine by the Institute of Master of Wine.
 
 </h5>
 </div>
 
-		<h4 class='xkcd' style="color:orange" name="contents">Contents</h4>
+
+    <h4 class='xkcd' style="color:orange" name="contents">Contents</h4>
 <embed src="/book/contents.pdf" width="500" height="375" 
  type="application/pdf">
 
 
 
-		<h4 class='xkcd' style="color:orange" name="preview">Preview of Chapters</h4>
+    <h4 class='xkcd' style="color:orange" name="preview">Preview of Chapters</h4>
 
 <h5 class='xkcd'>
 <b style="color:orange">Chapter 1</b> discusses in-depth about what wine professionals and enthusiasts love (and hate): <a style="color:orange">blind tasting</a>. It has been an essential part of training for wine professionals. However, it does appears that everyone has his or her own unique marker or method, on top of the generally accepted so-called ``deductive tasting``. I detail some of the many schools of thought about how to conduct deductive tasting, highlighting their major flaws and inconsistencies, while illustrating how this exact problem corresponds to some of the most classic machine learning methods, which in turn could be used to prevent pitfalls and identify the optimal strategy of deduction.
@@ -88,7 +324,7 @@ She is also a wine professional with credentials including Diploma in Wine with 
 <b style="color:orange">Chapter 5</b> describes the phenomena of <b style="color:orange">flying winemakers</b>, and globe-trotting wine professionals and enthusiasts, and introduces the wine equivalents of the fun game <a href="https://www.geoguessr.com">GeoGuesser</a>: VineyardGuesser --- given an image of a vineyard, guess where it is located in the world, and CellarGuesser --- given an image of a cellar, guess which winery it is! Can you achieve more correct guesses than our AI Guesser? You might be surprised. We will discuss the ins and outs of image geolocalization and how it applies to vineyards and cellars.
 
 <h5 class='xkcd'>
-<b style="color:orange">Chapter 6</b> details the fascinating world of <b style="color:orange">grape varieties</b>. Which grape varieties in the world are similar in terms of fruit profile, or structure, or growing patterns? What are the varieties that share something in common with both Riesling and Viognier? To answer such questions and many more, with the help of some of the widely used methods in AI, we produce a comprehensive map of the world's thousands \textit{vitis vinifera}, from which links and associations among grape varieties could be easily identified. Could AI help with grape variety identification in the vineyard with a single photo of the grape vine on the ground? The answers are indeed positive, with the help of fine-grained visual classification applications in computer vision.
+<b style="color:orange">Chapter 6</b> details the fascinating world of <b style="color:orange">grape varieties</b>. Which grape varieties in the world are similar in terms of fruit profile, or structure, or growing patterns? What are the varieties that share something in common with both Riesling and Viognier? To answer such questions and many more, with the help of some of the widely used methods in AI, we produce a comprehensive map of the world's thousands vitis vinifera, from which links and associations among grape varieties could be easily identified. Could AI help with grape variety identification in the vineyard with a single photo of the grape vine on the ground? The answers are indeed positive, with the help of fine-grained visual classification applications in computer vision.
 </h5>
 
 <h5 class='xkcd'>
