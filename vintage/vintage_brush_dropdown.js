@@ -66,7 +66,7 @@ Promise.all(promises).then(function (data) {
   data.forEach(function (eachDataset) {
     eachDataset.forEach(function (d) {
       d["uniscore"] = +d["uniscore"];
-      d["sentiment"] = +d["sentiment"];
+      //d["sentiment"] = +d["sentiment"];
       if (
         d.hasOwnProperty(
           "year"
@@ -92,9 +92,9 @@ $("#geographicChoice").on("change", function () {
 });
 
 //Add in event listener for Year choice.
-$("#sentiChoice").on("change", function () {
-  updateChart(allData);
-});
+// $("#sentiChoice").on("change", function () {
+//   updateChart(allData);
+// });
 
 //Can I make updates based on new x-axis variable w/o update? If so, add to blog, i.e. rinse and repeat.
 
@@ -102,18 +102,18 @@ $("#sentiChoice").on("change", function () {
 function updateChart(someData) {
   let dataJR = d3
     .nest()
-    .key(function (d) {
-      return d["sentiment"];
-    })
+    // .key(function (d) {
+    //   return d["sentiment"];
+    // })
     .entries(someData[0]);
 
-  let selectedSentiment = new $("#sentiChoice").val();
+  // let selectedSentiment = new $("#sentiChoice").val();
 
-  let filteredData = dataJR.filter(
-    (each) => each.key === selectedSentiment
-  )[0];
+  // let filteredData = dataJR.filter(
+  //   (each) => each.key === selectedSentiment
+  // )[0];
 
-  filteredData =
+  let filteredData =
     $("#geographicChoice").val() === "allregion"
       ? filteredData["values"]
       : filteredData["values"].filter(
