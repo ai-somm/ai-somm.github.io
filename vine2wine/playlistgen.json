@@ -1,0 +1,87 @@
+{
+"name": "Playlist Generation",
+"children": 
+[{
+"name": "Similarity-based Method",
+"children": [
+{
+"name": "Clustering"
+},
+{
+"name": "Similarity Distance Learning"
+},
+{
+"name": "Sequence-based Learning"
+}
+]
+},
+{
+"name": "Collaborative Filtering",
+"children": [
+{
+"name": "Standard Collaborative Filtering"
+},
+{
+"name": "Content-based Collaborative Filtering"
+}
+]
+},
+{
+"name": "Pattern Matching",
+"children": [
+{
+"name": "Association Rules"
+},
+{
+"name": "Sequential Patterns"
+}
+]
+},
+{
+"name": "Statistical Modeling Methods",
+"children": [
+{
+"name": "Markov Chains"
+},
+{
+"name": "Graph Learning"
+}
+]
+},
+{
+"name": "Reasoning",
+"children": [
+{
+"name": "Human- or User-in-the-loop Learning"
+},
+{
+"name": "Similarity Metric Learning"
+}
+]
+},
+{
+"name": "Discrete Dynamic Optimization",
+"children": [
+{
+"name": "Integer Linear Programming"
+},
+{
+"name": "Multi-armed Bandit"
+}
+]
+},
+{
+"name": "Hybrid Methods",
+"children": [
+{
+"name": "Reinforcement Learning"
+},
+{
+"name": "Ensemble Learning"
+},
+{
+"name": "Multi-task Learning"
+}
+]
+}]
+}
