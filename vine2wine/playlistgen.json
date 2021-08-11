@@ -71,6 +71,20 @@
 ]
 },
 {
+"name": "Deep Learning",
+"children": [
+{
+"name": "Transformer (attention-based)"
+},
+{
+"name": "Long short-term memory"
+},
+{
+"name": "Convolutional neural networks"
+}
+]
+},
+{
 "name": "Hybrid Methods",
 "children": [
 {
