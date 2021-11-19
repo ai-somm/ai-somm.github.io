@@ -1,169 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: AI for Wine
+---
+<div class="blurb">
+	<p class="xkcd">Welcome to AI for Wine! This website is still under active developement.</p>
+<!--	<div class="w3-content w3-display-container">
+		<img class="mySlides" src="/cover_noir.jpg" alt="sketch0" style="width:30%" align="middle">
+	<img class="mySlides" src="/cover_vivid.jpg" alt="sketch1" style="width:30%" align="middle">
+	<img class="mySlides" src="/cover.jpg" alt="sketch2" style="width:30%" align="middle">
+	<button class="w3-button w3-display-left" onclick="plusDivs(-1)" align="left">&#10094;</button>
+	<button class="w3-button w3-display-right" onclick="plusDivs(+1)" align="right">&#10095;</button>
+	</div>
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
 
-<head>
+	function plusDivs(n) {
+  	showDivs(slideIndex += n);
+	}
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Artificial Intelligence for Wine</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-  <!-- Plugin CSS -->
-  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/new-age.min.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-<!--   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-lg-7 my-auto">
-          <div class="header-content mx-auto">
-            <h1 class="mb-5">Neural Networks and Nebbiolo:  Artificial Intelligence for Wine</h1>
-            <a href="http://ai-for-wine.com/index0.html" class="btn btn-outline btn-xl js-scroll-trigger">Website</a>
-            <a href="http://ai-for-wine.com/book" class="btn btn-outline btn-xl js-scroll-trigger">Book</a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </header>
-
-  <section class="download text-center" id="abstract" style="background-color: #DEE7EF;">
-    <div class="container" >
-      <div class="section-heading text-center">
-        <h2>About</h2>
-        <p>This platform and book is a proof of concept for how artificial intelligence could, and should be applied to each and every aspect of the wine industry from vine to wine, to assist wine professionals in improving their professional skills, productivity, and efficiency, to change the wine industry for the better, and ultimately enrich wine consumers' experiences. </p>
-          <p>We ask, answer, illustrate, and demonstrate the solutions to a diverse range of questions relevant to wine professionals and enthusisasts, including but not limited to the following contents.</p>
-        <hr>
-      </div>
-    </div>
-  </section>
-
-  <section class="features" id="alltasks">
-    <div class="container">
-      <h2>Contents</h2>
-
-
-      <p> How could AI be leveraged for <a style="color:orange">improving viticulture</a> such as vineyard management and natural disaster response?</p>
-      <p> What are the essential components and techniques to enable <a style="color:orange">speech assistants</a> like Alexa or Google Home to <a style="color:orange">answer any wine-related questions</a>? </p>
-      <p> How could AI automatically come up reasonable <a style="color:orange">wine pairing</a> suggestions, whether it be with food, music, or art? </p>
-      <p> How could AI help flying winemakers and globe-trotting wine professionals <a style="color:orange">optimize their lifelong wine experiences</a>?</p>
-      <p> How could AI techniques tailor and optimize for each wine taster the best blind tasting strategies based on personal strengths and weaknesses? </p>
-      <p> What factors could influence bidder behaviors at <a style="color:orange">wine auctions</a>, and which auction design elements play a role in auctioneers expected revenue from the auction? How could AI methods help design the optimal auction mechanism for the auctioneer?</p>
-      <p> Are fine and rare wines worth considering of potential alternative assets relative to traditional assets for <a style="color:orange">investment</a>? How could AI improve wine collector's investment portfolio management strategies?</p>
-      <p> Could AI assist vine-growers, viticulturists, and geneticists in accurate <a style="color:orange">identification of</a> thousands of <a style="color:orange">grape varieties</a> around the globe?</p>
-      <p> What makes a great wine list? How to leverage AI to automatically <a style="color:orange">evaluate wine lists</a> objectively? How to automatically <a style="color:orange">generate wine lists</a> according to themes, preferences, moods, and occasions?</p>
-      <p> What are some AI techniques that would enable us to automatically <a style="color:orange">generate wine maps</a> according to any artistic styles?</p>
-      <p> How could we scientifically pinpoint the <a style="color:orange">causal effect of Terrior</a> versus Vigneron on wine? What are some AI techniques that would enable us to know for sure if wine's quality is caused by winemaking practices, vintage variations, climats or lieux-dits, etc.?</p>
-      <p> What makes a cocktail creative? How could we automatically <a style="color:orange">generate creative cocktail recipes</a> with AI?</p>
-
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <!-- <h2 class="section-heading">Discover what all the buzz is about!</h2> -->
-
-        </div>
-      </div>
-    </div>
-
-
-
-        <!--<h2>Meta-World Evaluation Modes</h2>-->
-          <section class="download text-center" id="abstract" style="background-color: #DEE7EF;">
-    <div class="container" >
-      <div class="section-heading text-center">
-      <h2>Platform</h2>
-
-      <p>There are <em>three distinctive ways</em> to navigate through <a href="http://ai-for-wine.com/index0.html">the platform</a> as each section consists of <em>three distinctive parts</em> that can be read separately:</p>
-
-      <ul>
-    <li><b>Visualization</b>: each section starts with an interactive visualization (or visualizations) that encapsulates (encapsulate) the topic of the section, followed with descriptions of data sources, how to interact with the visualization, and any interesting insights wherein;</li>
-    <li><b>Wine Talk</b>: where detailed information and findings that might be of interests to wine professsionals and enthusiasts are discussed in depth, and what AI could assist with and achieve in that regard are explained without technical jargons;</li>
-    <li><b>AI Talk</b>: where relevant state-of-the-art AI research papers, techniques, and results are surveyed and discussed in length --- constantly updated due to the fast evolution of the field, meant for those interested in or with backgrounds in AI research.</li>
-    <li><b>AI Demo</b>: in addition, when applicable, demos (and wine-related games) based on AI models will be made available in corresponding sections for experimentations.</li>
-  </ul>
-          <hr>
-      </div>
-    </div>
-  </section>
-   
-
-</section>
-
-  <section class="features" id="about">
-    <div class="container">
-      <div class="section-heading ">
-           <h2>Author</h2>
-           <p style="float: left; font-size: 12pt; text-align: center; width: 9%; margin-right: 1%; margin-bottom: 20em;"><img src="headshot.png" style="width: 100%"><a href="http://shenglihu.com">Shengli Hu</a><br>Cornell University</p>
-           <p style="float: left; font-size: 12pt; text-align: center; width: 9%; margin-right: 1%; margin-bottom: 20em;"><img src="dottieheadshot.png" style="width: 100%"><a href="http://instagram.com/dottie_ragamuffin">Dottie Shinzaki</a><br>Floof College</p>
-           <p style="float: left; font-size: 12pt; text-align: center; width: 9%; margin-right: 1%; margin-bottom: 20em;"><img src="tootsieheadshot.png" style="width: 100%"><a href="http://instagram.com/dottie_ragamuffin">Tootsie Hu</a><br>Woof University</p>
-      </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="features" id="parametric">
-    <div class="cta-content">
-      <div class="container">
-
-      </div>
-    </div>
-    <div class="overlay"></div>
-  </section>
-
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/new-age.min.js"></script>
-
-</body>
-
-</html>
+	function showDivs(n) {
+ 	 var i;
+ 	 var x = document.getElementsByClassName("mySlides");
+ 	 if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>-->
+<!--	<div class="container">
+  <div class="block" align="left">
+<img src="/cover_noir.jpg" alt="sketch0" width="100%">
+  </div>
+  <div class="block" align="middle">
+  	<p> There are <em>three distinctive ways</em> to navigate through this website as each section consists of <em>three distinctive parts</em> that can be read separately:</p>
+	
+  </div>
+  <div class="block" align="right">
+  <img src="/cover_vivid.jpg" alt="sketch1" width="100%">
+</div>
+</div>-->
+<p class="xkcd"> There are <em>three distinctive ways</em> to navigate through this website as each section consists of <em>three distinctive parts</em> that can be read separately:</p>
+	
+	<!--<img src="/cover.jpg" alt="sketch2" width="30%" align="left" hspace="20" vspace="20">-->
+	
+	<ul>
+		<li><b class="xkcd">Visualization</b>: each section starts with an interactive visualization (or visualizations) that encapsulates (encapsulate) the topic of the section, followed with descriptions of data sources, how to interact with the visualization, and any interesting insights wherein;</li>
+		<li><b class="xkcd">Wine Talk</b>: where detailed information and findings that might be of interests to wine professsionals and enthusiasts are discussed in depth, and what AI could assist with and achieve in that regard are explained without technical jargons;</li>
+		<li><b class="xkcd">AI Talk</b>: where relevant state-of-the-art AI research papers, techniques, and results are surveyed and discussed in length --- constantly updated due to the fast evolution of the field, meant for those interested in or with backgrounds in AI research.</li>
+	</ul>
+	
+	
+	<!--
+	<img src="cover.jpeg" alt="cover" style="width:250px;height:333px;">-->
+	
+	
+</div><!-- /.blurb -->
